@@ -1,0 +1,37 @@
+/*Basic styleguide definition*/
+@font-face {
+  font-family: "Nunito Sans";
+  src: local("NunitoSans-Regular"),
+    url("../fonts/NunitoSans.woff2") format("woff2"),
+    url("../fonts/NunitoSans.woff") format("woff"),
+    url("../fonts/NunitoSans.ttf") format("ttf"),
+    url("../fonts/NunitoSans.svg#NunitoSans-Regular") format("svg");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Raleway';
+  src: local('Raleway'),
+  url('../fonts/Raleway.eot') format('embedded-opentype'),
+  url('../fonts/Raleway.woff2') format('woff2'),
+  url('../fonts/Raleway.woff') format('woff'),
+  url('../fonts/Raleway.ttf') format('truetype'),
+  url('../fonts/Raleway.svg#Raleway') format('svg');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  --title: Raleway, sans-serif;
+  --body: "Nunito Sans", sans-serif;
+
+  --primary: #00b5a5;
+  --secondary: #295965;
+  --gray: #ededed;
+  --white: #fff;
+}
+
+/*Main global styles*/
