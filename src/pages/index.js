@@ -7,7 +7,9 @@ export default function Home() {
         <title>Investtools</title>
       </Head>
 
-      <div>home</div> {/*margin-top: 75px*/}
+      <div style={{height: "1000px"}}>
+        Página home
+      </div>
     </>
   )
 }

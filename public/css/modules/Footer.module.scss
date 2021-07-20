@@ -1,0 +1,32 @@
+@import "../scss/colors";
+
+.footer {
+  background: $primary;
+  padding-top: 60px;
+  padding-bottom: 45px;
+  border-top: 6px solid $secondary;
+
+  & :global(.by) {
+    margin-left: auto;
+  }
+
+  @media (max-width: 1199px) {
+    & :global(.logo-footer-box) {
+      max-width: 160px;
+    }
+    & :global(.by) {
+      max-width: 35px;
+    }
+  }
+
+  @media (max-width: 991px) {
+    & :global(.logo-footer-box) {
+      max-width: 130px !important;
+      text-align: center;
+      margin: 0 auto 40px;
+    }
+    & :global(.by) {
+      max-width: 30px;
+    }
+  }
+}

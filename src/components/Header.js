@@ -1,5 +1,5 @@
 import React, {useEffect} from 'react';
-import styles from '../../public/css/Header.module.scss';
+import styles from '../../public/css/modules/Header.module.scss';
 import Link from 'next/link';
 import Image from 'next/image';
 import logo from '../../public/images/logo.png';
