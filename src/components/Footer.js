@@ -3,7 +3,7 @@ import logo from "../../public/images/logo-branca.png";
 import faaz from "../../public/images/logo-faaz.svg";
 import Image from "next/image";
 import Link from 'next/link';
-import styles from '../../public/css/modules/Footer.module.scss'
+import styles from '../../public/css/modules/components/Footer.module.scss'
 
 export default function Footer() {
   return (

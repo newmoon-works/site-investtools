@@ -1,5 +1,5 @@
 import React, {useEffect} from 'react';
-import styles from '../../public/css/modules/Header.module.scss';
+import styles from '../../public/css/modules/components/Header.module.scss';
 import Link from 'next/link';
 import Image from 'next/image';
 import logo from '../../public/images/logo.png';
@@ -41,7 +41,7 @@ export default function Header() {
     const navbar = document.querySelector('.navbar');
     console.log(navbar);
     window.onscroll = () => {
-      100 < window.scrollY ? navbar.classList.add("small") : navbar.classList.remove("small");
+      100 < window.scrollY ? navbar.classList.add("shrink") : navbar.classList.remove("shrink");
     }
   }, []);
 

@@ -1,4 +1,4 @@
-@import "../scss/colors";
+@import "../../scss/colors";
 
 /* Header */
 .header {
@@ -44,7 +44,7 @@
     transition: none;
   }
 
-  & :global(.small) {
+  & :global(.shrink) {
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.04);
     padding-top: 7px;
     padding-bottom: 7px;
