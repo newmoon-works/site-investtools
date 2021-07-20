@@ -1,0 +1,49 @@
+@font-face {
+  font-family: "Nunito Sans";
+  src: local("NunitoSans-Regular"),
+  url("/fonts/NunitoSans.woff2") format("woff2"),
+  url("/fonts/NunitoSans.woff") format("woff"),
+  url("/fonts/NunitoSans.ttf") format("ttf"),
+  url("/fonts/NunitoSans.svg#NunitoSans-Regular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Raleway';
+  src: local('Raleway'),
+  url('/fonts/Raleway.eot') format('embedded-opentype'),
+  url('/fonts/Raleway.woff2') format('woff2'),
+  url('/fonts/Raleway.woff') format('woff'),
+  url('/fonts/Raleway.ttf') format('truetype'),
+  url('/fonts/Raleway.svg#Raleway') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+body {
+  font-family: "Nunito Sans", sans-serif;
+  color: $text-body;
+  margin-top: 75px;
+}
+
+a, h1, h2, h3, h4, h5, h5, h5, span {
+  color: $primary;
+}
+
+h1, h2, h3, h4, h5, h5, h5 {
+  font-family: "Raleway", sans-serif;
+}
+
+a:hover {
+  color: $secondary;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: $primary;
+  &:hover {
+    color: $secondary;
+  }
+}

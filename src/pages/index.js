@@ -7,7 +7,7 @@ export default function Home() {
         <title>Investtools</title>
       </Head>
 
-      <div>home</div>
+      <div>home</div> {/*margin-top: 75px*/}
     </>
   )
 }

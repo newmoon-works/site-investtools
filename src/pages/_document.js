@@ -44,7 +44,7 @@ class MyDocument extends Document {
         <body>
           <Main />
           <NextScript />
-          <Script strategy="beforeInteractive" src="/js/bootstrap.bundle.min.js"/>
+          <script src="/js/bootstrap.bundle.min.js"/>
         </body>
       </Html>
     )

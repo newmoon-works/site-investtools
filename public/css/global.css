@@ -6,7 +6,7 @@
     url("../fonts/NunitoSans.woff") format("woff"),
     url("../fonts/NunitoSans.ttf") format("ttf"),
     url("../fonts/NunitoSans.svg#NunitoSans-Regular") format("svg");
-  font-weight: 400;
+  font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
@@ -19,19 +19,33 @@
   url('../fonts/Raleway.woff') format('woff'),
   url('../fonts/Raleway.ttf') format('truetype'),
   url('../fonts/Raleway.svg#Raleway') format('svg');
-  font-weight: 400;
+  font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
 
 :root {
-  --title: Raleway, sans-serif;
+  --title: "Raleway", sans-serif;
   --body: "Nunito Sans", sans-serif;
 
-  --primary: #00b5a5;
-  --secondary: #295965;
+  --primary: #295965;
+  --secondary: #00b5a5;
   --gray: #ededed;
-  --white: #fff;
+  --white: #ffffff;
+  --gray-text: #8b8b8b;
 }
 
 /*Main global styles*/
+body {
+  font-family: var(--body);
+  color: var(--gray-text);
+}
+
+body a {
+  color: var(--primary) !important;
+  font-weight: 500;
+}
+
+body a:hover {
+  color: var(--secondary) !important;
+}
