@@ -1,9 +1,8 @@
 import Head from "next/head";
 import Hero from "../components/Hero";
+import data from  '../../public/content.json';
 
-export default function Home({ pageContent }) {
-
-
+export default function Home(pageContent) {
 
   return (
     <>
@@ -18,10 +17,7 @@ export default function Home({ pageContent }) {
 }
 
 export async function getStaticProps() {
-  const res = await fetch("http://localhost:3000/content.json");
-  const pageContent = await res.json();
-
   return {
-    props: { pageContent }
+    props: data
   }
 }
