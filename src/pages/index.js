@@ -2,6 +2,7 @@ import Head from "next/head";
 import data from  '../../public/content.json';
 import Hero from "../components/Hero";
 import Products from "../components/Products";
+import Clients from "../components/Clients";
 
 export default function Home(pageContent) {
 
@@ -13,6 +14,7 @@ export default function Home(pageContent) {
 
       <Hero content={pageContent.hero} />
       <Products content={pageContent.products} />
+      <Clients content={pageContent.clients} />
 
     </>
   )
