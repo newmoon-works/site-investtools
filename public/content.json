@@ -1,0 +1,351 @@
+{
+  "hero": [
+    {
+      "logo": "logo-performit2.png",
+      "text": "Plataforma de gestão de fundos de investimento na nuvem",
+      "image": "banner-performit6.png",
+      "alt": "Perform It",
+      "id": "perform-it"
+    },
+    {
+      "logo": "logo-grana.png",
+      "text": "Plataforma de cálculo, pagamento e declaração de Imposto de Renda na bolsa",
+      "image": "banner-grana2.png",
+      "alt": "Grana Capital",
+      "id": "grana-capital"
+    },
+    {
+      "logo": "logo-investtools-CRM.png",
+      "text": "Tudo que sua gestora precisa para se tornar um distribuidor",
+      "image": "banner-crm-min3.png",
+      "alt": "Investtools CRM",
+      "id": "crm"
+    },
+    {
+      "logo": "logo-blockchain.png",
+      "text": "Projeto de desenvolvimento e difusão da tecnologia Blockchain",
+      "image": "banner-blockchain2.png",
+      "alt": "Blockchain Studio",
+      "id": "blockchain-studio"
+    }
+  ],
+  "products": [
+    {
+      "image": "logo-performit2.png",
+      "alt": "Peform It",
+      "text": "Plataforma para gestoras de recursos com maior controle das operações, sem perder o foco no objetivo principal. Tudo de forma automática e com segurança comprovada.",
+      "link": "perform-it"
+    },
+    {
+      "image": "logo-grana.png",
+      "alt": "Grana Capital",
+      "text": "App de cálculo, pagamento e declaração do Imposto de Renda na bolsa para investidores Pessoa Física.",
+      "link": "grana-capital"
+    },
+    {
+      "image": "logo-investtools-CRM.png",
+      "alt": "Investtools CRM",
+      "text": "Sistema com todos os processos que a gestora precisa atender para ser um distribuidor eficiente. Tudo de acordo com a Comissão de Valores Mobiliários.",
+      "link": "investtools-crm"
+    },
+    {
+      "image": "logo-blockchain.png",
+      "alt": "Blockchain Studio",
+      "text": "Empresa com o propósito de desenvolver e difundir a tecnologia que promete ser uma das mais importantes no próximos anos por meio de projetos e cursos.",
+      "link": "blockchain-studio"
+    }
+  ],
+  "clients": [
+    {
+      "logo": "hix2@2x.png",
+      "name": "Nome cliente-1@2x"
+    },
+    {
+      "logo": "perfin4@2x.png",
+      "name": "Nome cliente-2@2x"
+    },
+    {
+      "logo": "squadra2@2x.png",
+      "name": "Nome cliente-3@2x"
+    },
+    {
+      "logo": "leblon4@2x.png",
+      "name": "Nome cliente-4@2x"
+    },
+    {
+      "logo": "necton2@2x.png",
+      "name": "Nome cliente-6@2x"
+    },
+    {
+      "logo": "skopos@2x.png",
+      "name": "Nome cliente-7@2x"
+    },
+    {
+      "logo": "brasilplural@2x.png",
+      "name": "Nome cliente-10@2x"
+    },
+    {
+      "logo": "capitania@2x.png",
+      "name": "Nome cliente-11@2x"
+    },
+    {
+      "logo": "modulo2@2x.png",
+      "name": "Nome cliente-12@2x"
+    },
+    {
+      "logo": "equitas2@2x.png",
+      "name": "Nome cliente-13@2x"
+    },
+    {
+      "logo": "tavola2@2x.png",
+      "name": "Nome cliente-14@2x"
+    },
+    {
+      "logo": "studio@2x.png",
+      "name": "Nome cliente-15@2x"
+    },
+    {
+      "logo": "apex@2x.png",
+      "name": "Nome cliente-17@2x"
+    },
+    {
+      "logo": "oceana@2x.png",
+      "name": "Nome cliente-18@2x"
+    },
+    {
+      "logo": "tempo@2x.png",
+      "name": "Nome cliente-19@2x"
+    },
+    {
+      "logo": "bogari3@2x.png",
+      "name": "Nome cliente-20@2x"
+    },
+    {
+      "logo": "florenca2@2x.png",
+      "name": "Nome cliente-21@2x"
+    },
+    {
+      "logo": "saga@2x.png",
+      "name": "Nome cliente-23@2x"
+    }
+  ],
+  "testimonials": [
+    {
+      "quote": "O Perform It é uma ótima ferramenta que consolida várias funções do operacional dos fundos numa única plataforma. O sistema abrange todos os fatores que impactam diariamente na gestão das carteiras, automatizando os processos, validando as informações, economizando tempo nas diversas etapas e reduzindo a chance de erros por falha humana.",
+      "name": "Pedro Rudge",
+      "company": "Leblon Equities"
+    },
+    {
+      "quote": "Atualmente o PerformIt nos permite criar nossas próprias telas utilizando uma API muito fácil de usar, sejam elas relatórios ou novas funcionalidades do sistema. A equipe do PerformIt me deu suporte completo para eu desenvolver minhas telas, me ajudando a montar meu ambiente de desenvolvimento e a entender as tecnologias necessárias. Aqui na Oceana nós já criamos 12 telas que nos auxiliam no nosso dia-a-dia do sistema.",
+      "name": "Mauricio Arieira",
+      "company": "Oceana Investimentos"
+    }
+  ],
+  "team": [
+    {
+      "name": "Andre Aizim<br> Kelmanson",
+      "position": "CEO",
+      "linkedin": "#",
+      "photo": "andre.png"
+    },
+    {
+      "name": "Lucas<br> Pérez",
+      "position": "Sócio",
+      "linkedin": "#",
+      "photo": "lucas.png"
+    },
+    {
+      "name": "david<br> gibbin",
+      "position": "Sócio",
+      "linkedin": "#",
+      "photo": "david.png"
+    },
+    {
+      "name": "Fabio Issamu<br> Oshiro",
+      "position": "Sócio",
+      "linkedin": "#",
+      "photo": "fabio.png"
+    },
+    {
+      "name": "Leonardo<br> Mendonça",
+      "position": "Sócio",
+      "linkedin": "#",
+      "photo": "leonardo.png"
+    }
+  ],
+  "performit": [
+    {
+      "monitor": "macbook-performit3@2x.png",
+      "logo": "logo-performit2.png",
+      "about": "<p>O Perform It possibilita total controle do fluxo de investimentos de sua gestora, liberando você e sua equipe para pensar no principal, a estratégia.</p><p>Com o Perform It, as gestoras de recursos terão maior controle das operações, sem perder o foco no objetivo principal.Tudo de forma automática e com segurança comprovada.</p><p>Nosso software ERP monitora todo o fluxo da gestora de capitais, com interfaces modernas com administradoras, corretoras, entre outras.</p><p>O Perform It controla o fluxo 360 graus, desde os processos de Back Office até Middle Office e Front Office.</p>",
+      "feature": [
+        {
+          "title": "Sistema automatizado",
+          "text": "Sistema 100% automatizado, sem a necessidade de preenchimento de planilhas."
+        },
+        {
+          "title": "API",
+          "text": "Poderosa API, onde a gestora desenvolve suas novas telas e funcionalidades e integra no menu do sistema."
+        },
+        {
+          "title": "Due Diligence",
+          "text": "Ferramentas modernas de apoio ao processo de Due Diligence."
+        },
+        {
+          "title": "Time de excelência",
+          "text": "Equipe treinada e atualizada constantemente, com aprovação dos clientes."
+        },
+        {
+          "title": "Taxa de satisfação <br>extremamente alta",
+          "text": "Clientes que contrataram o Perform It permanecem com o sistema."
+        },
+        {
+          "title": "Infraestrutura <br>personalizada",
+          "text": "Infraestrutura personalizada para cada cliente, onde ele possui ambiente próprio."
+        }
+      ],
+      "functionalities": [
+        {
+          "icon": "back-office.svg",
+          "title": "Back Office",
+          "text": "<p>Interface fácil e inovadora para relacionamento com administradoras;</p><p>Interface personalizada para as gestoras de recursos;</p><p>Conciliação diária das carteiras dos clientes.</p>"
+        },
+        {
+          "icon": "back-office-2.svg",
+          "title": "Middle Office",
+          "text": "<p>Relatórios completos para equipes comerciais das  gestoras de recursos;</p><p>Relatórios de rebate de distribuidor;</p><p>Foco em Compliance.</p>"
+        },
+        {
+          "icon": "back-office-3.svg",
+          "title": "Front Office",
+          "text": "<p>Visualização e operação da carteira agrupadas de acordo com cada cliente;</p><p>Atribuições de performance para as gestoras de fundos de investimento;</p><p>Boletagem + compliance pre trade + alocação através de plugins complementares.</p>"
+        }
+      ]
+    }
+  ],
+  "grana-capital": [
+    {
+      "monitor": "macbook-grana2@2x.png",
+      "logo": "logo-grana.png",
+      "about": "<p>O Grana é a plataforma ideal para que o cliente possa calcular, pagar e declarar seu Imposto de Renda sem esforço. O app importa suas transações na bolsa automaticamente e, com base nas mesmas, calcula o Imposto de Renda que deverá ser pago. </p>",
+      "feature": [
+        {
+          "title": "Integração com o Canal Eletrônico do Investidor (CEI)",
+          "text": "Praticidade. Esta é uma de nossas maiores qualidades. Por meio desta integração, nós importamos as informações diretamente no CEI e atualiza o próprio sistema. Quando o cliente compra algo na corretora, não há necessidade do cadastro desta movimentação na plataforma. Após a compra, automaticamente, sua aquisição aparece no Grana Capital. Somente a Investtools oferece este benefício."
+        },
+        {
+          "title": "Retroação desde o início do ano",
+          "text": "Transparência. O Grana importa suas transações desde o início do ano, independente de quando você comece a usar o app. Desta forma possibilitamos o usuário de acompanhar e comparar seus resultados de IR na bolsa ao longo dos meses, oferecndo total transparência no serviço."
+        },
+        {
+          "title": "Preenchimento automático da declaração",
+          "text": "Tempo é dinheiro. Sabemos o quanto a declaração toma tempo dos investidores, por isso não se preocupe! O Grana Capital conta com uma funcionalidade de preenchimento automático da declaração, desta forma o usuário só precisará colocar seus dados de forma simples e revisar o preenchimento."
+        },
+        {
+          "title": "Seu IR em qualquer lugar",
+          "text": "Segurança e facilidade. O Grana Capital traz a praticidade dos apps para a palma da sua mão. Esta é a maneira mais segura e ágil para você acompanhar os investimentos e Imposto de Renda de qualquer lugar, seja do escritório, seja da praia."
+        },
+        {
+          "title": "Atendimento personalizado",
+          "text": "Nós ouvimos você. Sabemos que cada usuário é único, por esta razão oferecemos atendimento personalizado para cada um."
+        },
+        {
+          "title": "Suporte a diversos tipos de ativos",
+          "text": "Monitoramento constante. No Grana Capital não importa os tipos de posições que você tem, todos serão contabilizados para o IR. Nossa meta é facilitar sempre seu dia a dia ao acompanhar o andamento delas."
+        },
+        {
+          "title": "Interface simples e intuitiva",
+          "text": "O lugar de todos. Iniciante ou investidor experiente na bolsa de valores, o Grana Capital traz a interface mais completa e fácil do mercado."
+        }
+      ],
+      "functionalities": [
+        {
+          "icon": "ev-patrimonial.svg",
+          "title": "Evolução patrimonial<br> e Proventos",
+          "text": "<p>Com o Grana Capital você acompanha a evolução do patrimônio ao longo do tempo, bem como o cálculo do IR.</p><p>Sistema agrega automaticamente as informações de proventos e as contabiliza na carteira do cliente.</p>"
+        },
+        {
+          "icon": "cei.svg",
+          "title": "CEI e Rentabilidades",
+          "text": "<p>Por meio desta integração, o cliente não necessita mais informar todas as movimentações realizadas.</p><p>Nosso sistema, de forma automática, está integrado ao CEI, e repassa diretamente a ele as compras e vendas de cada cliente.</p><p>O sistema contabiliza a rentabilidade de cada ativo que compõem cada carteira do cliente e de todas elas juntas.</p>"
+        }
+      ]
+    }
+  ],
+  "crm": [
+    {
+      "monitor": "macbook-crm@2x.png",
+      "logo": "logo-investtools-CRM.png",
+      "about": "<p>Com as mudanças realizadas pela Comissão de Valores Mobiliários em janeiro de 2016 (CVM 558) para que as gestoras possam começar a distribuir os seus próprios fundos, sem a necessidade da figura do distribuidor, percebemos a necessidade de uma parceria com as gestoras neste novo processo, preparando-as da maneira correta.</p><p>Assim, dentro de nosso sistema, incluímos todos os processos que a gestora precisa atender para ser um distribuidor eficiente.</p>",
+      "feature": [
+        {
+          "title": "Suitability e Know Your Client",
+          "text": "Controle. Com o InvesttoolsCRM, o cliente fica liberado do estresse de ter que se preocupar se o seu perfil está próximo da expiração. A parte burocrática fica conosco. Preocupe-se apenas com seus investimentos."
+        },
+        {
+          "title": "Prevenção à lavagem de dinheiro",
+          "text": "Confiança. Esse será sempre um dos nossos lemas. Atuar de forma clara e honesta a fim de que os clientes estejam tranquilos quanto às informações e dados que fornecemos. Até por isso, enviamos ao Conselho de Controle de Atividades Financeiras (COAF) relatório sempre que identificamos o surgimento de padrão suspeito de operações de lavagem de dinheiro."
+        },
+        {
+          "title": "Boletagem de movimentação",
+          "text": "Burocracia zero. O InvesttoolsCRM realiza o enquadramento do cliente antes de processar a ordem do envio dos boletos. Chega de perder tempo preparando, manualmente, o encaminhamento dessas informações para a administradora."
+        },
+        {
+          "title": "Consultas à base de clientes",
+          "text": "Praticidade. Precisando consultar a sua base de clientes? Com apenas um clique é possível, em segundos, descobrir quantos clientes, por exemplo, não assinaram ainda o termo de recusa de suitability. Faça sua busca com ordenação, filtros, agrupamentos, tabelas pivô, exportação para Excel e muito mais."
+        },
+        {
+          "title": "Gestão de documentos",
+          "text": "Informação é a alma do negócio. Sempre que um documento estiver prestes a vencer ou um cotista não tiver assinado documento essencial para operar nos fundos, o sistema informará você no momento ideal. Além disso, seus arquivos estão seguros sob nossos cuidados. Não perca tempo e espaço com este armazenamento. Nós cuidamos de tudo para você."
+        }
+      ],
+      "functionalities": [
+        {
+          "icon": "backup.svg",
+          "title": "Backups e Auditoria",
+          "text": "<p>Nós fazemos diariamente o backup completo do banco de dados e o mantemos armazenado por 5 anos a fim de possibilitar retroação do estado do sistema para qualquer data.</p><p>Todo acesso feito ao sistema, tanto relacionado à atualização quanto à consulta de dados é registrado na nossa base de logs e fica retido por 5 anos.</p>"
+        },
+        {
+          "icon": "testes.svg",
+          "title": "Testes de segurança<br> e Controle de acesso",
+          "text": "<p>Nós disponibilizamos mensalmente os relatórios dos testes de segurança que são feitos nos nossos servidores, como estabelece o artigo 4º, §8º, II da instrução CVM 558.</p><p>Apenas os usuários com nível de acesso específico podem consultar e alterar informações relativas à prevenção de lavagem de dinheiro, como configuração de regras e alertas de desenquadramento.</p>"
+        }
+      ]
+    }
+  ],
+  "blockchain": [
+    {
+      "logo": "logo-blockchain.png",
+      "about": "<p>A Blockchain Studio é um projeto pioneiro no mercado e tem como propósito o desenvolvimento e a difusão da tecnologia que promete ser uma das mais importantes nos próximos anos.</p><p>Ela é uma das primeiras empresas do Rio de Janeiro a desenvolver projetos e cursos com foco na disseminação do conhecimento sobre Blockchain.Diante disso, tornou - se protagonista com ações junto a bancos importantes, órgãos públicos, como BNDES, e fundações de Blockchain, como a Ethereum Foundation.</p><p>O investimento em treinamento e estudo, além do reconhecimento dos clientes, credenciam a Investtools como uma instituição de alta performance, eficiência, credibilidade e um pólo de inovação constante.</p>",
+      "feat": "<p>Com foco na disseminação da Blockchain, ministramos cursos para desenvolvedores e traders que mostram o que há de mais moderno sobre esta tecnologia e como utilizá-la da melhor forma.</p><p>A Blockchain Studio tem como parceiros instituições de renome tanto na área empresarial quanto na educacional.</p><p>São eles:</p>",
+      "partners": [
+        {
+          "image": "ethereum.png",
+          "name": "Ethereum"
+        },
+        {
+          "image": "bndes.png",
+          "name": "BNDES"
+        },
+        {
+          "image": "puc-rio.png",
+          "name": "PUC - Rio"
+        },
+        {
+          "image": "ufrj.png",
+          "name": "UFRJ"
+        }
+      ],
+      "project": "<p>Com grande conhecimento sobre Blockchain, a Blockchain Studio desenvolve projetos em consultoria nesta tecnologia disruptiva, ajudando empresas dos mais variados segmentos de atuação.</p><p>Nossa expertise é essencial para a cultura de toda instituição que queira evoluir e estar sempre à frente de seu tempo.</p><p>Torne sua empresa um case de sucesso e descubra como a revolução Blockchain pode ajudá - lo no processo de gestão.</p><p>Descubra como a revolução Blockchain pode ajudar sua empresa no processo de gestão e transforme - a em um case de sucesso no mercado.</p>"
+    }
+  ],
+  "generalText": [
+    {
+      "contactText": "Quer conhecer nossos produtos? <br>Nós teremos o prazer de te responder.",
+      "aboutText": "<p>Somos uma empresa com foco nas melhores soluções de tecnologia para o mercado financeiro, atuando com excelência no atendimento e com elevado nível de inovações tecnológicas.</p> <p>Trabalhamos em várias frentes ao mesmo tempo, com produtos voltados para gestoras, corretoras, distribuidoras, agentes autônomos, pessoas físicas e researches.Além disso, fornecemos treinamento e consultorias com tecnologia de ponta.</p>",
+      "historyText": "<p>Nascida em 2007 com foco apenas em soluções para corretoras, a Investtools cresceu sempre em busca de soluções importantes e inéditas para o mercado financeiro. Em 2009, surge o Perform It, software inovador onde o cliente poderia ter controle total do fluxo de investimentos de sua gestora. Já em 2014, sob o comando de novos sócios, a empresa é refundada. Em 2017, surgem novos produtos e empresas, como o Grana Capital, o Investtools CRM e o Blockchain Studio. Nos últimos quatro anos, aumentamos consideravelmente o número de clientes, ampliamos nossa equipe e continuamos desenvolvendo novas ferramentas tecnológicas.</p> <p>Esse é só o começo de um caminho com muitas inovações pela frente, sempre desenvolvendo as melhores soluções para o mercado.</p>",
+      "whyUsText": "<p>Nossa qualidade no desenvolvimento de soluções tanto tecnológicas quanto financeiras criam satisfação imediata nos clientes, com aprovação de 100% dos nossos produtos e taxa de saída próxima a zero.</p>",
+      "motivationText": "<p>Nossa motivação está no desafio da inovação constante e da satisfação do cliente. Trabalhamos para nos tornar referência no mercado, como uma empresa de excelência tecnológica e excelência na área financeira.</p> <p>Se você, assim como a gente, acredita que a tecnologia da informação é vital para o mercado financeiro, a Investtools é ideal para você e para sua empresa.</p>"
+    }
+  ]
+}

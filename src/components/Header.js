@@ -39,7 +39,6 @@ export default function Header() {
 
   useEffect(() => {
     const navbar = document.querySelector('.navbar');
-    console.log(navbar);
     window.onscroll = () => {
       100 < window.scrollY ? navbar.classList.add("shrink") : navbar.classList.remove("shrink");
     }

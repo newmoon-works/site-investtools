@@ -1,0 +1,179 @@
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateX(-8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+.heroSection {
+  background-image: url("../../../images/bg-banner@2x.png");
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  background-size: 55% 105%;
+  height: 765px;
+}
+.heroSection::before {
+  content: "";
+  width: 100%;
+  background: linear-gradient(to bottom, #e4ecf0 0%, #fff 35%, #fff 37%, rgba(125, 185, 232, 0) 100%);
+  background-size: cover;
+  height: 575px;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+@media (max-width: 992px) {
+  .heroSection {
+    height: 465px;
+    margin-top: 30px;
+  }
+  .heroSection::before {
+    height: 50%;
+  }
+}
+@media (max-width: 768px) {
+  .heroSection .heroSliderImage {
+    max-width: 270px;
+    margin: 0 auto;
+  }
+  .heroSection {
+    height: 100%;
+    min-height: 550px;
+    background-size: 95% 60%;
+    background-position: top right;
+    margin-top: 10px;
+    padding: 0 10px;
+  }
+  .heroSection::before {
+    height: 60%;
+  }
+}
+
+.heroSlider {
+  position: relative;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  z-index: 1;
+}
+.heroSlider img {
+  max-width: 150px !important;
+}
+.heroSlider h1 {
+  max-width: 300px;
+  margin-top: 35px;
+  letter-spacing: 0.88px;
+  line-height: 38px;
+}
+@media (max-width: 992px) {
+  .heroSlider h1 {
+    font-size: 20px;
+    line-height: 33px;
+  }
+}
+@media (max-width: 768px) {
+  .heroSlider h1 {
+    font-size: 19px;
+    line-height: 30px;
+    max-width: 100%;
+  }
+}
+
+.content {
+  margin-bottom: 90px;
+  animation: fade-in 1s ease both;
+}
+.content:not(:global(.active)) {
+  display: none;
+}
+@media (max-width: 768px) {
+  .content {
+    margin-top: 40px;
+    margin-bottom: 140px;
+  }
+}
+
+.arrows {
+  position: absolute;
+  display: flex;
+  bottom: 20%;
+}
+.arrows button:first-child {
+  margin-right: 5px;
+}
+.arrows button:nth-child(2) {
+  margin-left: 5px;
+}
+.arrows button:active {
+  transform: scale(0.95);
+}
+.arrows button {
+  padding: 0;
+  cursor: pointer;
+  border: 0;
+  display: flex;
+  z-index: 1;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  background: #295965;
+  text-align: center;
+  width: 40px;
+  height: 40px;
+  position: relative;
+  transition: all 150ms ease-out;
+}
+.arrows button svg {
+  transition: all 0.25s ease-in-out;
+}
+.arrows button:hover svg {
+  transform: scale(1.15);
+}
+
+.heroSliderImage {
+  position: relative;
+  height: 100%;
+  margin-top: 20px;
+}
+.heroSliderImage img {
+  margin-top: 20px;
+}
+.heroSliderImage .monitorContent {
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 76%;
+  width: 76%;
+  background-size: contain;
+  position: absolute;
+  right: 5.4%;
+  top: -4%;
+  transition: background-image 0.385s ease-in-out;
+  overflow: hidden;
+  background-image: url("../../../images/hero/banner-performit6.png");
+}
+@media (max-width: 992px) {
+  .heroSliderImage .monitorContent {
+    top: -19px;
+    height: 75%;
+  }
+}
+@media (max-width: 768px) {
+  .heroSliderImage .monitorContent {
+    top: -73px;
+    height: 80%;
+  }
+}
+@media (max-width: 576px) {
+  .heroSliderImage .monitorContent {
+    top: -16px;
+    height: 80%;
+  }
+}
+
+/*# sourceMappingURL=Hero.module.css.map */

@@ -26,6 +26,10 @@ h1, h2, h3, h4, h5, h5, h5 {
   font-family: "Raleway", sans-serif;
 }
 
+h1, h2 {
+  font-size: 22px;
+}
+
 a:hover {
   color: #00b5a5;
 }

@@ -1,0 +1,204 @@
+@import "../../scss/colors";
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateX(-8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+.heroSection {
+  background-image: url("../../../images/bg-banner@2x.png");
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  background-size: 55% 105%;
+  height: 765px;
+
+  &::before {
+    content: '';
+    width: 100%;
+    background: linear-gradient(to bottom, #e4ecf0 0%, #fff 35%, #fff 37%, rgba(125, 185, 232, 0) 100%);
+    background-size: cover;
+    height: 575px;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+
+  @media (max-width: 992px) {
+    & {
+      height: 465px;
+      margin-top: 30px;
+    }
+
+    &::before {
+      height: 50%;
+    }
+  }
+
+  @media (max-width: 768px) {
+    & .heroSliderImage {
+      max-width: 270px;
+      margin: 0 auto;
+    }
+
+    & {
+      height: 100%;
+      min-height: 550px;
+      background-size: 95% 60%;
+      background-position: top right;
+      margin-top: 10px;
+      padding: 0 10px;
+    }
+
+    &::before {
+      height: 60%;
+    }
+  }
+}
+
+.heroSlider {
+  position: relative;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  z-index: 1;
+
+  & img {
+    max-width: 150px !important;
+  }
+
+  & h1 {
+    max-width: 300px;
+    margin-top: 35px;
+    letter-spacing: .88px;
+    line-height: 38px;
+  }
+
+  @media (max-width: 992px) {
+    & h1 {
+      font-size: 20px;
+      line-height: 33px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    & h1 {
+      font-size: 19px;
+      line-height: 30px;
+      max-width: 100%;
+    }
+  }
+}
+
+.content {
+  margin-bottom: 90px;
+  animation: fade-in 1s ease both;
+
+  &:not(:global(.active)) {
+    display: none;
+  }
+
+  @media (max-width: 768px) {
+    & {
+      margin-top: 40px;
+      margin-bottom: 140px;
+    }
+  }
+}
+
+.arrows {
+  position: absolute;
+  display: flex;
+  bottom: 20%;
+
+  & button:first-child {
+    margin-right: 5px;
+  }
+
+  & button:nth-child(2) {
+    margin-left: 5px;
+  }
+
+  & button:active {
+    transform: scale(0.95);
+  }
+
+  & button {
+    padding: 0;
+    cursor: pointer;
+    border: 0;
+    display: flex;
+    z-index: 1;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    background: $primary;
+    text-align: center;
+    width: 40px;
+    height: 40px;
+    position: relative;
+    transition: all 150ms ease-out;
+
+    & svg {
+      transition: all .25s ease-in-out;
+    }
+
+    &:hover svg {
+      transform: scale(1.15);
+    }
+  }
+}
+
+.heroSliderImage {
+  position: relative;
+  height: 100%;
+  margin-top: 20px;
+
+  & img {
+    margin-top: 20px;
+  }
+
+  & .monitorContent {
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 76%;
+    width: 76%;
+    background-size: contain;
+    position: absolute;
+    right: 5.4%;
+    top: -4%;
+    transition: background-image .385s ease-in-out;
+    overflow: hidden;
+
+    background-image: url("../../../images/hero/banner-performit6.png");
+  }
+
+  @media (max-width: 992px) {
+    & .monitorContent {
+      top: -19px;
+      height: 75%;
+    }
+  }
+
+  @media (max-width: 768px) {
+    & .monitorContent {
+      top: -73px;
+      height: 80%;
+    }
+  }
+
+  @media (max-width: 576px) {
+    & .monitorContent {
+      top: -16px;
+      height: 80%;
+    }
+  }
+}
