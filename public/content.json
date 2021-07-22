@@ -34,13 +34,13 @@
       "image": "logo-performit2.png",
       "alt": "Peform It",
       "text": "Plataforma para gestoras de recursos com maior controle das operações, sem perder o foco no objetivo principal. Tudo de forma automática e com segurança comprovada.",
-      "link": "perform-it"
+      "link": "/perform-it"
     },
     {
       "image": "logo-grana.png",
       "alt": "Grana Capital",
       "text": "App de cálculo, pagamento e declaração do Imposto de Renda na bolsa para investidores Pessoa Física.",
-      "link": "grana-capital"
+      "link": "https://grana.capital/"
     },
     {
       "image": "logo-investtools-CRM.png",

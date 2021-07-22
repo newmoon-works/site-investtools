@@ -1,0 +1,65 @@
+@import "../../scss/colors";
+
+.productsSection {
+  margin-top: 110px;
+}
+
+.cardProduct {
+  position: relative;
+  text-decoration: none;
+  width: 230px;
+  height: 255px;
+  border: 1.5px solid #f2f2f2;
+  margin: 0 30px 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  cursor: pointer;
+  overflow: hidden;
+
+  &:hover .cardImgOverlay {
+    left: 0;
+  }
+
+  & img {
+    width: auto;
+    max-width: 65%;
+    margin: 0 auto;
+  }
+
+  & h3 {
+    font-size: 13px;
+    letter-spacing: .26px;
+    color: #fff;
+    line-height: 22px;
+    text-align: justify;
+    margin: 0;
+  }
+}
+
+.cardImgOverlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  border: 0;
+  background: $primary;
+  padding: 45px 25px 25px;
+  left: -100%;
+  width: 100%;
+  transition: all .285s ease-in-out;
+
+  &::before {
+    content: '';
+    display: block;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 37px 37px 0 0;
+    border-color: #00b4a4 transparent transparent transparent;
+    transform: rotate(360deg);
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+}

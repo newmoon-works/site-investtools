@@ -14,7 +14,7 @@ export default function Footer() {
             <div className="logo-footer-box">
               <Link href="/">
                 <a rel="noopener" target="_blank">
-                  <Image layout="intrinsic" src={logo} quality="35" alt="Investtools" />
+                  <Image layout="intrinsic" src={logo} quality="1" alt="Investtools" />
                 </a>
               </Link>
             </div>
@@ -23,7 +23,7 @@ export default function Footer() {
             <div className="by">
               <Link href="https://faazcomunicacao.com.br/?utm_source=Investtools&utm_medium=site&utm_campaign=Portfolio">
                 <a rel="noopener" target="_blank">
-                  <Image layout="intrinsic" src={faaz} quality="35" alt="FAAZ Comunicação" />
+                  <Image layout="intrinsic" src={faaz} quality="1" alt="FAAZ Comunicação" />
                 </a>
               </Link>
             </div>

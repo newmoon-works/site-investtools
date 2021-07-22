@@ -50,7 +50,7 @@ export default function Header() {
         <div className="container">
           <Link href="/">
             <a className="navbar-brand">
-              <Image layout="intrinsic" src={logo} quality="35" alt="Investtools" />
+              <Image layout="intrinsic" src={logo} quality="1" alt="Investtools" />
             </a>
           </Link>
           <button className={`navbar-toggler collapsed border-0 ${styles.toggler}`} data-bs-toggle="collapse" data-bs-target="#navigation">

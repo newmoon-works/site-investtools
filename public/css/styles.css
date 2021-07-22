@@ -41,4 +41,29 @@ a:hover {
   color: #00b5a5;
 }
 
+.title-box {
+  position: relative;
+}
+.title-box::before {
+  content: "";
+  display: block;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 27px 27px 0 0;
+  border-color: #00b4a4 transparent transparent transparent;
+  transform: rotate(360deg);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.title-box h2 {
+  letter-spacing: 0.44px;
+  color: #295965;
+  font-weight: bold;
+  line-height: 35px;
+  text-transform: uppercase;
+  padding-top: 40px;
+}
+
 /*# sourceMappingURL=styles.css.map */

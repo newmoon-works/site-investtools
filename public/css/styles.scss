@@ -1,3 +1,30 @@
 @import "scss/colors";
 @import "scss/typography";
 
+.title-box {
+  position: relative;
+
+  &::before {
+    content: '';
+    display: block;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 27px 27px 0 0;
+    border-color: #00b4a4 transparent transparent transparent;
+    transform: rotate(360deg);
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  & h2 {
+    letter-spacing: .44px;
+    color: $primary;
+    font-weight: bold;
+    line-height: 35px;
+    text-transform: uppercase;
+    padding-top: 40px;
+  }
+
+}

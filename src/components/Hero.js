@@ -3,7 +3,7 @@ import Image from "next/image";
 import styles from '../../public/css/modules/components/Hero.module.scss';
 import mac from '../../public/images/mac@2x.png';
 
-export default function Hero({content}) {
+export default function Hero({ content }) {
 
   const [active, setActive] = useState(content[0]);
 
@@ -71,7 +71,7 @@ export default function Hero({content}) {
           <div className="col-12 col-sm-7 px-sm-0 order-md-2">
             <div className={styles.heroSliderImage}>
               <div className={styles.monitorContent} id="monitor" />
-              <Image src={mac} alt="Investtools" />
+              <Image src={mac} alt="Investtools" quality="1" />
             </div>
           </div>
         </div>
