@@ -65,5 +65,12 @@ a:hover {
   text-transform: uppercase;
   padding-top: 40px;
 }
+@media (max-width: 768px) {
+  .title-box h2 {
+    font-size: 20px;
+    padding-top: 30px;
+    line-height: 30px;
+  }
+}
 
 /*# sourceMappingURL=styles.css.map */
