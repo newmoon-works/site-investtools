@@ -30,3 +30,53 @@
     }
   }
 }
+
+.infoFooterBox {
+  & ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    & li:last-child {
+      margin: 0 100px;
+    }
+    & li {
+      & a {
+        font-size: 14px;
+        text-decoration: none;
+        letter-spacing: .2px;
+        color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: all .285s ease-in-out;
+
+        & img {
+          width: 23px;
+          height: 23px;
+          margin-right: 10px;
+        }
+
+        & p {
+          margin: 0;
+        }
+      }
+    }
+  }
+  @media (max-width: 1199px) {
+    & ul li:last-child {
+      margin: 0 60px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    & ul li:last-child {
+      margin: 35px 0;
+    }
+
+    & ul {
+      flex-direction: column;
+    }
+  }
+}
