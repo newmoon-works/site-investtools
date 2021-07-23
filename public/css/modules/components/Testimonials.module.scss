@@ -1,0 +1,147 @@
+.testimonialSection {
+  background: url("../../../images/bg-testimonials.jpg") top center no-repeat;
+  background-size: cover;
+  position: relative;
+  padding: 50px 0 40px;
+
+  & :global(.title-box) {
+    margin-bottom: 25px;
+  }
+
+  & :global(.row) {
+    overflow: hidden;
+  }
+
+  & :global(.flickity-viewport) {
+    overflow: visible;
+  }
+
+  @media (max-width: 992px) {
+    & {
+      padding: 50px 0 60px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    & {
+      padding: 50px 0 40px;
+    }
+  }
+
+  @media (max-width: 576px) {
+    & :global(.flickity-prev-next-button) {
+      bottom: 5% !important;
+      top: auto !important;
+    }
+    & :global(.flickity-viewport) {
+      height: 450px !important;
+    }
+    & :global(.flickity-prev-next-button.previous) {
+      left: 30%;
+    }& :global(.flickity-prev-next-button.next) {
+      right: 30%;
+    }
+  }
+}
+
+.testimonialBox {
+  background: #fff;
+  height: 255px;
+  width: 360px;
+  margin-right: 100px;
+  padding: 30px 25px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+  position: relative;
+  top: 0;
+
+  & .aspas {
+    position: absolute;
+    right: -10px;
+    top: -10px;
+
+    & img {
+      width: 47px;
+      height: 47px;
+    }
+  }
+
+  & .text {
+    & p {
+      font-size: 13px;
+      letter-spacing: .22px;
+      color: gray;
+      line-height: 19px;
+    }
+  }
+
+  & .info {
+    position: absolute;
+    bottom: 15px;
+    right: 20px;
+    text-align: right;
+
+    & p {
+      font-size: 14px;
+      letter-spacing: .28px;
+      color: #295965;
+      font-weight: bold;
+      margin-bottom: 0;
+    }
+
+    & small {
+      font-size: 11px;
+      letter-spacing: .22px;
+      color: #00b4a4;
+      display: block;
+    }
+  }
+
+  @media (max-width: 1199px) {
+    & {
+      max-width: 320px;
+      height: 285px;
+    }
+  }
+
+  @media (max-width: 992px) {
+    & {
+      max-width: 255px;
+      height: 335px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    & {
+      max-width: 90%;
+      height: 340px;
+      padding: 40px 25px 20px;
+    }
+  }
+}
+
+.square {
+  background: #fff;
+  height: 255px;
+  width: 360px;
+  margin-right: 100px;
+  padding: 30px 25px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+}
+
+.carouselMobile {
+  display: none;
+}
+
+.carouselDesktop {
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .carouselMobile {
+    display: block;
+  }
+
+  .carouselDesktop {
+    display: none;
+  }
+}
