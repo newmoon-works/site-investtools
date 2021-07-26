@@ -35,3 +35,15 @@
     }
   }
 }
+
+.decoration {
+  position: absolute;
+  & img {
+    max-width: 110px;
+  }
+  @media (max-width: 768px) {
+    & img {
+      max-width: 60px;
+    }
+  }
+}

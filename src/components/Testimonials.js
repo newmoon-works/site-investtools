@@ -17,6 +17,10 @@ export default function Testimonials({ content }) {
 
   return (
     <section className={styles.testimonialSection}>
+
+      <div className={`decoration ${styles.decor}`}><img src="/images/triangulos-depo-esqu@2x.png" alt="Detalhe"/></div>
+      <div className={`decoration ${styles.decor}`}><img src="/images/triangulos-depo-dire@2x.png" alt="Detalhe"/></div>
+
       <div className="container">
         <div className="row">
           <div className="col-12">

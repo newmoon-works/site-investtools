@@ -80,3 +80,22 @@
 .bigImg {
   max-width: 600px;
 }
+
+.carouselItem {
+  display: flex;
+}
+
+.decor:first-child {
+  top: -75px;
+  left: 0;
+}
+
+.decor:nth-child(2) {
+  right: 0;
+  top: 0;
+}
+
+.decor:nth-child(3) {
+  right: 0;
+  bottom: 0;
+}

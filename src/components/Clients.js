@@ -9,10 +9,16 @@ export default function Clients({ content }) {
     wrapAround: true,
     initialIndex: 8,
     autoPlay: true,
+    pageDots: false,
   }
 
   return (
     <section className={styles.clientSection}>
+
+      <div className={`decoration ${styles.decor}`}><img src="/images/triangulos-clientes-esqu@2x.png" alt="Detalhe"/></div>
+      <div className={`decoration ${styles.decor}`}><img src="/images/triangulos-clientes-dire@2x.png" alt="Detalhe"/></div>
+      <div className={`decoration ${styles.decor}`}><img src="/images/triangulos-clientes-bottomm@2x.png" alt="Detalhe"/></div>
+
       <div className="container">
         <div className="row">
           <div className="col-12">
@@ -30,7 +36,7 @@ export default function Clients({ content }) {
                 {
                   content.map(client => {
                     return (
-                      <div className="col-6 col-md-4 col-lg-3" key={content.indexOf(client)}>
+                      <div className={`col-6 col-md-4 col-lg-3 ${styles.carouselItem}`} key={content.indexOf(client)}>
                         <img src={`/images/clientes/${client.logo}`} alt={client.name}/>
                       </div>
                     )

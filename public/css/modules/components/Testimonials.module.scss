@@ -38,7 +38,8 @@
     }
     & :global(.flickity-prev-next-button.previous) {
       left: 30%;
-    }& :global(.flickity-prev-next-button.next) {
+    }
+    & :global(.flickity-prev-next-button.next) {
       right: 30%;
     }
   }
@@ -144,4 +145,18 @@
   .carouselDesktop {
     display: none;
   }
+}
+
+.decor:first-child {
+  bottom: 0;
+  left: 0;
+
+  & img {
+    max-width: 75px !important;
+  }
+}
+
+.decor:nth-child(2) {
+  right: 0;
+  top: 0;
 }

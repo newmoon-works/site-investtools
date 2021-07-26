@@ -73,4 +73,16 @@ a:hover {
   }
 }
 
+.decoration {
+  position: absolute;
+}
+.decoration img {
+  max-width: 110px;
+}
+@media (max-width: 768px) {
+  .decoration img {
+    max-width: 60px;
+  }
+}
+
 /*# sourceMappingURL=styles.css.map */
