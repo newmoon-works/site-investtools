@@ -49,6 +49,10 @@
     padding-top: 7px;
     padding-bottom: 7px;
     background: #fff;
+
+    & li:hover::before {
+      top: -11px;
+    }
   }
 
   @media (max-width: 1199px) {
