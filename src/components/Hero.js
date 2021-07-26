@@ -68,7 +68,10 @@ export default function Hero({ content }) {
               </button>
             </div>
           </div>
-          <div className="col-12 col-sm-7 px-sm-0 order-md-2">
+          <div className="col-12 col-sm-7 px-sm-0 order-md-2 position-relative">
+            <div className={`decoration ${styles.decor}`}>
+              <img src="/images/triangulos-banner@2x.png" alt="Decor"/>
+            </div>
             <div className={styles.heroSliderImage}>
               <div className={styles.monitorContent} id="monitor" />
               <Image src={mac} alt="Investtools" quality="1" />

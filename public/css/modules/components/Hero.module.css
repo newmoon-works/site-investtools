@@ -176,4 +176,33 @@
   }
 }
 
+.decor {
+  top: 11%;
+  right: -14%;
+  animation: bob 1s ease-out infinite both alternate;
+}
+.decor img {
+  max-width: 100%;
+  height: auto;
+}
+@media (max-width: 768px) {
+  .decor {
+    top: 15%;
+    right: 0;
+    width: 100%;
+    left: 0;
+    max-width: 330px;
+    margin: 0 auto;
+  }
+}
+
+@keyframes bob {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-4px);
+  }
+}
+
 /*# sourceMappingURL=Hero.module.css.map */

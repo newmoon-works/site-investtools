@@ -41,6 +41,10 @@ a:hover {
   color: #00b5a5;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 .title-box {
   position: relative;
 }
