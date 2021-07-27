@@ -5,13 +5,13 @@ import Footer from "../components/Footer";
 export default function Layout(props) {
   return (
     <>
-      <Header />
+      <Header/>
       <main>
         {
           props.children
         }
       </main>
-      <Footer />
+      <Footer/>
     </>
   )
 }

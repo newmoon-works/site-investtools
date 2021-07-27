@@ -1,0 +1,110 @@
+@import "../../scss/colors";
+
+.aboutSection {
+  margin-top: 120px;
+}
+
+.aboutBox {
+  margin-bottom: 60px;
+  & .textBox {
+    max-width: 430px;
+    margin-top: 30px;
+  }
+
+  @media (max-width: 992px) {
+    margin-bottom: 40px;
+    & .textBox {
+      max-width: 100%;
+    }
+  }
+}
+
+.historyBox {
+  background: $primary;
+  padding: 35px 60px 120px;
+  position: absolute;
+  width: 114%;
+  z-index: 1;
+
+  & .textBox {
+    margin-top: 35px;
+  }
+
+  @media (max-width: 1200px) {
+    padding-bottom: 60px;
+    position: relative;
+  }
+
+  @media (max-width: 992px) {
+    width: 100%;
+    padding-bottom: 85px;
+    z-index: -1;
+  }
+
+  @media (max-width: 768px) {
+    padding: 35px 25px 70px;
+  }
+}
+
+.imageBox {
+  max-width: 380px;
+  margin-top: 45px;
+
+  & img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  @media (max-width: 992px) {
+    max-width: 90%;
+    height: 460px;
+    margin: -45px auto 0;
+  }
+}
+
+.whyUsBox {
+  margin-top: 255px;
+  max-width: 300px;
+
+  & .textBox {
+    max-width: 430px;
+    margin-top: 25px;
+  }
+
+  @media (max-width: 992px) {
+    max-width: 100%;
+    margin-top: 55px;
+    padding: 30px 25px;
+    & .textBox {
+      max-width: 100%;
+    }
+  }
+}
+
+.motivationBox {
+  position: relative;
+  z-index: 2;
+  background: #f2f2f2;
+  margin-top: 100px;
+  padding: 40px 35px 25px;
+  max-width: 380px;
+
+  & .textBox {
+    margin-top: 15px;
+  }
+
+  @media (max-width: 1200px) {
+    margin-top: 80px;
+  }
+
+  @media (max-width: 992px) {
+    margin-top: 45px;
+  }
+
+  @media (max-width: 768px) {
+    max-width: 100%;
+    margin-top: 30px;
+    padding: 30px 25px;
+  }
+}
