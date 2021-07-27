@@ -1,0 +1,30 @@
+.heroSection {
+  background: url("../../../../public/images/bg-contato.jpg") center no-repeat;
+  height: 520px;
+  background-size: cover;
+  padding-top: 25.3%;
+  margin-top: 10px;
+}
+@media (min-width: 1200px) {
+  .heroSection {
+    height: 300px;
+    padding-top: 15.3%;
+  }
+}
+@media (max-width: 1200px) {
+  .heroSection {
+    height: 420px;
+  }
+}
+@media (max-width: 992px) {
+  .heroSection {
+    height: 380px;
+  }
+}
+@media (max-width: 768px) {
+  .heroSection {
+    height: 230px;
+  }
+}
+
+/*# sourceMappingURL=ContactHero.module.css.map */
