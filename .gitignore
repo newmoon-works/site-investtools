@@ -33,4 +33,7 @@ yarn-error.log*
 # vercel
 .vercel
 
+# etc
 .idea
+*.module.css
+*.module.css.map
