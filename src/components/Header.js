@@ -66,16 +66,16 @@ export default function Header() {
           <a href="#">Cases</a>
           <ul>
             <li>
-              <a href="">Blockchain Studio</a>
+              <a target="_blank" rel="noopener noreferrer" href="https://www.blockchainstudio.com.br">Blockchain Studio</a>
             </li>
             <li>
-              <a href="">Grana Capital</a>
+              <a target="_blank" rel="noopener noreferrer" href="https://www.grana.capital">Grana Capital</a>
             </li>
             <li>
-              <a href="">NeagleBank</a>
+              <a target="_blank" rel="noopener noreferrer" href="https://www.neaglebank.com">NeagleBank</a>
             </li>
             <li>
-              <a href="">Trampolin</a>
+              <a target="_blank" rel="noopener noreferrer" href="https://www.trampol.in">Trampolin</a>
             </li>
           </ul>
         </li>
