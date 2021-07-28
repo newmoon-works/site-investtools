@@ -14,9 +14,13 @@
     }
   }
 
-  & li {
+  & li:global(.nav-item) {
     margin: 0 15px;
     position: relative;
+
+    a:focus {
+      color: $primary !important;
+    }
 
     &::before {
       content: '';
@@ -78,13 +82,19 @@
       top: 0;
       bottom: 0;
       left: -100%;
+
+      li {
+        &::before {
+          opacity: 0 !important;
+        }
+      }
     }
 
     & .navCollapse:global(.show) {
       left: 0;
     }
 
-    & .navCollapse ul {
+    & .navCollapse .mainNav {
       width: 80%;
       padding: 70px 0 30px;
       height: 100%;
@@ -94,7 +104,7 @@
       flex-direction: column;
     }
 
-    & .navCollapse ul li {
+    & .navCollapse .mainNav li {
       margin: .75rem 0;
     }
   }
@@ -157,4 +167,83 @@
 .toggler:not(:global(.collapsed)) .hamburgerInner::after {
   bottom: 0;
   transform: rotate(-90deg);
+}
+
+.navCollapse {}
+.mainNav {}
+
+.header :global(.dropdown) {
+  &:hover ul, &:focus-within ul {
+    visibility: visible;
+    opacity: 1;
+    transform: scaleY(1);
+  }
+
+  ul {
+    visibility: hidden;
+    opacity: 0;
+    transform: scaleY(0);
+    transform-origin: top center;
+    position: absolute;
+    top: 100%;
+    list-style: none;
+    min-width: 185px;
+    padding: 0;
+    background-color: #fff;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    transition: all 150ms ease;
+    @media (max-width: 992px) {
+      left: -15%;
+    }
+
+    li {
+
+      a {
+        padding: 20px;
+        display: inline-block;
+        width: 100%;
+      }
+
+      &:last-child:hover ul, &:last-child:focus-within ul {
+        visibility: visible;
+        opacity: 1;
+        transform: scaleY(1);
+      }
+
+      &:last-child ul {
+        visibility: hidden;
+        transform: scaleY(0);
+        transform-origin: top center;
+        background-color: $secondary;
+        @media (max-width: 992px) {
+          top: -100%;
+          left: 75%;
+        }
+
+        li {
+          transition: all 150ms ease-in-out;
+          color: #fff;
+
+          a {
+            color: inherit;
+            font-weight: normal;
+            padding: 20px;
+            display: inline-block;
+            width: 100%;
+          }
+
+          &:hover {
+            color: $primary;
+            background-color: #fff;
+          }
+        }
+      }
+
+      a {
+        text-decoration: none;
+        transition: color 0.15s ease-in-out;
+      }
+    }
+  }
 }

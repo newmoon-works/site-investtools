@@ -10,34 +10,42 @@ export default function Header() {
     {
       name: 'A Investtools',
       slug: 'a-investtools',
+      class: ''
     },
     {
       name: 'Perform It',
       slug: 'perform-it',
+      class: ''
     },
     {
-      name: 'Dilligence It',
-      slug: 'dilligence-it',
+      name: 'Diligence It',
+      slug: 'diligence-it',
+      class: ''
     },
     {
       name: 'Pré-Trade (Arco It)',
       slug: 'arco-it',
+      class: ''
     },
     {
       name: 'Novos Negócios',
-      slug: 'novos-negocios',
+      slug: '#',
+      class: 'dropdown'
     },
     {
       name: 'Blog',
       slug: 'blog',
+      class: ''
     },
     {
       name: 'Contato',
       slug: 'contato',
+      class: ''
     },
     {
       name: 'Carreiras',
       slug: 'carreiras',
+      class: ''
     },
   ]
 
@@ -47,6 +55,33 @@ export default function Header() {
       100 < window.scrollY ? navbar.classList.add("shrink") : navbar.classList.remove("shrink");
     }
   }, []);
+
+  function DropDown() {
+    return (
+      <ul>
+        <li>
+          <a href="">Nossa Incubadora</a>
+        </li>
+        <li className="sub-dropdown">
+          <a href="#">Cases</a>
+          <ul>
+            <li>
+              <a href="">Blockchain Studio</a>
+            </li>
+            <li>
+              <a href="">Grana Capital</a>
+            </li>
+            <li>
+              <a href="">NeagleBank</a>
+            </li>
+            <li>
+              <a href="">Trampolin</a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    )
+  }
 
   return (
     <header className={styles.header}>
@@ -63,17 +98,20 @@ export default function Header() {
             </span>
           </button>
           <div className={`${styles.navCollapse} navbar-collapse collapse`} id="navigation">
-            <ul className="navbar-nav ms-auto">
+            <ul className={`${styles.mainNav} navbar-nav ms-auto`}>
 
               {
                 links.map(navLink => {
                   return (
-                    <li className="nav-item" key={navLink.slug}>
+                    <li className={`nav-item ${navLink.class}`} key={navLink.slug}>
                       <Link href={`/${navLink.slug}`}>
                         <a className="nav-link">
                           {navLink.name}
                         </a>
                       </Link>
+                      {
+                        navLink.class ? <DropDown/> : null
+                      }
                     </li>
                   )
                 })
