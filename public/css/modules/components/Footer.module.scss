@@ -2,81 +2,128 @@
 
 .footer {
   background: $primary;
-  padding-top: 60px;
-  padding-bottom: 45px;
+  padding: 100px 0 75px 0;
+  position: relative;
   border-top: 6px solid $secondary;
 
-  & :global(.by) {
-    margin-left: auto;
-  }
+  /*& :global(.row) {
+    padding-top: 50px;
+  }*/
 
-  @media (max-width: 1199px) {
-    & :global(.logo-footer-box) {
-      max-width: 160px;
-    }
-    & :global(.by) {
-      max-width: 35px;
-    }
-  }
-
-  @media (max-width: 991px) {
-    & :global(.logo-footer-box) {
-      max-width: 130px !important;
+  @media (max-width: 992px) {
+    & .footerLogo {
       text-align: center;
       margin: 0 auto 40px;
     }
-    & :global(.by) {
-      max-width: 30px;
+  }
+
+  @media (max-width: 768px) {
+    & .footerLogo {
+      margin: 0 auto;
     }
   }
 }
 
-.infoFooterBox {
-  & ul {
+.footerLogo {
+  width: 50%;
+  height: 60px;
+  display: flex;
+  align-items: center;
+
+  & + div {
+    margin-top: 20px;
+    @media (max-width: 768px) {
+      margin-top: 0;
+      text-align: center;
+      font-size: 14px;
+    }
+    p {
+      margin: 0;
+      color: #fff;
+    }
+  }
+
+  @media (max-width: 768px) {
+    width: 70%;
+  }
+}
+
+.footer {
+  h3 {
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+
+  ul {
     margin: 0;
     padding: 0;
     list-style: none;
     display: flex;
-    justify-content: center;
-    & li:last-child {
-      margin: 0 100px;
-    }
-    & li {
-      & a {
+    flex-direction: column;
+
+    li {
+      &:first-child {
+        margin-bottom: 5px;
+      }
+      &:last-child {
+        margin-top: 5px;
+      }
+
+      a {
         font-size: 14px;
         text-decoration: none;
         letter-spacing: .2px;
         color: #fff;
         display: flex;
-        justify-content: center;
         align-items: center;
         transition: all .285s ease-in-out;
 
-        & img {
+        img {
           width: 23px;
           height: 23px;
           margin-right: 10px;
         }
 
-        & p {
+        p {
           margin: 0;
         }
       }
     }
   }
-  @media (max-width: 1199px) {
-    & ul li:last-child {
-      margin: 0 60px;
+}
+
+.footerBox {
+  @media (max-width: 992px) {
+    & > div {
+      padding: 10% 10% 10% 10% !important;
+      text-align: center;
+      a {
+        justify-content: center;
+      }
     }
   }
 
-  @media (max-width: 768px) {
-    & ul li:last-child {
-      margin: 35px 0;
-    }
-
-    & ul {
-      flex-direction: column;
-    }
+  &:nth-child(1) > div {
+    padding-right: 30px;
   }
+
+  &:nth-child(2) > div {
+    padding-top: 15px;
+    padding-left: 45px;
+    padding-right: 30px;
+  }
+
+  &:nth-child(3) > div {
+    padding-top: 15px;
+    padding-left: 30px;
+    padding-right: 20px;
+  }
+}
+
+.decor {
+  bottom: 0;
+  right: 0;
 }

@@ -16,12 +16,16 @@ export default function Header() {
       slug: 'perform-it',
     },
     {
-      name: 'CRM',
-      slug: 'crm',
+      name: 'Dilligence It',
+      slug: 'dilligence-it',
     },
     {
-      name: 'Venture Builder',
-      slug: 'venture-builder',
+      name: 'Pré-Trade (Arco It)',
+      slug: 'arco-it',
+    },
+    {
+      name: 'Novos Negócios',
+      slug: 'novos-negocios',
     },
     {
       name: 'Blog',
