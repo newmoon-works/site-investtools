@@ -6,14 +6,14 @@
 
 .aboutBox {
   margin-bottom: 60px;
-  & .textBox {
+  .textBox {
     max-width: 430px;
     margin-top: 30px;
   }
 
   @media (max-width: 992px) {
     margin-bottom: 40px;
-    & .textBox {
+    .textBox {
       max-width: 100%;
     }
   }
@@ -26,7 +26,7 @@
   width: 114%;
   z-index: 1;
 
-  & .textBox {
+  .textBox {
     margin-top: 35px;
   }
 
@@ -50,7 +50,7 @@
   max-width: 380px;
   margin-top: 45px;
 
-  & img {
+  img {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -67,7 +67,7 @@
   margin-top: 255px;
   max-width: 300px;
 
-  & .textBox {
+  .textBox {
     max-width: 430px;
     margin-top: 25px;
   }
@@ -76,7 +76,7 @@
     max-width: 100%;
     margin-top: 55px;
     padding: 30px 25px;
-    & .textBox {
+    .textBox {
       max-width: 100%;
     }
   }
@@ -90,7 +90,7 @@
   padding: 40px 35px 25px;
   max-width: 380px;
 
-  & .textBox {
+  .textBox {
     margin-top: 15px;
   }
 

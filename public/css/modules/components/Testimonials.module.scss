@@ -4,42 +4,38 @@
   position: relative;
   padding: 50px 0 50px;
 
-  & :global(.title-box) {
+  :global(.title-box) {
     margin-bottom: 50px;
   }
 
-  & :global(.row) {
+  :global(.row) {
     overflow: hidden;
   }
 
-  & :global(.flickity-viewport) {
+  :global(.flickity-viewport) {
     overflow: visible;
   }
 
   @media (max-width: 992px) {
-    & {
-      padding: 50px 0 60px;
-    }
+    padding: 50px 0 60px;
   }
 
   @media (max-width: 768px) {
-    & {
-      padding: 50px 0 40px;
-    }
+    padding: 50px 0 40px;
   }
 
   @media (max-width: 576px) {
-    & :global(.flickity-prev-next-button) {
+    :global(.flickity-prev-next-button) {
       bottom: 5% !important;
       top: auto !important;
     }
-    & :global(.flickity-viewport) {
+    :global(.flickity-viewport) {
       height: 450px !important;
     }
-    & :global(.flickity-prev-next-button.previous) {
+    :global(.flickity-prev-next-button.previous) {
       left: 30%;
     }
-    & :global(.flickity-prev-next-button.next) {
+    :global(.flickity-prev-next-button.next) {
       right: 30%;
     }
   }
@@ -55,19 +51,19 @@
   position: relative;
   top: 0;
 
-  & .aspas {
+  .aspas {
     position: absolute;
     right: -10px;
     top: -10px;
 
-    & img {
+    img {
       width: 47px;
       height: 47px;
     }
   }
 
-  & .text {
-    & p {
+  .text {
+    p {
       font-size: 13px;
       letter-spacing: .22px;
       color: gray;
@@ -75,13 +71,13 @@
     }
   }
 
-  & .info {
+  .info {
     position: absolute;
     bottom: 15px;
     right: 20px;
     text-align: right;
 
-    & p {
+    p {
       font-size: 14px;
       letter-spacing: .28px;
       color: #295965;
@@ -89,7 +85,7 @@
       margin-bottom: 0;
     }
 
-    & small {
+    small {
       font-size: 11px;
       letter-spacing: .22px;
       color: #00b4a4;
@@ -98,25 +94,19 @@
   }
 
   @media (max-width: 1199px) {
-    & {
-      max-width: 320px;
-      height: 285px;
-    }
+    max-width: 320px;
+    height: 285px;
   }
 
   @media (max-width: 992px) {
-    & {
-      max-width: 255px;
-      height: 335px;
-    }
+    max-width: 255px;
+    height: 335px;
   }
 
   @media (max-width: 768px) {
-    & {
-      max-width: 90%;
-      height: 340px;
-      padding: 40px 25px 20px;
-    }
+    max-width: 90%;
+    height: 340px;
+    padding: 40px 25px 20px;
   }
 }
 
@@ -151,7 +141,7 @@
   bottom: 0;
   left: 0;
 
-  & img {
+  img {
     max-width: 75px !important;
   }
 }

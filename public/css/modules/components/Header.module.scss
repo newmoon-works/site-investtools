@@ -1,20 +1,20 @@
 @import "../../scss/colors";
 
-/* Header */
+// Header
 .header {
 
-  & nav {
+  nav {
     padding: 15px 1rem .5rem;
     font-weight: bold;
     transition: all .385s ease-in-out;
     background-color: transparent;
-    & img {
+    img {
       max-width: 170px !important;
       z-index: 1040 !important;
     }
   }
 
-  & li:global(.nav-item) {
+  li:global(.nav-item) {
     margin: 0 15px;
     position: relative;
 
@@ -40,37 +40,37 @@
     }
   }
 
-  & button:focus {
+  button:focus {
     box-shadow: none;
   }
 
-  & :global(.collapsing) {
+  :global(.collapsing) {
     transition: none;
   }
 
-  & :global(.shrink) {
+  :global(.shrink) {
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.04);
     padding-top: 7px;
     padding-bottom: 7px;
     background: #fff;
 
-    & li:hover::before {
+    li:hover::before {
       top: -11px;
     }
   }
 
   @media (max-width: 1199px) {
-    & nav img {
+    nav img {
       max-width: 155px !important;
     }
   }
 
   @media (max-width: 992px) {
-    & .toggler {
+    .toggler {
       padding: 0;
     }
 
-    & .navCollapse {
+    .navCollapse {
       transition: left .375s ease;
       background-color: #f3f4f5;
       box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.18);
@@ -90,11 +90,11 @@
       }
     }
 
-    & .navCollapse:global(.show) {
+    .navCollapse:global(.show) {
       left: 0;
     }
 
-    & .navCollapse .mainNav {
+    .navCollapse .mainNav {
       width: 80%;
       padding: 70px 0 30px;
       height: 100%;
@@ -110,7 +110,7 @@
   }
 
   @media (max-width: 768px) {
-    & .navCollapse {
+    .navCollapse {
       width: 65%;
     }
   }

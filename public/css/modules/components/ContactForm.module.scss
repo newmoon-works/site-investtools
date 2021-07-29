@@ -36,7 +36,7 @@
 
 .textBox {
   margin-top: 15px;
-  & p {
+  p {
     font-size: 15px;
     letter-spacing: .28px;
     color: $primary;
@@ -47,13 +47,13 @@
 .infosBox {
   max-width: 260px;
   margin-top: 60px;
-  & ul {
+  ul {
     margin: 0;
     padding: 0;
     list-style: none;
-    & li {
+    li {
       margin-bottom: 40px;
-      & a {
+      a {
         display: flex;
         align-items: center;
         text-decoration: none;
@@ -62,33 +62,31 @@
         letter-spacing: .24px;
         color: #295965;
         line-height: 19px;
-        & img {
+        img {
           width: 25px;
           height: 25px;
           margin-right: 13px;
         }
-        & p {
+        p {
           margin: 0;
         }
       }
     }
   }
   @media (max-width: 992px) {
-    & {
-      max-width: 100%;
-      & ul {
-        display: flex;
-        & li {
-          margin-right: 45px;
-        }
+    max-width: 100%;
+    ul {
+      display: flex;
+      li {
+        margin-right: 45px;
       }
     }
   }
 
   @media (max-width: 768px) {
-    & ul {
+    ul {
       flex-direction: column;
-      & li {
+      li {
         margin-right: 0;
         &:first-child {
           margin-bottom: 40px;
