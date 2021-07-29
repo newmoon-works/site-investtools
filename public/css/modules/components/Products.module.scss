@@ -17,7 +17,8 @@
   cursor: pointer;
   overflow: hidden;
 
-  &:hover .cardImgOverlay {
+  &:hover .cardImgOverlay,
+  &:focus .cardImgOverlay {
     left: 0;
   }
 
