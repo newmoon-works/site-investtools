@@ -1,5 +1,6 @@
 import React from 'react';
 import styles from '../../public/css/modules/components/Products.module.scss'
+import Image from "next/image";
 
 export default function Products({ content }) {
   return (
@@ -17,7 +18,9 @@ export default function Products({ content }) {
                 content.map(card => {
                   return (
                     <a href={card.link} key={card.link} className={styles.cardProduct}>
-                      <img src={`/images/${card.image}`} alt={card.alt}/>
+                      <div className={styles.prodImg}>
+                        <Image src={require(`../../public/images/${card.image}`).default} alt={card.alt}/>
+                      </div>
                       <div className={styles.cardImgOverlay}>
                         <div>
                           <h3>{card.text}</h3>

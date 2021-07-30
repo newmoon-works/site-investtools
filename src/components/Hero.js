@@ -4,7 +4,6 @@ import styles from '../../public/css/modules/components/Hero.module.scss';
 import mac from '../../public/images/mac@2x.png';
 
 export default function Hero({ content }) {
-
   const [active, setActive] = useState(content[0]);
 
   function handleClick(e) {
@@ -40,12 +39,11 @@ export default function Hero({ content }) {
         <div className="row">
           <div className="col-12 col-sm-5 order-2 order-md-1 position-relative">
             <div className={styles.heroSlider} id="heroSlider">
-
               {
                 content.map(item => {
                   return (
                     <div key={item.alt} id={item.id} className={styles.content}>
-                      <img src={`/images/${item.logo}`} alt={item.alt} />
+                      <Image src={require(`../../public/images/${item.logo}`).default} priority alt={item.alt} />
                       <h1>
                         <strong>{ item.text }</strong>
                       </h1>
@@ -53,17 +51,18 @@ export default function Hero({ content }) {
                   )
                 })
               }
-
             </div>
             <div className={styles.arrows}>
               <button onClick={handleClick} className="arrow arrow-left">
                 <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                  <path fill="currentColor" d="M11.29,12l3.54-3.54a1,1,0,0,0,0-1.41,1,1,0,0,0-1.42,0L9.17,11.29a1,1,0,0,0,0,1.42L13.41,17a1,1,0,0,0,.71.29,1,1,0,0,0,.71-.29,1,1,0,0,0,0-1.41Z" />
+                  <path fill="currentColor" d="M11.29,12l3.54-3.54a1,1,0,0,0,0-1.41,1,1,0,0,0-1.42,0L9.17,11.29a1,1,0,
+                  0,0,0,1.42L13.41,17a1,1,0,0,0,.71.29,1,1,0,0,0,.71-.29,1,1,0,0,0,0-1.41Z" />
                 </svg>
               </button>
               <button onClick={handleClick} className="arrow arrow-right">
                 <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                  <path fill="currentColor" d="M14.83,11.29,10.59,7.05a1,1,0,0,0-1.42,0,1,1,0,0,0,0,1.41L12.71,12,9.17,15.54a1,1,0,0,0,0,1.41,1,1,0,0,0,.71.29,1,1,0,0,0,.71-.29l4.24-4.24A1,1,0,0,0,14.83,11.29Z" />
+                  <path fill="currentColor" d="M14.83,11.29,10.59,7.05a1,1,0,0,0-1.42,0,1,1,0,0,0,0,1.41L12.71,12,9.17,
+                  15.54a1,1,0,0,0,0,1.41,1,1,0,0,0,.71.29,1,1,0,0,0,.71-.29l4.24-4.24A1,1,0,0,0,14.83,11.29Z" />
                 </svg>
               </button>
             </div>
