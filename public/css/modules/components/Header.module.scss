@@ -179,6 +179,10 @@
     transform: scaleY(1);
   }
 
+  span:global(.nav-link) {
+    cursor: pointer;
+  }
+
   ul {
     visibility: hidden;
     opacity: 0;
@@ -199,8 +203,8 @@
 
     li {
 
-      a {
-        padding: 20px;
+      a, span {
+        padding: 20px !important;
         display: inline-block;
         width: 100%;
       }
@@ -225,7 +229,7 @@
           transition: all 150ms ease-in-out;
           color: #fff;
 
-          a {
+          a, span {
             color: inherit;
             font-weight: normal;
             padding: 20px;
@@ -240,7 +244,7 @@
         }
       }
 
-      a {
+      a, span {
         text-decoration: none;
         transition: color 0.15s ease-in-out;
       }

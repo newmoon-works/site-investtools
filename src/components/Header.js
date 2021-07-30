@@ -6,7 +6,7 @@ import logo from '../../public/images/logo.png';
 
 export default function Header() {
 
-  const links = [
+  /*const links = [
     {
       name: 'A Investtools',
       slug: 'a-investtools',
@@ -47,23 +47,36 @@ export default function Header() {
       slug: 'carreiras',
       class: ''
     },
-  ]
+  ]*/
 
   useEffect(() => {
+    //tornar a navbar menor a partir de 100px "scrollados"
     const navbar = document.querySelector('.navbar');
     window.onscroll = () => {
       100 < window.scrollY ? navbar.classList.add("shrink") : navbar.classList.remove("shrink");
     }
+
+    // fechar a navbar quando um link for clicado no mobile
+    const navItems = navbar.querySelectorAll('.navbar a');
+    navItems.forEach(item => {
+      item.addEventListener('click', () => {
+        const nav = document.getElementById('navigation');
+        let bsCollapse = new bootstrap.Collapse(nav, {toggle: false});
+        bsCollapse.hide();
+      });
+    });
   }, []);
 
   function DropDown() {
     return (
       <ul>
         <li>
-          <a href="">Nossa Incubadora</a>
+          <Link href="/nossa-incubadora">
+            <a>Nossa Incubadora</a>
+          </Link>
         </li>
         <li className="sub-dropdown">
-          <a href="#">Cases</a>
+          <span className="nav-link">Cases</span>
           <ul>
             <li>
               <a target="_blank" rel="noopener noreferrer" href="https://www.blockchainstudio.com.br">Blockchain Studio</a>
@@ -89,10 +102,11 @@ export default function Header() {
         <div className="container">
           <Link href="/">
             <a className="navbar-brand">
-              <Image layout="intrinsic" src={logo} quality="1" alt="Investtools" />
+              <Image layout="intrinsic" src={logo} quality="1" alt="Investtools"/>
             </a>
           </Link>
-          <button className={`navbar-toggler collapsed border-0 ${styles.toggler}`} data-bs-toggle="collapse" data-bs-target="#navigation">
+          <button className={`navbar-toggler collapsed border-0 ${styles.toggler}`} data-bs-toggle="collapse"
+                  data-bs-target="#navigation">
             <span className={styles.hamburgerBox}>
               <span className={styles.hamburgerInner}/>
             </span>
@@ -100,7 +114,33 @@ export default function Header() {
           <div className={`${styles.navCollapse} navbar-collapse collapse`} id="navigation">
             <ul className={`${styles.mainNav} navbar-nav ms-auto`}>
 
-              {
+              <li className="nav-item">
+                <Link href="/a-investtools"><a className="nav-link">A Investtools</a></Link>
+              </li>
+              <li className="nav-item">
+                <Link href="/perform-it"><a className="nav-link">Perform It</a></Link>
+              </li>
+              <li className="nav-item">
+                <Link href="/dilligence-it"><a className="nav-link">Diligence It</a></Link>
+              </li>
+              <li className="nav-item">
+                <Link href="/arco-it"><a className="nav-link">Pré-Trade (Arco It)</a></Link>
+              </li>
+              <li className="nav-item dropdown">
+                <span className="nav-link">Novos Negócios</span>
+                <DropDown/>
+              </li>
+              <li className="nav-item">
+                <a className="nav-link" href="https://blog.investtools.com.br">Blog</a>
+              </li>
+              <li className="nav-item">
+                <Link href="/contato"><a className="nav-link">Contato</a></Link>
+              </li>
+              <li className="nav-item">
+                <Link href="/carreiras"><a className="nav-link">Carreiras</a></Link>
+              </li>
+
+              {/*{
                 links.map(navLink => {
                   return (
                     <li className={`nav-item ${navLink.class}`} key={navLink.slug}>
@@ -115,7 +155,7 @@ export default function Header() {
                     </li>
                   )
                 })
-              }
+              }*/}
 
             </ul>
           </div>
