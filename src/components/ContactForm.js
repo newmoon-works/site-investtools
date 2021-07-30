@@ -1,25 +1,12 @@
 import styles from '../../public/css/modules/components/ContactForm.module.scss';
 import React, { useEffect } from 'react';
+import initForm from "../../public/js/rd-form";
 
 export default function ContactForm() {
 
   useEffect(() => {
-    const script = document.createElement('script');
-    script.src = 'https://d335luupugsy2.cloudfront.net/js/rdstation-forms/stable/rdstation-forms.min.js';
-    script.type = 'text/javascript';
-
-    const insertForm = document.createElement('script');
-    insertForm.src = '/js/rd-form-call.js';
-    script.type = 'text/javascript';
-
-    const form = document.getElementById('rd-station-form');
-    form.appendChild(script);
-    form.appendChild(insertForm);
-
-    return () => {
-      form.removeChild(script);
-    }
-  })
+    initForm();
+  }, [])
 
   return (
     <section className={styles.contactForm}>
