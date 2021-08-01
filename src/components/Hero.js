@@ -43,7 +43,7 @@ export default function Hero({ content }) {
                 content.map(item => {
                   return (
                     <div key={item.alt} id={item.id} className={styles.content}>
-                      <Image src={require(`../../public/images/${item.logo}`).default} priority alt={item.alt} />
+                      <Image src={require(`../../public/images/${item.logo}`).default} alt={item.alt} />
                       <h1>
                         <strong>{ item.text }</strong>
                       </h1>
@@ -73,7 +73,7 @@ export default function Hero({ content }) {
             </div>
             <div className={styles.heroSliderImage}>
               <div className={styles.monitorContent} id="monitor" />
-              <Image src={mac} alt="Investtools" quality="1" />
+              <Image src={mac} alt="Investtools" priority quality="1" />
             </div>
           </div>
         </div>
