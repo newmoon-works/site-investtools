@@ -1,7 +1,7 @@
 import React from 'react';
 import Head from "next/head";
 import data from "../../public/content.json";
-import AboutSection from "../components/AboutSection";
+import Section from "../components/about/Section";
 
 export default function aInvesttools(pageContent) {
 
@@ -11,7 +11,7 @@ export default function aInvesttools(pageContent) {
         <title>A Investtools</title>
       </Head>
 
-      <AboutSection content={pageContent} />
+      <Section content={pageContent} />
 
     </>
   )

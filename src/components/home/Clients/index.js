@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from '../../public/css/modules/components/Clients.module.scss';
+import styles from './Clients.module.scss';
 import 'flickity/css/flickity.css';
 import Flickity from "react-flickity-component";
 import Image from "next/image";
@@ -38,7 +38,7 @@ export default function Clients({ content }) {
                   content.map(client => {
                     return (
                       <div className={`col-6 col-md-4 col-lg-3 ${styles.carouselItem}`} key={content.indexOf(client)}>
-                        <Image src={require(`../../public/images/clientes/${client.logo}`).default} alt={client.name}/>
+                        <Image src={require(`../../../../public/images/clientes/${client.logo}`).default} alt={client.name}/>
                       </div>
                     )
                   })

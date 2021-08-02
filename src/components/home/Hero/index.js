@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from 'react';
 import Image from "next/image";
-import styles from '../../public/css/modules/components/Hero.module.scss';
-import mac from '../../public/images/mac@2x.png';
+import styles from './Hero.module.scss';
+import mac from 'public/images/mac@2x.png';
 
 export default function Hero({ content }) {
   const [active, setActive] = useState(content[0]);
@@ -43,7 +43,7 @@ export default function Hero({ content }) {
                 content.map(item => {
                   return (
                     <div key={item.alt} id={item.id} className={styles.content}>
-                      <Image src={require(`../../public/images/${item.logo}`).default} alt={item.alt} />
+                      <Image src={require(`../../../../public/images/${item.logo}`).default} alt={item.alt} />
                       <h1>
                         <strong>{ item.text }</strong>
                       </h1>

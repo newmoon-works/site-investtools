@@ -1,8 +1,8 @@
-import styles from '../../public/css/modules/components/ContactForm.module.scss';
+import styles from './ContactForm.module.scss';
 import React, { useEffect } from 'react';
-import initForm from "../../public/js/rd-form";
+import initForm from "../../../../public/js/rd-form";
 
-export default function ContactForm() {
+export default function Index() {
 
   useEffect(() => {
     initForm();

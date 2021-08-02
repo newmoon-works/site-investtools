@@ -1,10 +1,10 @@
 import Head from "next/head";
 import data from  '../../public/content.json';
-import Hero from "../components/Hero";
-import Products from "../components/Products";
-import Clients from "../components/Clients";
-import Testimonials from "../components/Testimonials";
-import Contact from "../components/Contact";
+import Hero from "../components/home/Hero";
+import Products from "../components/home/Products";
+import Clients from "../components/home/Clients";
+import Testimonials from "../components/home/Testimonials";
+import Contact from "../components/home/Contact";
 
 export default function Home(pageContent) {
 

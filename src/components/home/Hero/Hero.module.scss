@@ -1,4 +1,4 @@
-@import "../../scss/colors";
+@import "../../../styles/scss/colors";
 
 @keyframes fade-in {
   from {
@@ -12,7 +12,7 @@
 }
 
 .heroSection {
-  background-image: url("../../../images/bg-banner@2x.png");
+  background-image: url("../../../../public/images/bg-banner@2x.png");
   background-repeat: no-repeat;
   background-position: bottom right;
   background-size: 55% 105%;
@@ -172,7 +172,7 @@
     transition: background-image .385s ease-in-out;
     overflow: hidden;
 
-    background-image: url("../../../images/hero/banner-performit6.png");
+    background-image: url("../../../../public/images/hero/banner-performit6.png");
   }
 
   @media (max-width: 992px) {

@@ -1,6 +1,6 @@
 import React, {useEffect} from 'react';
-import styles from '../../public/css/modules/components/Contact.module.scss'
-import initForm from "../../public/js/rd-form";
+import styles from './Contact.module.scss'
+import initForm from "../../../../public/js/rd-form";
 
 export default function Contact() {
 

@@ -1,7 +1,7 @@
 import React from 'react';
 import Head from "next/head";
-import ContactHero from "../components/ContactHero";
-import ContactForm from "../components/ContactForm";
+import Hero from "../components/contact/Hero";
+import Form from "../components/contact/Form";
 
 export default function Contato() {
   return (
@@ -10,8 +10,8 @@ export default function Contato() {
         <title>Contato - Investtools</title>
       </Head>
 
-      <ContactHero/>
-      <ContactForm/>
+      <Hero/>
+      <Form/>
     </>
   )
 }

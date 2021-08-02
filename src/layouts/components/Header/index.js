@@ -1,10 +1,10 @@
 import React, {useEffect} from 'react';
-import styles from '../../public/css/modules/components/Header.module.scss';
+import styles from './Header.module.scss';
 import Link from 'next/link';
 import Image from 'next/image';
-import logo from '../../public/images/logo.png';
+import logo from '../../../../public/images/logo.png';
 
-export default function Header() {
+export default function Index() {
 
   /*const links = [
     {

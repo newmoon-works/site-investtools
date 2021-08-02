@@ -1,12 +1,12 @@
 import React, {useEffect} from 'react';
-import logo from "../../public/images/logo-branca.png";
-import faaz from "../../public/images/logo-faaz.svg";
+import logo from "../../../../public/images/logo-branca.png";
+import faaz from "../../../../public/images/logo-faaz.svg";
 import Image from "next/image";
 import Link from 'next/link';
-import styles from '../../public/css/modules/components/Footer.module.scss'
+import styles from './Footer.module.scss'
 import { useRouter } from "next/router";
 
-export default function Footer() {
+export default function Index() {
 
   // ocultar informações de contato na home
   const router = useRouter();

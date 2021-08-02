@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from '../../public/css/modules/components/Testimonials.module.scss';
+import styles from './Testimonials.module.scss';
 import 'flickity/css/flickity.css';
 import Flickity from "react-flickity-component";
 
