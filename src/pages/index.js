@@ -14,15 +14,11 @@ export default function Home(pageContent) {
         <title>Investtools</title>
       </Head>
 
-      {/*<Hero content={pageContent.hero} />
+      <Hero content={pageContent.hero} />
       <Products content={pageContent.products} />
       <Clients content={pageContent.clients} />
       <Testimonials content={pageContent.testimonials} />
-      <Contact />*/}
-
-      <div>
-
-      </div>
+      <Contact />
     </>
   )
 }

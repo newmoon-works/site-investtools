@@ -121,10 +121,10 @@ export default function Header() {
                 <Link href="/perform-it"><a className="nav-link">Perform It</a></Link>
               </li>
               <li className="nav-item">
-                <Link href="/dilligence-it"><a className="nav-link">Diligence It</a></Link>
+                <Link href="/diligence-it"><a className="nav-link">Diligence It</a></Link>
               </li>
               <li className="nav-item">
-                <Link href="/arco-it"><a className="nav-link">Pré-Trade (Arco It)</a></Link>
+                <Link href="/arcon-it"><a className="nav-link">Arcon It</a></Link>
               </li>
               <li className="nav-item dropdown">
                 <span className="nav-link">Novos Negócios</span>
@@ -137,7 +137,7 @@ export default function Header() {
                 <Link href="/contato"><a className="nav-link">Contato</a></Link>
               </li>
               <li className="nav-item">
-                <Link href="/carreiras"><a className="nav-link">Carreiras</a></Link>
+                <a className="nav-link" target="_blank" href="https://investtools.gupy.io/" rel="noopener noreferrer">Carreiras</a>
               </li>
 
               {/*{

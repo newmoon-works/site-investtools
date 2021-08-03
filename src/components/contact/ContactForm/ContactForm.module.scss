@@ -109,3 +109,11 @@
     padding: 25px 25px 30px;
   }
 }
+
+.spinner {
+  color: $primary;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

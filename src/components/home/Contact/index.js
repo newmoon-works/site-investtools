@@ -1,6 +1,6 @@
 import React, {useEffect} from 'react';
 import styles from './Contact.module.scss'
-import initForm from "../../../../public/js/rd-form";
+import initForm from "public/js/rd-form";
 
 export default function Contact() {
 
@@ -40,7 +40,11 @@ export default function Contact() {
           </div>
           <div className="col-12 col-lg-6">
             <div className={styles.formBox} id="rd-station-form">
-              <div id="contato-site-eb80607c4c296921e638" role="main" />
+              <div className="h-100" id="contato-site-eb80607c4c296921e638" role="main">
+                <div className={styles.spinner} id="spinner">
+                  <div className="spinner-border"/>
+                </div>
+              </div>
             </div>
           </div>
         </div>
