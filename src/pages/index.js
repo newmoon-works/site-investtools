@@ -21,29 +21,8 @@ export default function Home(pageContent) {
       <Contact />*/}
 
       <div>
-        <h1>
-          COMING SOON
-        </h1>
+
       </div>
-
-      <style jsx>
-        {`
-          div {
-            height: 100%;
-            display: flex;
-            align-items: center;
-            justify-content:center;
-          }
-
-          h1 {
-            font-size: 60px;
-            letter-spacing: 20px;
-            font-weight: bold;
-          }
-
-        `}
-      </style>
-
     </>
   )
 }
