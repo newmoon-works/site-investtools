@@ -1,0 +1,48 @@
+@import "../../../styles/scss/colors";
+
+.heroSection {
+  margin-bottom: 500px;
+  background-color: $secondary;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.heroShape {
+  overflow: hidden;
+  position: absolute;
+  bottom: -85px;
+  width: 100%;
+  transform: rotate(180deg);
+  
+  svg {
+    width: calc(150% + 1.3px);
+    height: 550px;
+
+    display: block;
+    position: relative;
+    left: 50%;
+    z-index: -1;
+    transform: translateX(-50%);
+
+    path {
+      fill: #f8f8f8;
+    }
+  }
+}
+
+.heroText {
+  z-index: 1;
+
+  h3 {
+    color: $secondary;
+  }
+  h1 {
+    color: $primary;
+  }
+  span {
+    display: inline-block;
+    max-width: 400px;
+  }
+}

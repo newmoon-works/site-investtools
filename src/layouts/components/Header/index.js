@@ -2,9 +2,9 @@ import React, {useEffect} from 'react';
 import styles from './Header.module.scss';
 import Link from 'next/link';
 import Image from 'next/image';
-import logo from '../../../../public/images/logo.png';
+import logo from 'public/images/logo.png';
 
-export default function Index() {
+export default function Header() {
 
   /*const links = [
     {
@@ -131,7 +131,7 @@ export default function Index() {
                 <DropDown/>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="https://blog.investtools.com.br">Blog</a>
+                <Link href="/blog"><a className="nav-link">Blog</a></Link>
               </li>
               <li className="nav-item">
                 <Link href="/contato"><a className="nav-link">Contato</a></Link>

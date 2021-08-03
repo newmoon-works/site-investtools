@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './AboutSection.module.scss';
 
-export default function Section({content}) {
+export default function AboutSection({content}) {
 
   return (
     <section className={styles.aboutSection}>

@@ -1,7 +1,7 @@
 import React from 'react';
 import Head from "next/head";
-import Hero from "../components/contact/Hero";
-import Form from "../components/contact/Form";
+import Hero from "../components/contact/ContactHero";
+import Form from "../components/contact/ContactForm";
 
 export default function Contato() {
   return (

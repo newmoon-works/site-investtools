@@ -1,18 +1,27 @@
 import React from 'react';
+import Head from "next/head";
+import BlogHero from "../../components/blog/BlogHero";
 
-export default function Blog({ postList }) {
+export default function Blog(/*{ postList }*/) {
   return (
-    <section>
+    <>
+      <Head>
+        <title>Blog Investtools – Confira Nossos Conteúdos</title>
+      </Head>
 
-    </section>
+      <BlogHero />
+    </>
   )
 }
-
+/*
 export async function getStaticProps() {
   const posts = await fetch('https://blog.investtools.com.br/wp-json/wp/v2/posts');
   const postList = await posts.json();
 
   return {
-    postList
+    props: {
+      postList
+    }
   }
 }
+*/

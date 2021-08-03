@@ -1,5 +1,5 @@
 import '../../public/css/bootstrap.css';
-import '../styles/styles.css';
+import '../styles/styles.scss';
 import Layout from "../layouts/Layout";
 import Head from "next/head";
 
