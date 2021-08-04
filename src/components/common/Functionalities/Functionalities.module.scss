@@ -1,0 +1,62 @@
+.funcSection {
+  padding-bottom: 90px;
+
+  & :global(.title-box) {
+    margin-bottom: 50px;
+  }
+
+  @media (max-width: 992px) {
+    padding-top: 85px;
+    padding-bottom: 45px;
+
+    .cardFunc {
+      display: flex;
+    }
+    .content {
+      max-width: 100%;
+      margin-left: 50px;
+    }
+  }
+  @media (max-width: 768px) {
+    padding-top: 65px;
+    padding-bottom: 35px;
+
+    .cardFunc {
+      display: block;
+      margin-bottom: 65px;
+    }
+    .content {
+      margin-left: 0;
+    }
+  }
+}
+
+.cardFunc {
+  margin-bottom: 50px;
+}
+
+.icon {
+  width: 55px;
+  height: 55px;
+  margin-bottom: 12px;
+}
+
+.content {
+  max-width: 240px;
+
+  h5 {
+    font-size: 16px;
+    letter-spacing: .28px;
+    color: #00b4a4;
+    text-transform: uppercase;
+    font-weight: bold;
+    line-height: 25px;
+  }
+  .textBox {
+    p {
+      letter-spacing: .26px;
+      line-height: 22px;
+      font-size: 15px;
+    }
+  }
+}
