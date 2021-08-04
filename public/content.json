@@ -183,33 +183,38 @@
       "photo": "leonardo.png"
     }
   ],
-  "performit": [
-    {
+  "performit": {
       "monitor": "macbook-performit3@2x.png",
       "logo": "logo-performit2.png",
       "about": "<p>O Perform It possibilita total controle do fluxo de investimentos de sua gestora, liberando você e sua equipe para pensar no principal, a estratégia.</p><p>Com o Perform It, as gestoras de recursos terão maior controle das operações, sem perder o foco no objetivo principal.Tudo de forma automática e com segurança comprovada.</p><p>Nosso software ERP monitora todo o fluxo da gestora de capitais, com interfaces modernas com administradoras, corretoras, entre outras.</p><p>O Perform It controla o fluxo 360 graus, desde os processos de Back Office até Middle Office e Front Office.</p>",
-      "feature": [
+      "features": [
         {
+          "id": 1,
           "title": "Sistema automatizado",
           "text": "Sistema 100% automatizado, sem a necessidade de preenchimento de planilhas."
         },
         {
+          "id": 2,
           "title": "API",
           "text": "Poderosa API, onde a gestora desenvolve suas novas telas e funcionalidades e integra no menu do sistema."
         },
         {
+          "id": 3,
           "title": "Due Diligence",
           "text": "Ferramentas modernas de apoio ao processo de Due Diligence."
         },
         {
+          "id": 4,
           "title": "Time de excelência",
           "text": "Equipe treinada e atualizada constantemente, com aprovação dos clientes."
         },
         {
+          "id": 5,
           "title": "Taxa de satisfação <br>extremamente alta",
           "text": "Clientes que contrataram o Perform It permanecem com o sistema."
         },
         {
+          "id": 6,
           "title": "Infraestrutura <br>personalizada",
           "text": "Infraestrutura personalizada para cada cliente, onde ele possui ambiente próprio."
         }
@@ -231,8 +236,7 @@
           "text": "<p>Visualização e operação da carteira agrupadas de acordo com cada cliente;</p><p>Atribuições de performance para as gestoras de fundos de investimento;</p><p>Boletagem + compliance pre trade + alocação através de plugins complementares.</p>"
         }
       ]
-    }
-  ],
+  },
   "grana-capital": [
     {
       "monitor": "macbook-grana2@2x.png",

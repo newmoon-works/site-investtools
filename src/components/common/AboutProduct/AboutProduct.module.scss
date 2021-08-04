@@ -1,0 +1,148 @@
+.productSection {
+  margin-top: 80px;
+
+  @media (max-width: 1199px) {
+    .monitorBox {
+      max-width: 510px;
+    }
+    .logoBox {
+      max-width: 170px;
+    }
+    .aboutProductBox {
+      margin-top: -55px;
+
+      .aboutBox {
+        right: -50px;
+        padding: 30px 35px 40px;
+      }
+    }
+    .featureBox {
+      top: -90px;
+      padding: 115px 40px 110px 90px;
+
+      .feature div {
+        padding: 0 15px;
+      }
+    }
+  }
+
+  @media (max-width: 992px) {
+    .logoBox {
+      max-width: 160px;
+      margin-bottom: 30px;
+    }
+    .aboutProductBox {
+      margin-top: -45px;
+
+      .aboutBox {
+        right: 0;
+        padding: 35px 45px 70px;
+        min-height: auto;
+      }
+    }
+    .featureBox {
+      top: 0;
+      left: 0;
+      padding: 65px 40px 50px;
+
+      .feature div {
+        padding: 0 30px;
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    margin-top: 160px;
+    .logoBox {
+      max-width: 150px;
+      margin: 0 auto 35px;
+    }
+    .aboutProductBox {
+      margin-top: 0;
+
+      .aboutBox {
+        padding: 25px 25px 60px;
+      }
+      .featureBox {
+        padding: 35px 30px 50px;
+
+        .feature {
+          flex-direction: column;
+          & div {
+            max-width: 100%;
+            padding: 0;
+            margin-bottom: 50px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.monitorBox {
+  position: relative;
+  z-index: 11;
+  max-width: 620px;
+  margin: 0 auto;
+}
+
+.logoBox {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 90px;
+  max-width: 190px;
+  margin-left: 30px;
+}
+
+.aboutProductBox {
+  margin-top: -71px;
+
+  .aboutBox {
+    background: #f2f2f2;
+    padding: 30px 60px 70px;
+    position: relative;
+    right: -60px;
+    z-index: 1;
+    min-height: 590px;
+    & :global(.title-box) {
+      margin-bottom: 30px;
+    }
+  }
+}
+
+.textBox {
+
+}
+
+.featureBox {
+  background: #295965;
+  padding: 130px 40px 120px 100px;
+  position: relative;
+  top: -105px;
+  left: -30px;
+
+  .feature {
+    flex-wrap: wrap !important;
+    display: flex !important;
+    div {
+      max-width: 50%;
+      margin-bottom: 70px;
+      padding: 0 37px;
+      h5 {
+        margin-bottom: 15px;
+        font-size: 15px;
+        letter-spacing: .26px;
+        color: #00b4a4;
+        text-transform: uppercase;
+        font-weight: bold;
+        line-height: 21px;
+      }
+      p {
+        font-size: 14px;
+        letter-spacing: .24px;
+        color: #fff;
+        margin-bottom: 0;
+      }
+    }
+  }
+}
