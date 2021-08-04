@@ -36,8 +36,8 @@ export default function AboutProduct({ content: {about, features, logo, monitor}
                       features.map(feat => {
                         return (
                           <div key={feat.id}>
-                            <h5>{ feat.title }</h5>
-                            <p>{ feat.text }</p>
+                            <h5 dangerouslySetInnerHTML={{__html: feat.title}} />
+                            <p  dangerouslySetInnerHTML={{__html: feat.text}} />
                           </div>
                         )
                       })
