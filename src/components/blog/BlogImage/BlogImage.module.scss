@@ -1,10 +1,13 @@
 .typewriter {
   width: 90%;
-  margin: 0 auto;
+  position: relative;
+  z-index: 1;
 }
 
 .triangles {
   transform: rotate(180deg);
   position: absolute;
-  top: -165px;
+  top: -90px;
+  left: -35px;
+  width: 100%;
 }

@@ -6,7 +6,9 @@ import triangles from 'public/images/triangulos-banner@2x.png';
 
 export default function BlogImage() {
 
-  useEffect(() => {
+  // Desmontar o component ao sair da página
+
+  /*useEffect(() => {
     window.onmousemove = e => {
       getMousePos(e);
     }
@@ -25,16 +27,22 @@ export default function BlogImage() {
       document.getElementById('triangles').style.transform = `rotate(180deg) translateX(-${translateX2}px) translateY(-${translateY2}px)`;
     }
     window.requestAnimationFrame(animate)
-  }
+  }*/
 
   return (
-    <div className="position-relative h-100">
+    /*<div className="position-relative h-100">
       <div className={styles.typewriter} id="typewriter">
         <Image src={typewriter} alt="Typewriter" />
       </div>
       <div className={styles.triangles} id="triangles">
         <Image src={triangles} alt="Triangles" />
       </div>
-    </div>
+    </div>*/
+    <>
+      <div className="position-relative">
+        <img id="typewriter" className={styles.typewriter} src="/images/typewriter.png" alt="Typewriter"/>
+        <img id="triangles" className={styles.triangles} src="/images/triangulos-banner-blog.png" alt="Typewriter"/>
+      </div>
+    </>
   )
 }

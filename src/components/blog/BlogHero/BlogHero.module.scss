@@ -2,7 +2,7 @@
 
 .heroSection {
   margin-bottom: 500px;
-  background-color: $secondary;
+  background-color: $green;
   position: relative;
   display: flex;
   align-items: center;
@@ -12,7 +12,7 @@
 .heroShape {
   overflow: hidden;
   position: absolute;
-  bottom: -85px;
+  bottom: -25px;
   width: 100%;
   transform: rotate(180deg);
   
@@ -23,11 +23,13 @@
     display: block;
     position: relative;
     left: 50%;
-    z-index: -1;
+    z-index: -2;
     transform: translateX(-50%);
 
     path {
-      fill: #f8f8f8;
+      position: relative;
+      z-index: -2;
+      fill: $snow;
     }
   }
 }
@@ -36,10 +38,10 @@
   z-index: 1;
 
   h3 {
-    color: $secondary;
+    color: $green;
   }
   h1 {
-    color: $primary;
+    color: $darkGreen;
   }
   span {
     display: inline-block;

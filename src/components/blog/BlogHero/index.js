@@ -10,7 +10,7 @@ export default function BlogHero() {
           <path d="M738,99l262-93V0H0v5.6L738,99z"/>
         </svg>
       </div>
-      <div className="container">
+      <div className="container position-relative">
         <div className="row">
           <div className="col-12 col-lg-6 d-flex align-items-center">
             <div className={styles.heroText}>
