@@ -72,7 +72,7 @@ export default function Header() {
       <ul>
         <li>
           <Link href="/nossa-incubadora">
-            <a>Nossa Incubadora</a>
+            <a className="nav-link">Nossa Incubadora</a>
           </Link>
         </li>
         <li className="sub-dropdown">

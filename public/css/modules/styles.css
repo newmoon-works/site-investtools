@@ -1,17 +1,140 @@
-/* Error: Can't find stylesheet to import.
- *   ,
- * 1 | @import "src/styles/scss/colors";
- *   |         ^^^^^^^^^^^^^^^^^^^^^^^^
- *   '
- *   styles.scss 1:9  root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Can't find stylesheet to import.\a   \2577 \a 1 \2502  @import \"src/styles/scss/colors\";\d\a   \2502          ^^^^^^^^^^^^^^^^^^^^^^^^\a   \2575 \a   styles.scss 1:9  root stylesheet";
+/* raleway-600 - latin */
+@font-face {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 600;
+  src: url("../../../public/fonts/raleway-v22-latin-600.eot");
+  /* IE9 Compat Modes */
+  src: local(""), url("../../../public/fonts/raleway-v22-latin-600.eot?#iefix") format("embedded-opentype"), url("../../../public/fonts/raleway-v22-latin-600.woff2") format("woff2"), url("../../../public/fonts/raleway-v22-latin-600.woff") format("woff"), url("../../../public/fonts/raleway-v22-latin-600.ttf") format("truetype"), url("../../../public/fonts/raleway-v22-latin-600.svg#Raleway") format("svg");
+  /* Legacy iOS */
 }
+/* lato-regular - latin */
+@font-face {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../../../public/fonts/lato-v17-latin-regular.eot");
+  /* IE9 Compat Modes */
+  src: local(""), url("../../../public/fonts/lato-v17-latin-regular.eot?#iefix") format("embedded-opentype"), url("../../../public/fonts/lato-v17-latin-regular.woff2") format("woff2"), url("../../../public/fonts/lato-v17-latin-regular.woff") format("woff"), url("../../../public/fonts/lato-v17-latin-regular.ttf") format("truetype"), url("../../../public/fonts/lato-v17-latin-regular.svg#Lato") format("svg");
+  /* Legacy iOS */
+}
+body {
+  font-family: Lato, "sans-serif";
+  color: #8291A5;
+}
+
+h1, h2, h3, h4, h5 {
+  font-weight: 600;
+  color: #295965;
+  font-family: "Raleway", sans-serif;
+}
+
+h1 {
+  font-size: 42px;
+  line-height: 60px;
+}
+
+h2 {
+  font-size: 32px;
+  line-height: 44px;
+}
+
+h3 {
+  font-size: 24px;
+  line-height: 36px;
+}
+
+h4 {
+  font-size: 20px;
+  line-height: 30px;
+}
+
+h5 {
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.body-large {
+  font-size: 18px;
+  line-height: 32px;
+}
+
+p, .body {
+  font-size: 16px;
+  line-height: 26px;
+}
+
+.body-small {
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.caption, .caption-upper {
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.caption-upper {
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+a:hover {
+  color: #00B5A5;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: #295965;
+}
+.navbar-light .navbar-nav .nav-link:hover {
+  color: #00B5A5;
+}
+
+body {
+  overflow-x: hidden;
+  margin-top: 75px;
+  background-color: #F9FBFC;
+}
+
+.title-box {
+  position: relative;
+}
+.title-box::before {
+  content: "";
+  display: block;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 27px 27px 0 0;
+  border-color: #00B5A5 transparent transparent transparent;
+  transform: rotate(360deg);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.title-box h3 {
+  letter-spacing: 0.44px;
+  text-transform: uppercase;
+  padding-top: 40px;
+}
+@media (max-width: 768px) {
+  .title-box h3 {
+    font-size: 20px;
+    padding-top: 30px;
+    line-height: 30px;
+  }
+}
+
+.decoration {
+  position: absolute;
+}
+.decoration img {
+  max-width: 110px;
+}
+@media (max-width: 768px) {
+  .decoration img {
+    max-width: 60px;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */

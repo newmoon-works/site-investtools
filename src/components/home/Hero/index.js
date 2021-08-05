@@ -44,9 +44,9 @@ export default function Hero({ content }) {
                   return (
                     <div key={item.alt} id={item.id} className={styles.content}>
                       <Image src={require(`../../../../public/images/${item.logo}`).default} alt={item.alt} />
-                      <h1>
-                        <strong>{ item.text }</strong>
-                      </h1>
+                      <h2>
+                        { item.text }
+                      </h2>
                     </div>
                   )
                 })

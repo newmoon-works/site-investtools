@@ -22,9 +22,9 @@ export default function AboutProduct({ content: {about, features, logo, monitor}
               <div className="col-12 col-lg-5">
                 <div className={styles.aboutBox}>
                   <div className="title-box">
-                    <h2>
+                    <h3>
                       Ganhe tempo para <br/> pensar na estratégia
-                    </h2>
+                    </h3>
                   </div>
                   <div className={styles.textBox} dangerouslySetInnerHTML={{__html: about}}/>
                 </div>

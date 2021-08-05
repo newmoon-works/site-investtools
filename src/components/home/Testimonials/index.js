@@ -25,7 +25,7 @@ export default function Testimonials({ content }) {
         <div className="row">
           <div className="col-12">
             <div className="title-box">
-              <h2 className="text-white">O que dizem <br/> nossos clientes</h2>
+              <h3 className="text-white">O que dizem <br/> nossos clientes</h3>
             </div>
           </div>
           <div className="col-12">
@@ -40,7 +40,7 @@ export default function Testimonials({ content }) {
                         </div>
 
                         <div className={styles.text}>
-                          <p>{quote.quote}</p>
+                          <p className="body-small">{quote.quote}</p>
                         </div>
 
                         <div className={styles.info}>

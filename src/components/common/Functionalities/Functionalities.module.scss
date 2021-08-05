@@ -1,3 +1,5 @@
+@import "../../../styles/scss/colors";
+
 .funcSection {
   padding-bottom: 90px;
 
@@ -47,7 +49,7 @@
   h5 {
     font-size: 16px;
     letter-spacing: .28px;
-    color: #00b4a4;
+    color: $green;
     text-transform: uppercase;
     font-weight: bold;
     line-height: 25px;

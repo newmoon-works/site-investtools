@@ -16,7 +16,7 @@ export default function Index() {
             <div className="col-12 col-lg-4 px-lg-0">
               <div className={styles.contactInfo}>
                 <div className="title-box">
-                  <h2 className="text-white">Contatos</h2>
+                  <h3 className="text-white">Contatos</h3>
                 </div>
                 <div className={styles.textBox}>
                   <p className="text-white">

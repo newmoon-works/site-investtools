@@ -1,10 +1,10 @@
-@import "src/styles/scss/colors";
-@import "src/styles/scss/typography";
+@import "./scss/colors";
+@import "./scss/typography";
 
 body {
   overflow-x: hidden;
   margin-top: 75px;
-  background-color: #f8f8f8;
+  background-color: $snow;
 }
 
 .title-box {
@@ -17,24 +17,21 @@ body {
     height: 0;
     border-style: solid;
     border-width: 27px 27px 0 0;
-    border-color: #00b4a4 transparent transparent transparent;
+    border-color: $green transparent transparent transparent;
     transform: rotate(360deg);
     position: absolute;
     top: 0;
     left: 0;
   }
 
-  & h2 {
+  & h3 {
     letter-spacing: .44px;
-    color: $primary;
-    font-weight: bold;
-    line-height: 35px;
     text-transform: uppercase;
     padding-top: 40px;
   }
 
   @media (max-width: 768px) {
-    & h2 {
+    & h3 {
       font-size: 20px;
       padding-top: 30px;
       line-height: 30px;

@@ -1,7 +1,7 @@
 @import "../../../styles/scss/colors";
 
 .contactForm {
-  background: #f2f2f2;
+  background: $snow;
 }
 
 .contactBox {
@@ -21,7 +21,7 @@
 }
 
 .contactInfo {
-  background: $primary;
+  background: $darkGreen;
   height: 100%;
   padding: 35px 45px;
 
@@ -39,7 +39,7 @@
   p {
     font-size: 15px;
     letter-spacing: .28px;
-    color: $primary;
+    color: $darkGreen;
     line-height: 23px;
   }
 }
@@ -60,7 +60,7 @@
         transition: all .285s ease-in-out;
         font-size: 14px;
         letter-spacing: .24px;
-        color: #295965;
+        color: $darkGreen;
         line-height: 19px;
         img {
           width: 25px;
@@ -97,7 +97,7 @@
 }
 
 .formBox {
-  background: #fff;
+  background: $white;
   height: 100%;
   padding: 35px 70px;
 
@@ -111,7 +111,7 @@
 }
 
 .spinner {
-  color: $primary;
+  color: $darkGreen;
   height: 100%;
   display: flex;
   justify-content: center;

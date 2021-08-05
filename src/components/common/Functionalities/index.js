@@ -7,7 +7,7 @@ export default function Functionalities({ content }) {
     <section className={styles.funcSection}>
       <div className="container">
         <div className="title-box">
-          <h2>Funcionalidades</h2>
+          <h3>Funcionalidades</h3>
         </div>
         <div className="row">
           {

@@ -10,7 +10,7 @@ export default function AboutSection({content}) {
           <div className="col-12 col-lg-7 position-relative">
             <div className={styles.aboutBox}>
               <div className="title-box">
-                <h2>A Investtools</h2>
+                <h3>A Investtools</h3>
               </div>
 
               <div className={styles.textBox} dangerouslySetInnerHTML={{__html: content.aboutText}} />
@@ -18,7 +18,7 @@ export default function AboutSection({content}) {
             </div>
             <div className={styles.historyBox}>
               <div className="title-box">
-                <h2 className="text-white">Breve História <br/> da empresa</h2>
+                <h3 className="text-white">Breve História <br/> da empresa</h3>
               </div>
               <div className={`${styles.textBox} text-white`} dangerouslySetInnerHTML={{__html: content.historyText}} />
             </div>
@@ -33,7 +33,7 @@ export default function AboutSection({content}) {
           <div className="col-12 col-sm-6">
             <div className={styles.whyUsBox}>
               <div className="title-box">
-                <h2>Por que nos contratar</h2>
+                <h3>Por que nos contratar</h3>
               </div>
 
               <div className={styles.textBox} dangerouslySetInnerHTML={{__html: content.whyUsText}} />
@@ -43,7 +43,7 @@ export default function AboutSection({content}) {
           <div className="col-12 col-sm-6">
             <div className={styles.motivationBox}>
               <div className="title-box">
-                <h2>O que nos motiva</h2>
+                <h3>O que nos motiva</h3>
               </div>
 
               <div className={styles.textBox} dangerouslySetInnerHTML={{__html: content.motivationText}} />

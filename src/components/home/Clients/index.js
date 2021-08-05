@@ -30,7 +30,7 @@ export default function Clients({ content }) {
           </div>
           <div className="col-12">
             <div className="title-box">
-              <h2>Clientes</h2>
+              <h3>Clientes</h3>
             </div>
             <div className="flickity">
               <Flickity options={flickityOptions}>

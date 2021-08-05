@@ -1,3 +1,5 @@
+@import "../../../styles/scss/colors";
+
 .testimonialSection {
   background: url("../../../../public/images/bg-testimonials.jpg") top center no-repeat;
   background-size: cover;
@@ -42,8 +44,8 @@
 }
 
 .testimonialBox {
-  background: #fff;
-  height: 255px;
+  background: $white;
+  height: 300px;
   width: 360px;
   margin-right: 20%;
   padding: 30px 25px;
@@ -63,12 +65,7 @@
   }
 
   .text {
-    p {
-      font-size: 13px;
-      letter-spacing: .22px;
-      color: gray;
-      line-height: 19px;
-    }
+
   }
 
   .info {
@@ -80,7 +77,7 @@
     p {
       font-size: 14px;
       letter-spacing: .28px;
-      color: #295965;
+      color: $darkGreen;
       font-weight: bold;
       margin-bottom: 0;
     }
@@ -88,30 +85,30 @@
     small {
       font-size: 11px;
       letter-spacing: .22px;
-      color: #00b4a4;
+      color: $green;
       display: block;
     }
   }
 
   @media (max-width: 1199px) {
     max-width: 320px;
-    height: 285px;
+    height: 325px;
   }
 
   @media (max-width: 992px) {
     max-width: 255px;
-    height: 335px;
+    height: 415px;
   }
 
   @media (max-width: 768px) {
     max-width: 90%;
-    height: 340px;
+    height: 370px;
     padding: 40px 25px 20px;
   }
 }
 
 .square {
-  background: #fff;
+  background: $white;
   height: 255px;
   width: 360px;
   margin-right: 100px;

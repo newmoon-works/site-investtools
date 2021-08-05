@@ -2,14 +2,14 @@
 
 .contactSection {
   padding: 55px 0 0;
-  background: #f2f2f2;
+  background: $snow;
 
   .textBox {
     margin: 30px 0 45px;
     p {
       font-size: 15px;
       letter-spacing: .28px;
-      color: $primary;
+      color: $darkGreen;
       line-height: 23px;
     }
   }
@@ -30,7 +30,7 @@
           transform: perspective(1px) translateZ(0);
           font-size: 14px;
           letter-spacing: .24px;
-          color: #295965;
+          color: $darkGreen;
           line-height: 19px;
           img {
             width: 25px;
@@ -72,7 +72,7 @@
 }
 
 .formBox {
-  background: #fff;
+  background: $white;
   max-width: 480px;
   padding: 50px 50px 40px;
   box-shadow: rgba(61,65,84,0.2) 0 0 20px;
@@ -93,7 +93,7 @@
 }
 
 .spinner {
-  color: $primary;
+  color: $darkGreen;
   height: 100%;
   display: flex;
   justify-content: center;

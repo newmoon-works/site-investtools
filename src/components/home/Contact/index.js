@@ -14,7 +14,7 @@ export default function Contact() {
         <div className="row">
           <div className="col-12 col-lg-6">
             <div className="title-box">
-              <h2>Contatos</h2>
+              <h3>Contatos</h3>
             </div>
             <div className={styles.textBox}>
               <p>

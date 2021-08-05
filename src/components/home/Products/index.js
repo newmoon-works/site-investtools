@@ -9,7 +9,7 @@ export default function Products({ content }) {
         <div className="row">
           <div className="col-12 col-sm-4">
             <div className="title-box">
-              <h2>Nossos <br/> Produtos</h2>
+              <h3>Nossos <br/> Produtos</h3>
             </div>
           </div>
           <div className="col-12 col-sm-8">

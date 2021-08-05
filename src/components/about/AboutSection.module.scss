@@ -20,7 +20,7 @@
 }
 
 .historyBox {
-  background: $primary;
+  background: $darkGreen;
   padding: 35px 60px 120px;
   position: absolute;
   width: 114%;
@@ -85,7 +85,7 @@
 .motivationBox {
   position: relative;
   z-index: 2;
-  background: #f2f2f2;
+  background: $snow;
   margin-top: 100px;
   padding: 40px 35px 25px;
   max-width: 380px;

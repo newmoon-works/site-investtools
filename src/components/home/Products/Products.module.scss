@@ -9,7 +9,7 @@
   text-decoration: none;
   width: 230px;
   height: 255px;
-  border: 1.5px solid #f2f2f2;
+  border: 1.5px solid $snow;
   margin: 0 30px 30px;
   display: flex;
   flex-direction: column;
@@ -31,7 +31,7 @@
   h3 {
     font-size: 13px;
     letter-spacing: .26px;
-    color: #fff;
+    color: $white;
     line-height: 22px;
     text-align: justify;
     margin: 0;
@@ -44,7 +44,7 @@
   bottom: 0;
   right: 0;
   border: 0;
-  background: $primary;
+  background: $darkGreen;
   padding: 45px 25px 25px;
   left: -100%;
   width: 100%;
@@ -57,7 +57,7 @@
     height: 0;
     border-style: solid;
     border-width: 37px 37px 0 0;
-    border-color: #00b4a4 transparent transparent transparent;
+    border-color: $green transparent transparent transparent;
     transform: rotate(360deg);
     position: absolute;
     top: 0;

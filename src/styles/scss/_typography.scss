@@ -1,52 +1,99 @@
-@font-face {
-  font-family: "Nunito Sans";
-  src: local("NunitoSans-Regular"),
-  url("/fonts/NunitoSans.woff2") format("woff2"),
-  url("/fonts/NunitoSans.woff") format("woff"),
-  url("/fonts/NunitoSans.ttf") format("ttf"),
-  url("/fonts/NunitoSans.svg#NunitoSans-Regular") format("svg");
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
-
+/* raleway-600 - latin */
 @font-face {
   font-family: 'Raleway';
-  src: local('Raleway'),
-  url('/fonts/Raleway.eot') format('embedded-opentype'),
-  url('/fonts/Raleway.woff2') format('woff2'),
-  url('/fonts/Raleway.woff') format('woff'),
-  url('/fonts/Raleway.ttf') format('truetype'),
-  url('/fonts/Raleway.svg#Raleway') format('svg');
-  font-weight: normal;
   font-style: normal;
-  font-display: swap;
+  font-weight: 600;
+  src: url('../../../public/fonts/raleway-v22-latin-600.eot'); /* IE9 Compat Modes */
+  src: local(''),
+  url('../../../public/fonts/raleway-v22-latin-600.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('../../../public/fonts/raleway-v22-latin-600.woff2') format('woff2'), /* Super Modern Browsers */
+  url('../../../public/fonts/raleway-v22-latin-600.woff') format('woff'), /* Modern Browsers */
+  url('../../../public/fonts/raleway-v22-latin-600.ttf') format('truetype'), /* Safari, Android, iOS */
+  url('../../../public/fonts/raleway-v22-latin-600.svg#Raleway') format('svg'); /* Legacy iOS */
+}
+
+/* lato-regular - latin */
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../../../public/fonts/lato-v17-latin-regular.eot'); /* IE9 Compat Modes */
+  src: local(''),
+  url('../../../public/fonts/lato-v17-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('../../../public/fonts/lato-v17-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+  url('../../../public/fonts/lato-v17-latin-regular.woff') format('woff'), /* Modern Browsers */
+  url('../../../public/fonts/lato-v17-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+  url('../../../public/fonts/lato-v17-latin-regular.svg#Lato') format('svg'); /* Legacy iOS */
 }
 
 body {
-  font-family: "Nunito Sans", sans-serif;
-  color: $text-body;
+  font-family: Lato, 'sans-serif';
+  color: $carbon;
 }
 
-a, h1, h2, h3, h4, h5, h5, h5, span {
-  color: $primary;
-}
-
-h1, h2, h3, h4, h5, h5, h5 {
+// Headings
+h1, h2, h3, h4, h5 {
+  font-weight: 600;
+  color: $darkGreen;
   font-family: "Raleway", sans-serif;
 }
 
-h1, h2 {
-  font-size: 22px;
+h1 {
+  font-size: 42px;
+  line-height: 60px;
+}
+h2 {
+  font-size: 32px;
+  line-height: 44px;
+}
+h3 {
+  font-size: 24px;
+  line-height: 36px;
+}
+h4 {
+  font-size: 20px;
+  line-height: 30px;
+}
+h5 {
+  font-size: 18px;
+  line-height: 24px;
 }
 
+// Body
+
+.body-large {
+  font-size: 18px;
+  line-height: 32px;
+}
+
+p, .body {
+  font-size: 16px;
+  line-height: 26px;
+}
+
+.body-small {
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.caption, .caption-upper {
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.caption-upper {
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+// Links
 a:hover {
-  color: $secondary;
+  color: $green;
 }
 
 .navbar-light .navbar-nav .nav-link {
-  color: $primary;
+  color: $darkGreen;
   &:hover {
-    color: $secondary;
+    color: $green;
   }
 }
