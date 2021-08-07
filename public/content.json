@@ -1,58 +1,45 @@
 {
   "hero": [
     {
-      "logo": "logo-performit2.png",
-      "text": "Plataforma de gestão de fundos de investimento na nuvem",
-      "image": "banner-performit6.png",
+      "logo": "perform-it-logo.svg",
+      "text": "Ganhe Tempo para\nPensar na Estratégia",
+      "image": "perform-it-screen.png",
       "alt": "Perform It",
       "id": "perform-it"
     },
     {
-      "logo": "logo-grana.png",
-      "text": "Plataforma de cálculo, pagamento e declaração de Imposto de Renda na bolsa",
-      "image": "banner-grana2.png",
-      "alt": "Grana Capital",
-      "id": "grana-capital"
+      "logo": "diligence-it-logo.svg",
+      "text": "Ganhe Tempo para\nPensar na Estratégia",
+      "image": "diligence-it-screen.png",
+      "alt": "Diligence It",
+      "id": "diligence-it"
     },
     {
-      "logo": "logo-investtools-CRM.png",
-      "text": "Tudo que sua gestora precisa para se tornar um distribuidor",
-      "image": "banner-crm-min3.png",
-      "alt": "Investtools CRM",
-      "id": "crm"
-    },
-    {
-      "logo": "logo-blockchain.png",
-      "text": "Projeto de desenvolvimento e difusão da tecnologia Blockchain",
-      "image": "banner-blockchain2.png",
-      "alt": "Blockchain Studio",
-      "id": "blockchain-studio"
+      "logo": "arcon-it-logo.svg",
+      "text": "Ganhe Tempo para\nPensar na Estratégia",
+      "image": "arcon-it-screen.png",
+      "alt": "Arcon It",
+      "id": "arcon-it"
     }
   ],
   "products": [
     {
-      "image": "logo-performit2.png",
-      "alt": "Peform It",
+      "image": "perform-it-logo.svg",
+      "alt": "Perform It",
       "text": "Plataforma para gestoras de recursos com maior controle das operações, sem perder o foco no objetivo principal. Tudo de forma automática e com segurança comprovada.",
       "link": "/perform-it"
     },
     {
-      "image": "logo-grana.png",
-      "alt": "Grana Capital",
-      "text": "App de cálculo, pagamento e declaração do Imposto de Renda na bolsa para investidores Pessoa Física.",
-      "link": "https://grana.capital/"
+      "image": "diligence-it-logo.svg",
+      "alt": "Diligence It",
+      "text": "Texto Diligence It",
+      "link": "/diligence-it"
     },
     {
-      "image": "logo-investtools-CRM.png",
-      "alt": "Investtools CRM",
-      "text": "Sistema com todos os processos que a gestora precisa atender para ser um distribuidor eficiente. Tudo de acordo com a Comissão de Valores Mobiliários.",
-      "link": "investtools-crm"
-    },
-    {
-      "image": "logo-blockchain.png",
-      "alt": "Blockchain Studio",
-      "text": "Empresa com o propósito de desenvolver e difundir a tecnologia que promete ser uma das mais importantes no próximos anos por meio de projetos e cursos.",
-      "link": "blockchain-studio"
+      "image": "arcon-it-logo.svg",
+      "alt": "Arcon It",
+      "text": "Texto Arcon It",
+      "link": "/arcon-it"
     }
   ],
   "clients": [

@@ -19,7 +19,7 @@ export default function Products({ content }) {
                   return (
                     <a href={card.link} key={card.link} className={styles.cardProduct}>
                       <div className={styles.prodImg}>
-                        <Image src={require(`../../../../public/images/${card.image}`).default} alt={card.alt}/>
+                        <Image src={require(`public/images/new/${card.image}`).default} alt={card.alt}/>
                       </div>
                       <div className={styles.cardImgOverlay}>
                         <div>
