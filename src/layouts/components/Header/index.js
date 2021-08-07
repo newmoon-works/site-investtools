@@ -2,7 +2,7 @@ import React, {useEffect} from 'react';
 import styles from './Header.module.scss';
 import Link from 'next/link';
 import Image from 'next/image';
-import logo from 'public/images/logo.png';
+import logo from 'public/images/new/logo-investtools.svg';
 
 export default function Header() {
 
