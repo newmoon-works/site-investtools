@@ -5,6 +5,7 @@ import Products from "../components/home/Products";
 import Clients from "../components/home/Clients";
 import Testimonials from "../components/home/Testimonials";
 import Contact from "../components/home/Contact";
+import About from "src/components/home/About";
 
 export default function Home(pageContent) {
 
@@ -16,6 +17,7 @@ export default function Home(pageContent) {
 
       <Hero content={pageContent.hero} />
       <Products content={pageContent.products} />
+      <About content={pageContent.about} />
       <Clients content={pageContent.clients} />
       <Testimonials content={pageContent.testimonials} />
       <Contact />

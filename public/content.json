@@ -42,6 +42,27 @@
       "link": "/arcon-it"
     }
   ],
+  "about": {
+      "title": "Soluções Importantes e Inéditas\npara o Mercado Financeiro",
+      "paragraphs": [
+        {
+          "id": 1,
+          "text": "Na vanguarda do desenvolvimento tecnológico, reconhecemos a necessidade de estar, sempre, encontrando dores do mercado e usando o nosso know-how para gerar soluções amplas, adaptadas às necessidades de cada agente do ecossistema financeiro.\n\n"
+        },
+        {
+          "id": 2,
+          "text": "Do microuniverso das gestoras ao amplo universo das finanças, a Investtools tem como objetivo final transformar o mercado com tecnologia.\n\n"
+        },
+        {
+          "id": 3,
+          "text": "Nossa qualidade no desenvolvimento de soluções gera satisfação imediata nos clientes, com aprovação de 100% dos nossos produtos e taxa de saída próxima a zero.\n\n"
+        },
+        {
+          "id": 4,
+          "text": "Nossa motivação está no desafio da inovação constante e da satisfação do cliente. Trabalhamos para nos tornar referência no mercado como uma empresa de destaque na área de tecnologia e de excelência na área financeira.\n\n"
+        }
+      ]
+  },
   "clients": [
     {
       "logo": "hix2@2x.png",

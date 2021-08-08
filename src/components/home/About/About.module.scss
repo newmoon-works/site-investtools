@@ -1,0 +1,90 @@
+@import "../../../styles//scss//colors";
+
+.aboutSection {
+  position: relative;
+  margin-top: 200px;
+}
+
+.aboutImages {
+  position: relative;
+  height: 100%;
+
+  & > * {
+    position: absolute !important;
+  }
+
+  & > div:nth-child(1) {
+    top: 0;
+    right: 0;
+    z-index: 1;
+    max-width: 550px !important;
+    // triangle
+    &::before, &::after {
+      content: '';
+      display: block;
+      position: absolute;
+      z-index: 1;
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 20px 20px 0 0;
+      bottom: 0;
+      left: 0;
+      border-color: $white transparent transparent transparent;
+      transform: rotateX(180deg);
+    }
+  }
+
+  & > div:nth-child(2) {
+    bottom: -45px;
+    left: 0;
+    max-width: 297px !important;
+    overflow: visible !important;
+
+    &::before {
+      content: '';
+      display: block;
+      position: absolute;
+      z-index: 1;
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 20px 20px 0 0;
+      left: 56px;
+      top: -30px;
+      border-color: $green transparent transparent transparent;
+      transform: rotateX(180deg) rotateY(180deg);
+    }
+  }
+
+  & > div:nth-child(3) {
+    bottom: 19px;
+    right: 129px;
+  }
+}
+
+.aboutText {
+  p {
+    margin-bottom: 0;
+    white-space: break-spaces;
+  }
+
+  h2 {
+    white-space: break-spaces;
+    position: relative;
+    margin-bottom: 50px;
+
+    &::before {
+      content: '';
+      display: block;
+      position: absolute;
+      width: 0;
+      height: 0;
+      top: -32px;
+      left: 0;
+      border-style: solid;
+      border-width: 20px 20px 0 0;
+      border-color: $green transparent transparent transparent;
+    }
+  }
+}
