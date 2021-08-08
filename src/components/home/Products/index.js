@@ -6,31 +6,33 @@ export default function Products({ content }) {
   return (
     <section className={styles.productsSection}>
       <div className="container">
+        <div className="title-box">
+          <h3>Produtos</h3>
+        </div>
         <div className="row">
-          <div className="col-12 col-sm-4">
-            <div className="title-box">
-              <h3>Nossos <br/> Produtos</h3>
-            </div>
-          </div>
-          <div className="col-12 col-sm-8">
-            <div className="product-box d-flex flex-wrap justify-content-center">
-              {
-                content.map(card => {
-                  return (
-                    <a href={card.link} key={card.link} className={styles.cardProduct}>
-                      <div className={styles.prodImg}>
-                        <Image src={require(`public/images/new/${card.image}`).default} alt={card.alt}/>
+          {
+            content.map(card => {
+              return (
+                <div className="col-12 col-sm-6 col-lg-3" key={card.link}>
+                  <a href={card.link} className={styles.cardProduct}>
+                    <div className={styles.prodImg}>
+                      <Image src={require(`public/images/new/${card.image}`).default} alt={card.alt} />
+                    </div>
+                    <div className={styles.cardImgOverlay}>
+                      <div>
+                        <h3>{card.text}</h3>
                       </div>
-                      <div className={styles.cardImgOverlay}>
-                        <div>
-                          <h3>{card.text}</h3>
-                        </div>
-                      </div>
-                    </a>
-                  )
-                })
-              }
-            </div>
+                    </div>
+                  </a>
+                </div>
+              )
+            })
+          }
+          <div className="col-12 col-sm-6 col-lg-3">
+            <a href="/nossa-incubadora" className={styles.cardProduct}>
+              <h5>Conheça também a</h5>
+              <h3>Nossa Incubadora</h3>
+            </a>
           </div>
         </div>
       </div>

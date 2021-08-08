@@ -76,7 +76,7 @@ export default function Header() {
           </Link>
         </li>
         <li className="sub-dropdown">
-          <span className="nav-link">Cases</span>
+          <span tabIndex="0" className="nav-link">Cases</span>
           <ul>
             <li>
               <a target="_blank" rel="noopener noreferrer" href="https://www.blockchainstudio.com.br">Blockchain Studio</a>
@@ -127,7 +127,7 @@ export default function Header() {
                 <Link href="/arcon-it"><a className="nav-link">Arcon It</a></Link>
               </li>
               <li className="nav-item dropdown">
-                <span className="nav-link">Novos Negócios</span>
+                <span tabIndex="0" className="nav-link">Novos Negócios</span>
                 <DropDown/>
               </li>
               <li className="nav-item">

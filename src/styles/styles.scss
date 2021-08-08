@@ -13,21 +13,20 @@ body {
   &::before {
     content: '';
     display: block;
+    position: absolute;
     width: 0;
     height: 0;
-    border-style: solid;
-    border-width: 27px 27px 0 0;
-    border-color: $green transparent transparent transparent;
-    transform: rotate(360deg);
-    position: absolute;
     top: 0;
     left: 0;
+    border-style: solid;
+    border-width: 20px 20px 0 0;
+    border-color: $green transparent transparent transparent;
   }
 
   & h3 {
     letter-spacing: .44px;
     text-transform: uppercase;
-    padding-top: 40px;
+    padding-top: 35px;
   }
 
   @media (max-width: 768px) {
