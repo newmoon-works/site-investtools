@@ -18,10 +18,6 @@ export default function Testimonials({ content }) {
 
   return (
     <section className={styles.testimonialSection}>
-
-      <div className={`decoration ${styles.decor}`}><img src="/images/triangulos-depo-esqu@2x.png" alt="Detalhe" /></div>
-      <div className={`decoration ${styles.decor}`}><img src="/images/triangulos-depo-dire@2x.png" alt="Detalhe" /></div>
-
       <div className="container">
         <div className="row">
           <div className="col-12">
@@ -35,7 +31,7 @@ export default function Testimonials({ content }) {
                     return (
                       <div key={content.indexOf(quote)} className={`${styles.testimonialBox} col-12 col-sm-6`}>
                         <div className={styles.aspas}>
-                          <img src="/images/aspas@2x.png" alt="Aspas" />
+                          <h1>”</h1>
                         </div>
 
                         <div className={styles.text}>
@@ -59,7 +55,7 @@ export default function Testimonials({ content }) {
                     return (
                       <div key={content.indexOf(quote)} className={`${styles.testimonialBox} col-12 col-sm-6`}>
                         <div className={styles.aspas}>
-                          <img src="/images/aspas@2x.png" alt="Aspas" />
+                          <h1>”</h1>
                         </div>
 
                         <div className={styles.text}>

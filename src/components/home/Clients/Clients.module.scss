@@ -3,6 +3,7 @@
 .clientSection {
   position: relative;
   margin-top: 220px;
+  padding-bottom: 160px;
 
   h3 {
     margin-bottom: 70px;
@@ -11,9 +12,11 @@
   :global(.flickity) {
     button {
       background: transparent;
-
-      path {
-        fill: $steel;
+      svg {
+        height: 20px !important;
+        path {
+          fill: $steel;
+        }
       }
     }
   }

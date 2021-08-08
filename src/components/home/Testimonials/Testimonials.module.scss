@@ -4,7 +4,21 @@
   background: url("../../../../public/images/bg-testimonials.jpg") top center no-repeat;
   background-size: cover;
   position: relative;
-  padding: 50px 0 50px;
+  padding: 75px 0 200px;
+
+  h3 {
+    margin-bottom: 75px;
+  }
+
+  button {
+    background: transparent;
+    svg {
+      height: 20px !important;
+      path {
+        fill: $white;
+      }
+    }
+  }
 
   :global(.title-box) {
     margin-bottom: 50px;
@@ -46,7 +60,7 @@
 .testimonialBox {
   background: $white;
   height: 300px;
-  width: 360px;
+  width: 400px;
   margin-right: 20%;
   padding: 30px 25px;
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
@@ -57,10 +71,13 @@
     position: absolute;
     right: -10px;
     top: -10px;
+    height: 35px;
+    width: 35px;
+    background-color: $green;
 
-    img {
-      width: 47px;
-      height: 47px;
+    h1 {
+      margin: 0;
+      text-align: center;
     }
   }
 
