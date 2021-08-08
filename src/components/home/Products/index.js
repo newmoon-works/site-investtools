@@ -1,14 +1,13 @@
 import React from 'react';
 import styles from './Products.module.scss'
 import Image from "next/image";
+import TitleBox from 'src/components/common/TitleBox';
 
 export default function Products({ content }) {
   return (
     <section className={styles.productsSection}>
       <div className="container">
-        <div className="title-box">
-          <h3>Produtos</h3>
-        </div>
+        <TitleBox>Produtos</TitleBox>
         <div className="row">
           {
             content.map(card => {

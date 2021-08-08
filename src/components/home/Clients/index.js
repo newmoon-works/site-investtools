@@ -3,6 +3,7 @@ import styles from './Clients.module.scss';
 import 'flickity/css/flickity.css';
 import Flickity from "react-flickity-component";
 import Image from "next/image";
+import TitleBox from 'src/components/common/TitleBox';
 
 export default function Clients({ content }) {
 
@@ -16,9 +17,9 @@ export default function Clients({ content }) {
   return (
     <section className={styles.clientSection}>
 
-      <div className={`decoration ${styles.decor}`}><img src="/images/triangulos-clientes-esqu@2x.png" alt="Detalhe"/></div>
-      <div className={`decoration ${styles.decor}`}><img src="/images/triangulos-clientes-dire@2x.png" alt="Detalhe"/></div>
-      <div className={`decoration ${styles.decor}`}><img src="/images/triangulos-clientes-bottomm@2x.png" alt="Detalhe"/></div>
+      <div className={`decoration ${styles.decor}`}><img src="/images/triangulos-clientes-esqu@2x.png" alt="Detalhe" /></div>
+      <div className={`decoration ${styles.decor}`}><img src="/images/triangulos-clientes-dire@2x.png" alt="Detalhe" /></div>
+      <div className={`decoration ${styles.decor}`}><img src="/images/triangulos-clientes-bottomm@2x.png" alt="Detalhe" /></div>
 
       <div className="container">
         <div className="row">
@@ -29,16 +30,14 @@ export default function Clients({ content }) {
             </div>
           </div>
           <div className="col-12">
-            <div className="title-box">
-              <h3>Clientes</h3>
-            </div>
+            <TitleBox>Clientes</TitleBox>
             <div className="flickity">
               <Flickity options={flickityOptions}>
                 {
                   content.map(client => {
                     return (
                       <div className={`col-6 col-md-4 col-lg-3 ${styles.carouselItem}`} key={content.indexOf(client)}>
-                        <Image src={require(`../../../../public/images/clientes/${client.logo}`).default} alt={client.name}/>
+                        <Image src={require(`../../../../public/images/clientes/${client.logo}`).default} alt={client.name} />
                       </div>
                     )
                   })

@@ -4,6 +4,7 @@ import styles from './Hero.module.scss';
 import mac from 'public/images/new/imac-screen.png';
 import pattern from 'public/images/new/pattern-square-vertical.svg';
 import triangleFree from 'public/images/new/triangle-free.svg';
+import TitleBox from 'src/components/common/TitleBox';
 
 export default function Hero({ content }) {
   const [active, setActive] = useState(content[0]);

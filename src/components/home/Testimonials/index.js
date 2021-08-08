@@ -2,6 +2,7 @@ import React from 'react';
 import styles from './Testimonials.module.scss';
 import 'flickity/css/flickity.css';
 import Flickity from "react-flickity-component";
+import TitleBox from 'src/components/common/TitleBox';
 
 export default function Testimonials({ content }) {
 
@@ -18,15 +19,13 @@ export default function Testimonials({ content }) {
   return (
     <section className={styles.testimonialSection}>
 
-      <div className={`decoration ${styles.decor}`}><img src="/images/triangulos-depo-esqu@2x.png" alt="Detalhe"/></div>
-      <div className={`decoration ${styles.decor}`}><img src="/images/triangulos-depo-dire@2x.png" alt="Detalhe"/></div>
+      <div className={`decoration ${styles.decor}`}><img src="/images/triangulos-depo-esqu@2x.png" alt="Detalhe" /></div>
+      <div className={`decoration ${styles.decor}`}><img src="/images/triangulos-depo-dire@2x.png" alt="Detalhe" /></div>
 
       <div className="container">
         <div className="row">
           <div className="col-12">
-            <div className="title-box">
-              <h3 className="text-white">O que dizem <br/> nossos clientes</h3>
-            </div>
+            <TitleBox className="text-white">O que dizem <br /> nossos clientes</TitleBox>
           </div>
           <div className="col-12">
             <div className={styles.carouselDesktop}>
