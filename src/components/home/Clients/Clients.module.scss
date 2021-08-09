@@ -49,3 +49,9 @@
     margin-right: 40% !important;
   }
 }
+
+.decor {
+  transform: rotateY(180deg) rotateX(180deg);
+  right: 0;
+  top: -100px;
+}

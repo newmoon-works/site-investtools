@@ -5,6 +5,7 @@
   padding: 150px 0 75px 0;
   position: relative;
   border-top: 6px solid $green;
+  position: relative;
 
   /*& :global(.row) {
     padding-top: 50px;
@@ -120,7 +121,12 @@
   line-height: 18px;
 }
 
-.decor {
+.decorTop {
+  top: -153px;
+  left: 0;
+}
+
+.decorBottom {
   bottom: 0;
   right: 0;
 }

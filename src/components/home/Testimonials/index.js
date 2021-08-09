@@ -3,6 +3,7 @@ import styles from './Testimonials.module.scss';
 import 'flickity/css/flickity.css';
 import Flickity from "react-flickity-component";
 import TitleBox from 'src/components/common/TitleBox';
+import Decoration from 'src/components/common/Decoration';
 
 export default function Testimonials({ content }) {
 
@@ -18,6 +19,8 @@ export default function Testimonials({ content }) {
 
   return (
     <section className={styles.testimonialSection}>
+      <Decoration size="lg" style="white" className={styles.decorTop} />
+      <Decoration size="sm" style="white" className={styles.decorBottom} />
       <div className="container">
         <div className="row">
           <div className="col-12">

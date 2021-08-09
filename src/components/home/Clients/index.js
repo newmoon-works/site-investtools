@@ -4,6 +4,7 @@ import 'flickity/css/flickity.css';
 import Flickity from "react-flickity-component";
 import Image from "next/image";
 import TitleBox from 'src/components/common/TitleBox';
+import Decoration from 'src/components/common/Decoration';
 
 export default function Clients({ content }) {
 
@@ -16,6 +17,7 @@ export default function Clients({ content }) {
 
   return (
     <section className={styles.clientSection}>
+      <Decoration style="normal" size="lg" className={styles.decor}/>
       <div className="container">
         <div className="row">
           <div className="col-12">
