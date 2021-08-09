@@ -2,21 +2,21 @@
   "hero": [
     {
       "logo": "perform-it-logo.svg",
-      "text": "Ganhe Tempo para\nPensar na Estratégia",
+      "text": "Ganhe Tempo para Pensar na Estratégia",
       "image": "perform-it-screen.png",
       "alt": "Perform It",
       "id": "perform-it"
     },
     {
       "logo": "diligence-it-logo.svg",
-      "text": "Ganhe Tempo para\nPensar na Estratégia",
+      "text": "Ganhe Tempo para Pensar na Estratégia",
       "image": "diligence-it-screen.png",
       "alt": "Diligence It",
       "id": "diligence-it"
     },
     {
       "logo": "arcon-it-logo.svg",
-      "text": "Ganhe Tempo para\nPensar na Estratégia",
+      "text": "Ganhe Tempo para Pensar na Estratégia",
       "image": "arcon-it-screen.png",
       "alt": "Arcon It",
       "id": "arcon-it"
@@ -26,7 +26,7 @@
     {
       "image": "perform-it-logo.svg",
       "alt": "Perform It",
-      "text": "Ganhe Tempo para\nPensar na Estratégia",
+      "text": "Ganhe Tempo para Pensar na Estratégia",
       "link": "/perform-it"
     },
     {
