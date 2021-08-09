@@ -20,7 +20,7 @@ export default function Home(pageContent) {
       <About content={pageContent.about} />
       <Clients content={pageContent.clients} />
       <Testimonials content={pageContent.testimonials} />
-      <Contact />
+      <Contact content={pageContent.generalText[0]} />
     </>
   )
 }

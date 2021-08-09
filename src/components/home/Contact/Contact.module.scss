@@ -1,40 +1,29 @@
 @import "../../../styles/scss/colors";
 
 .contactSection {
-  padding: 55px 0 0;
+  margin-top: 115px;
   background: $snow;
 
-  .textBox {
-    margin: 30px 0 45px;
-    p {
-      font-size: 15px;
-      letter-spacing: .28px;
-      color: $darkGreen;
-      line-height: 23px;
-    }
-  }
-
   .infosBox {
-    max-width: 260px;
+    color: $granite;
+    white-space: break-spaces;
+    p {
+      margin: 30px 0;
+    }
     ul {
       margin: 0;
       padding: 0;
       list-style: none;
       li {
-        margin-bottom: 40px;
+        margin-bottom: 15px;
         a {
           display: flex;
           align-items: center;
           text-decoration: none;
-          transition: all .285s ease-in-out;
-          transform: perspective(1px) translateZ(0);
-          font-size: 14px;
-          letter-spacing: .24px;
-          color: $darkGreen;
-          line-height: 19px;
+          color: $granite;
           img {
-            width: 25px;
-            height: 25px;
+            width: 15px;
+            height: 15px;
             margin-right: 13px;
           }
           p {
@@ -67,17 +56,13 @@
   }
 }
 
-.iconInfo {
-
-}
-
 .formBox {
   background: $white;
   max-width: 480px;
   padding: 50px 50px 40px;
   box-shadow: rgba(61,65,84,0.2) 0 0 20px;
   position: relative;
-  top: 40px;
+  top: -175px;
   z-index: 1;
 
   @media (max-width: 992px) {
