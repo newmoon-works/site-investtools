@@ -32,13 +32,13 @@
     {
       "image": "diligence-it-logo.svg",
       "alt": "Diligence It",
-      "text": "Texto Diligence It",
+      "text": "Diligence It",
       "link": "/diligence-it"
     },
     {
       "image": "arcon-it-logo.svg",
       "alt": "Arcon It",
-      "text": "Texto Arcon It",
+      "text": "Arcon It",
       "link": "/arcon-it"
     }
   ],
@@ -192,8 +192,9 @@
     }
   ],
   "performit": {
-      "monitor": "macbook-performit3@2x.png",
-      "logo": "logo-performit2.png",
+      "monitor": "note-perform-it.png",
+      "logo": "perform-it-logo.svg",
+      "title": "Ganhe Tempo para\nPensar na Estratégia",
       "about": "<p>O Perform It possibilita total controle do fluxo de investimentos de sua gestora, liberando você e sua equipe para pensar no principal, a estratégia.</p><p>Com o Perform It, as gestoras de recursos terão maior controle das operações, sem perder o foco no objetivo principal.Tudo de forma automática e com segurança comprovada.</p><p>Nosso software ERP monitora todo o fluxo da gestora de capitais, com interfaces modernas com administradoras, corretoras, entre outras.</p><p>O Perform It controla o fluxo 360 graus, desde os processos de Back Office até Middle Office e Front Office.</p>",
       "features": [
         {
@@ -245,122 +246,78 @@
         }
       ]
   },
-  "grana-capital": [
-    {
-      "monitor": "macbook-grana2@2x.png",
-      "logo": "logo-grana.png",
-      "about": "<p>O Grana é a plataforma ideal para que o cliente possa calcular, pagar e declarar seu Imposto de Renda sem esforço. O app importa suas transações na bolsa automaticamente e, com base nas mesmas, calcula o Imposto de Renda que deverá ser pago. </p>",
-      "feature": [
-        {
-          "title": "Integração com o Canal Eletrônico do Investidor (CEI)",
-          "text": "Praticidade. Esta é uma de nossas maiores qualidades. Por meio desta integração, nós importamos as informações diretamente no CEI e atualiza o próprio sistema. Quando o cliente compra algo na corretora, não há necessidade do cadastro desta movimentação na plataforma. Após a compra, automaticamente, sua aquisição aparece no Grana Capital. Somente a Investtools oferece este benefício."
-        },
-        {
-          "title": "Retroação desde o início do ano",
-          "text": "Transparência. O Grana importa suas transações desde o início do ano, independente de quando você comece a usar o app. Desta forma possibilitamos o usuário de acompanhar e comparar seus resultados de IR na bolsa ao longo dos meses, oferecndo total transparência no serviço."
-        },
-        {
-          "title": "Preenchimento automático da declaração",
-          "text": "Tempo é dinheiro. Sabemos o quanto a declaração toma tempo dos investidores, por isso não se preocupe! O Grana Capital conta com uma funcionalidade de preenchimento automático da declaração, desta forma o usuário só precisará colocar seus dados de forma simples e revisar o preenchimento."
-        },
-        {
-          "title": "Seu IR em qualquer lugar",
-          "text": "Segurança e facilidade. O Grana Capital traz a praticidade dos apps para a palma da sua mão. Esta é a maneira mais segura e ágil para você acompanhar os investimentos e Imposto de Renda de qualquer lugar, seja do escritório, seja da praia."
-        },
-        {
-          "title": "Atendimento personalizado",
-          "text": "Nós ouvimos você. Sabemos que cada usuário é único, por esta razão oferecemos atendimento personalizado para cada um."
-        },
-        {
-          "title": "Suporte a diversos tipos de ativos",
-          "text": "Monitoramento constante. No Grana Capital não importa os tipos de posições que você tem, todos serão contabilizados para o IR. Nossa meta é facilitar sempre seu dia a dia ao acompanhar o andamento delas."
-        },
-        {
-          "title": "Interface simples e intuitiva",
-          "text": "O lugar de todos. Iniciante ou investidor experiente na bolsa de valores, o Grana Capital traz a interface mais completa e fácil do mercado."
-        }
-      ],
-      "functionalities": [
-        {
-          "icon": "ev-patrimonial.svg",
-          "title": "Evolução patrimonial<br> e Proventos",
-          "text": "<p>Com o Grana Capital você acompanha a evolução do patrimônio ao longo do tempo, bem como o cálculo do IR.</p><p>Sistema agrega automaticamente as informações de proventos e as contabiliza na carteira do cliente.</p>"
-        },
-        {
-          "icon": "cei.svg",
-          "title": "CEI e Rentabilidades",
-          "text": "<p>Por meio desta integração, o cliente não necessita mais informar todas as movimentações realizadas.</p><p>Nosso sistema, de forma automática, está integrado ao CEI, e repassa diretamente a ele as compras e vendas de cada cliente.</p><p>O sistema contabiliza a rentabilidade de cada ativo que compõem cada carteira do cliente e de todas elas juntas.</p>"
-        }
-      ]
-    }
-  ],
-  "crm": [
-    {
-      "monitor": "macbook-crm@2x.png",
-      "logo": "logo-investtools-CRM.png",
-      "about": "<p>Com as mudanças realizadas pela Comissão de Valores Mobiliários em janeiro de 2016 (CVM 558) para que as gestoras possam começar a distribuir os seus próprios fundos, sem a necessidade da figura do distribuidor, percebemos a necessidade de uma parceria com as gestoras neste novo processo, preparando-as da maneira correta.</p><p>Assim, dentro de nosso sistema, incluímos todos os processos que a gestora precisa atender para ser um distribuidor eficiente.</p>",
-      "feature": [
-        {
-          "title": "Suitability e Know Your Client",
-          "text": "Controle. Com o InvesttoolsCRM, o cliente fica liberado do estresse de ter que se preocupar se o seu perfil está próximo da expiração. A parte burocrática fica conosco. Preocupe-se apenas com seus investimentos."
-        },
-        {
-          "title": "Prevenção à lavagem de dinheiro",
-          "text": "Confiança. Esse será sempre um dos nossos lemas. Atuar de forma clara e honesta a fim de que os clientes estejam tranquilos quanto às informações e dados que fornecemos. Até por isso, enviamos ao Conselho de Controle de Atividades Financeiras (COAF) relatório sempre que identificamos o surgimento de padrão suspeito de operações de lavagem de dinheiro."
-        },
-        {
-          "title": "Boletagem de movimentação",
-          "text": "Burocracia zero. O InvesttoolsCRM realiza o enquadramento do cliente antes de processar a ordem do envio dos boletos. Chega de perder tempo preparando, manualmente, o encaminhamento dessas informações para a administradora."
-        },
-        {
-          "title": "Consultas à base de clientes",
-          "text": "Praticidade. Precisando consultar a sua base de clientes? Com apenas um clique é possível, em segundos, descobrir quantos clientes, por exemplo, não assinaram ainda o termo de recusa de suitability. Faça sua busca com ordenação, filtros, agrupamentos, tabelas pivô, exportação para Excel e muito mais."
-        },
-        {
-          "title": "Gestão de documentos",
-          "text": "Informação é a alma do negócio. Sempre que um documento estiver prestes a vencer ou um cotista não tiver assinado documento essencial para operar nos fundos, o sistema informará você no momento ideal. Além disso, seus arquivos estão seguros sob nossos cuidados. Não perca tempo e espaço com este armazenamento. Nós cuidamos de tudo para você."
-        }
-      ],
-      "functionalities": [
-        {
-          "icon": "backup.svg",
-          "title": "Backups e Auditoria",
-          "text": "<p>Nós fazemos diariamente o backup completo do banco de dados e o mantemos armazenado por 5 anos a fim de possibilitar retroação do estado do sistema para qualquer data.</p><p>Todo acesso feito ao sistema, tanto relacionado à atualização quanto à consulta de dados é registrado na nossa base de logs e fica retido por 5 anos.</p>"
-        },
-        {
-          "icon": "testes.svg",
-          "title": "Testes de segurança<br> e Controle de acesso",
-          "text": "<p>Nós disponibilizamos mensalmente os relatórios dos testes de segurança que são feitos nos nossos servidores, como estabelece o artigo 4º, §8º, II da instrução CVM 558.</p><p>Apenas os usuários com nível de acesso específico podem consultar e alterar informações relativas à prevenção de lavagem de dinheiro, como configuração de regras e alertas de desenquadramento.</p>"
-        }
-      ]
-    }
-  ],
-  "blockchain": [
-    {
-      "logo": "logo-blockchain.png",
-      "about": "<p>A Blockchain Studio é um projeto pioneiro no mercado e tem como propósito o desenvolvimento e a difusão da tecnologia que promete ser uma das mais importantes nos próximos anos.</p><p>Ela é uma das primeiras empresas do Rio de Janeiro a desenvolver projetos e cursos com foco na disseminação do conhecimento sobre Blockchain.Diante disso, tornou - se protagonista com ações junto a bancos importantes, órgãos públicos, como BNDES, e fundações de Blockchain, como a Ethereum Foundation.</p><p>O investimento em treinamento e estudo, além do reconhecimento dos clientes, credenciam a Investtools como uma instituição de alta performance, eficiência, credibilidade e um pólo de inovação constante.</p>",
-      "feat": "<p>Com foco na disseminação da Blockchain, ministramos cursos para desenvolvedores e traders que mostram o que há de mais moderno sobre esta tecnologia e como utilizá-la da melhor forma.</p><p>A Blockchain Studio tem como parceiros instituições de renome tanto na área empresarial quanto na educacional.</p><p>São eles:</p>",
-      "partners": [
-        {
-          "image": "ethereum.png",
-          "name": "Ethereum"
-        },
-        {
-          "image": "bndes.png",
-          "name": "BNDES"
-        },
-        {
-          "image": "puc-rio.png",
-          "name": "PUC - Rio"
-        },
-        {
-          "image": "ufrj.png",
-          "name": "UFRJ"
-        }
-      ],
-      "project": "<p>Com grande conhecimento sobre Blockchain, a Blockchain Studio desenvolve projetos em consultoria nesta tecnologia disruptiva, ajudando empresas dos mais variados segmentos de atuação.</p><p>Nossa expertise é essencial para a cultura de toda instituição que queira evoluir e estar sempre à frente de seu tempo.</p><p>Torne sua empresa um case de sucesso e descubra como a revolução Blockchain pode ajudá - lo no processo de gestão.</p><p>Descubra como a revolução Blockchain pode ajudar sua empresa no processo de gestão e transforme - a em um case de sucesso no mercado.</p>"
-    }
-  ],
+  "diligenceit": {
+    "monitor": "note-diligence-it.png",
+    "logo": "diligence-it-logo.svg",
+    "title": "Diligence It",
+    "about": "<p>O Diligence It firma a parceria da Investtools com gestoras que busquem tornar seus processos de suitability e de prevenção à lavagem de dinheiro mais rápidos, práticos e transparentes.</p>",
+    "features": [
+      {
+        "id": 1,
+        "title": "Prevencção à lavagem de dinheiro",
+        "text": "Confiança. Esse será sempre um dos nossos lemas: atuar de forma clara e honesta a fim de que os clientes estejam tranquilos quanto às informações e dados que fornecemos.\n\nAté por isso, enviamos ao Conselho de Controle de Atividades Financeiras (COAF) relatóriosempre que identificamos o surgimento de padrão suspeito de operações de lavagem de dinheiro."
+      },
+      {
+        "id": 2,
+        "title": "Suitability",
+        "text": "Controle. Com o Diligence It, o cliente fica liberado do estresse de ter que se preocupar se o seu perfil está próximo da expiração. A parte burocrática fica conosco.\n\nPreocupe-se apenas com seus investimentos."
+      }
+    ],
+    "functionalities": [
+      {
+        "title": "BOLETAGEM DE MOVIMENTAÇÃO",
+        "text": "Burocracia zero. O Diligence It realiza o enquadramento do cliente antes de processar a ordem do envio dos boletos. Chega de perder tempo preparando, manualmente, o encaminhamento dessas informações para a administradora."
+      },
+      {
+        "title": "CONSULTAS À BASE DE CLIENTES",
+        "text": "Praticidade. Precisando consultar a sua base de clientes? Com apenas um clique é possível descobrir quantos clientes, por exemplo, não assinaram ainda o termo de recusa de suitability. Faça sua busca com ordenação, filtros, agrupamentos, tabelas pivô, exportação para Excel e muito mais."
+      },
+      {
+        "title": "GESTÃO DE DOCUMENTOS",
+        "text": "Informação. Sempre que um documento estiver prestes a vencer ou um cotista não tiver assinado documento essencial para operar nos fundos, o sistema informará você no momento ideal. Além disso, seus arquivos estão seguros sob nossos cuidados. Não perca tempo e espaço com este armazenamento: nós cuidamos de tudo para você."
+      },
+      {
+        "title": "MOTOR DE REGRAS DO COMPLIANCE",
+        "text": "Versatilidade. Elaborado para auxiliar as gestoras a se adaptar às instruções do CVM 558, o Diligence It dispõe às gestoras diversas regras de validação para o compliance, de maneira que possam selecioná-las de acordo com suas necessidades e preferências."
+      }
+    ]
+  },
+  "arconit": {
+    "monitor": "note-arcon-it.png",
+    "logo": "arcon-it-logo.svg",
+    "title": "Arcon It",
+    "about": "<p>O Arcon It é um sistema de pré compliance que simplifica processos operacionais das gestoras, usando a tecnologia para garantir que estejam de acordo com a Instrução 555 da CVM, relativa às necessidades de enquadramento dos fundos de investimento.</p>",
+    "features": [
+      {
+        "id": 1,
+        "title": "Praticidade",
+        "text": "Ao invés de ter que checar manualmente se as operações realizadas pelo gestor desenquadraram o fundo de investimentos dos limites determinados por seu regulamento, a gestora pode usar o Arcon It para automatizar esse processo. A parte burocrática fica conosco. O sistema facilita todo processo de alocação ao final do dia"
+      },
+      {
+        "id": 2,
+        "title": "Rapidez",
+        "text": "Todo o processo de checagem pré-compliance leva cerca de cinco minutos, poupa a gestora de incorrer em erros operacionais, e permite que os gestores foquem em seu core business: os investimentos."
+      }
+    ],
+    "functionalities": [
+      {
+        "title": "DETECÇÃO DE IRREGULARIDADES",
+        "text": "Ao simular as estratégias de compra e venda, o Arcon It revela à gestora qualquer irregularidade de desenquadramento do fundo, e permite que o gestor ajuste sua estratégia para mantê-la dentro do compliance estipulado."
+      },
+      {
+        "title": "INTEGRAÇÃO",
+        "text": "Integração com as principais plataformas de de trading de mercado e ao carrying broker"
+      },
+      {
+        "title": "AUDITÁVEL",
+        "text": "Ao automatizar processos operacionais, o Arcon It facilita o processo de auditoria, porque registra detalhadamente as intenções de trade, operações e checagens."
+      },
+      {
+        "title": "ESCALÁVEL",
+        "text": "O Arcon It é um produto que pode ser integrado ao  Perform It, software de gestão de fluxos de investimentos para gestoras, solução consolidada e reconhecida como carro-chefe da Investtools. Os sistemas rodam de forma independente, mas a integração pode ser personalizada de acordo com as necessidades da gestora."
+      }
+    ]
+  },
   "generalText": [
     {
       "contactText": "Quer conhecer nossos produtos?\nNós teremos o prazer de te responder.",

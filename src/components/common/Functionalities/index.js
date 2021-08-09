@@ -13,10 +13,10 @@ export default function Functionalities({ content }) {
           {
             content.map(func => {
               return (
-                <div className="col-12 col-lg-4" key={func.title}>
+                <div className="col-12 col-lg-6" key={func.title}>
                   <div className={styles.cardFunc}>
                     <div className={styles.icon}>
-                      <Image alt={func.title} src={require(`public/images/icones/${func.icon}`)} />
+                      <Image alt="Icon" src={require(`public/images/new/icon.svg`)} />
                     </div>
                     <div className={styles.content}>
                       <h5>{func.title}</h5>

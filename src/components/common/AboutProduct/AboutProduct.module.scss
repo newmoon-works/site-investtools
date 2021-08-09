@@ -2,6 +2,7 @@
 
 .productSection {
   margin-top: 160px;
+  position: relative;
 
   @media (max-width: 1199px) {
     .monitorBox {
@@ -90,8 +91,8 @@
 .logoBox {
   display: flex;
   justify-content: center;
-  margin-bottom: 90px;
-  max-width: 190px;
+  margin-bottom: 130px;
+  max-width: 300px;
   margin-left: 30px;
 }
 
@@ -105,6 +106,12 @@
     right: -60px;
     z-index: 1;
     min-height: 590px;
+
+    h3 {
+      margin-bottom: 50px;
+      white-space: break-spaces;
+    }
+
     & :global(.title-box) {
       margin-bottom: 30px;
     }
@@ -112,7 +119,10 @@
 }
 
 .textBox {
-
+  & > p {
+    font-size: 14px;
+    line-height: 24px;
+  }
 }
 
 .featureBox {
@@ -129,21 +139,30 @@
       max-width: 50%;
       margin-bottom: 70px;
       padding: 0 37px;
-      h5 {
-        margin-bottom: 15px;
-        font-size: 15px;
-        letter-spacing: .26px;
+      h6 {
         color: $green;
         text-transform: uppercase;
-        font-weight: bold;
-        line-height: 21px;
       }
       p {
-        font-size: 14px;
-        letter-spacing: .24px;
+        white-space: break-spaces;
         color: $white;
         margin-bottom: 0;
       }
     }
   }
+}
+
+.decorSmall {
+  bottom: -76px;
+  right: 66px;
+}
+
+.decorBig {
+  bottom: -6px;
+  right: 0;
+}
+
+.decorTop {
+  left: 0;
+  top: -45px;
 }
