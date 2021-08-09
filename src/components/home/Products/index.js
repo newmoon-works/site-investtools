@@ -19,7 +19,7 @@ export default function Products({ content }) {
                     </div>
                     <div className={styles.cardImgOverlay}>
                       <div>
-                        <h3>{card.text}</h3>
+                        <h4>{card.text}</h4>
                       </div>
                     </div>
                   </a>
