@@ -1,1 +1,9 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220.08 279.96"><defs><style>.cls-1{fill:#295965;}.cls-2{fill:#00b5a5;}</style></defs><g id="Camada_2" data-name="Camada 2"><g id="bank_slip" data-name="bank slip"><g id="bank_slip-2" data-name="bank slip"><path class="cls-1" d="M220,42.4,177.66,0l0,0,0,0L40.08,0V20H20v0H0V280H200.08V240h20Zm-40-11.68L189.34,40h-9.26Zm0,229.24H20V40H40.08L40.15,240H180.08Zm20-40h-140V20h100V60h40Z"/><rect class="cls-2" x="80.08" y="50.13" width="60" height="20"/><rect class="cls-2" x="80.08" y="90.21" width="69.96" height="20"/><rect class="cls-2" x="160.04" y="90.21" width="20.04" height="20"/><rect class="cls-2" x="80.08" y="130.3" width="19.96" height="20"/><rect class="cls-2" x="110.04" y="130.3" width="70" height="20"/><rect class="cls-2" x="80.08" y="170.38" width="99.96" height="20"/></g></g></g></svg>
+<svg width="44" height="55" viewBox="0 0 44 55" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M43.2143 8.32857L34.8975 0H7.87286V3.92857H3.92857H0V55H39.3014V47.1429H43.23L43.2143 8.32857ZM35.3571 6.03429L37.1918 7.85714H35.3729L35.3571 6.03429ZM35.3571 51.0636H3.92857V7.85714H7.87286L7.88661 47.1429H35.3729L35.3571 51.0636ZM39.2857 43.2064H11.7857V3.92857H31.4286V11.7857H39.2857V43.2064Z" fill="#295965"/>
+<path d="M27.5157 9.84692H15.73V13.7755H27.5157V9.84692Z" fill="#00B5A5"/>
+<path d="M29.4721 17.7198H15.73V21.6484H29.4721V17.7198Z" fill="#00B5A5"/>
+<path d="M35.373 17.7198H31.4365V21.6484H35.373V17.7198Z" fill="#00B5A5"/>
+<path d="M19.6507 25.5946H15.73V29.5232H19.6507V25.5946Z" fill="#00B5A5"/>
+<path d="M35.365 25.5946H21.615V29.5232H35.365V25.5946Z" fill="#00B5A5"/>
+<path d="M35.365 33.4675H15.73V37.3961H35.365V33.4675Z" fill="#00B5A5"/>
+</svg>

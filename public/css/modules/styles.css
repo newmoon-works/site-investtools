@@ -23,7 +23,7 @@ body {
   color: #717F90;
 }
 
-h1, h2, h3, h4, h5 {
+h1, h2, h3, h4, h5, h6 {
   font-weight: 600;
   color: #295965;
   font-family: "Raleway", sans-serif;
@@ -54,6 +54,37 @@ h5 {
   line-height: 24px;
 }
 
+h6 {
+  font-size: 16px;
+  line-height: 22px;
+}
+
+@media (max-width: 992px) {
+  h1 {
+    font-size: 32px;
+    line-height: 44px;
+  }
+
+  h2 {
+    font-size: 24px;
+    line-height: 36px;
+  }
+
+  h3 {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  h4 {
+    font-size: 18px;
+    line-height: 26px;
+  }
+
+  h5 {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
 .body-large {
   font-size: 18px;
   line-height: 32px;
@@ -88,6 +119,10 @@ a:hover {
 }
 .navbar-light .navbar-nav .nav-link:hover {
   color: #00B5A5;
+}
+
+html {
+  overflow-x: hidden;
 }
 
 body {
