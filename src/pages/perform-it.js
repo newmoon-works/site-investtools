@@ -12,7 +12,7 @@ export default function PerformIt(pageContent) {
       </Head>
 
       <AboutProduct content={pageContent} />
-      <Functionalities content={pageContent.functionalities}/>
+      <Functionalities col="4" content={pageContent.functionalities}/>
     </>
   )
 }

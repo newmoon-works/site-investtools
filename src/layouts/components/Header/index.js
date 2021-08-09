@@ -1,4 +1,4 @@
-import React, {useEffect} from 'react';
+import React, { useEffect } from 'react';
 import styles from './Header.module.scss';
 import Link from 'next/link';
 import Image from 'next/image';
@@ -61,7 +61,7 @@ export default function Header() {
     navItems.forEach(item => {
       item.addEventListener('click', () => {
         const nav = document.getElementById('navigation');
-        let bsCollapse = new bootstrap.Collapse(nav, {toggle: false});
+        let bsCollapse = new bootstrap.Collapse(nav, { toggle: false });
         bsCollapse.hide();
       });
     });
@@ -102,13 +102,13 @@ export default function Header() {
         <div className="container">
           <Link href="/">
             <a className="navbar-brand">
-              <Image layout="intrinsic" src={logo} quality="1" alt="Investtools"/>
+              <Image layout="intrinsic" src={logo} quality="1" alt="Investtools" />
             </a>
           </Link>
           <button className={`navbar-toggler collapsed border-0 ${styles.toggler}`} data-bs-toggle="collapse"
-                  data-bs-target="#navigation">
+            data-bs-target="#navigation">
             <span className={styles.hamburgerBox}>
-              <span className={styles.hamburgerInner}/>
+              <span className={styles.hamburgerInner} />
             </span>
           </button>
           <div className={`${styles.navCollapse} navbar-collapse collapse`} id="navigation">
@@ -128,10 +128,13 @@ export default function Header() {
               </li>
               <li className="nav-item dropdown">
                 <span tabIndex="0" className="nav-link">Novos Negócios</span>
-                <DropDown/>
+                <DropDown />
               </li>
-              <li className="nav-item">
+              {/* <li className="nav-item">
                 <Link href="/blog"><a className="nav-link">Blog</a></Link>
+              </li> */}
+              <li className="nav-item">
+                <a rel="noopener noreferrer" target="_blank" href="https://blog.investtools.com.br" className="nav-link">Blog</a>
               </li>
               <li className="nav-item">
                 <Link href="/contato"><a className="nav-link">Contato</a></Link>

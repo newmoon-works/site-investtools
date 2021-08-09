@@ -235,12 +235,12 @@
           "text": "<p>Interface fácil e inovadora para relacionamento com administradoras;</p><p>Interface personalizada para as gestoras de recursos;</p><p>Conciliação diária das carteiras dos clientes.</p>"
         },
         {
-          "icon": "back-office-2.svg",
+          "icon": "middle-office.svg",
           "title": "Middle Office",
           "text": "<p>Relatórios completos para equipes comerciais das  gestoras de recursos;</p><p>Relatórios de rebate de distribuidor;</p><p>Foco em Compliance.</p>"
         },
         {
-          "icon": "back-office-3.svg",
+          "icon": "front-office.svg",
           "title": "Front Office",
           "text": "<p>Visualização e operação da carteira agrupadas de acordo com cada cliente;</p><p>Atribuições de performance para as gestoras de fundos de investimento;</p><p>Boletagem + compliance pre trade + alocação através de plugins complementares.</p>"
         }
@@ -265,18 +265,22 @@
     ],
     "functionalities": [
       {
+        "icon": "bank-slip.svg",
         "title": "BOLETAGEM DE MOVIMENTAÇÃO",
         "text": "Burocracia zero. O Diligence It realiza o enquadramento do cliente antes de processar a ordem do envio dos boletos. Chega de perder tempo preparando, manualmente, o encaminhamento dessas informações para a administradora."
       },
       {
+        "icon": "clients.svg",
         "title": "CONSULTAS À BASE DE CLIENTES",
         "text": "Praticidade. Precisando consultar a sua base de clientes? Com apenas um clique é possível descobrir quantos clientes, por exemplo, não assinaram ainda o termo de recusa de suitability. Faça sua busca com ordenação, filtros, agrupamentos, tabelas pivô, exportação para Excel e muito mais."
       },
       {
+        "icon": "docs.svg",
         "title": "GESTÃO DE DOCUMENTOS",
         "text": "Informação. Sempre que um documento estiver prestes a vencer ou um cotista não tiver assinado documento essencial para operar nos fundos, o sistema informará você no momento ideal. Além disso, seus arquivos estão seguros sob nossos cuidados. Não perca tempo e espaço com este armazenamento: nós cuidamos de tudo para você."
       },
       {
+        "icon": "compliance.svg",
         "title": "MOTOR DE REGRAS DO COMPLIANCE",
         "text": "Versatilidade. Elaborado para auxiliar as gestoras a se adaptar às instruções do CVM 558, o Diligence It dispõe às gestoras diversas regras de validação para o compliance, de maneira que possam selecioná-las de acordo com suas necessidades e preferências."
       }
@@ -301,18 +305,22 @@
     ],
     "functionalities": [
       {
+        "icon": "detection.svg",
         "title": "DETECÇÃO DE IRREGULARIDADES",
         "text": "Ao simular as estratégias de compra e venda, o Arcon It revela à gestora qualquer irregularidade de desenquadramento do fundo, e permite que o gestor ajuste sua estratégia para mantê-la dentro do compliance estipulado."
       },
       {
+        "icon": "integration.svg",
         "title": "INTEGRAÇÃO",
         "text": "Integração com as principais plataformas de de trading de mercado e ao carrying broker"
       },
       {
+        "icon": "audit.svg",
         "title": "AUDITÁVEL",
         "text": "Ao automatizar processos operacionais, o Arcon It facilita o processo de auditoria, porque registra detalhadamente as intenções de trade, operações e checagens."
       },
       {
+        "icon": "scalability.svg",
         "title": "ESCALÁVEL",
         "text": "O Arcon It é um produto que pode ser integrado ao  Perform It, software de gestão de fluxos de investimentos para gestoras, solução consolidada e reconhecida como carro-chefe da Investtools. Os sistemas rodam de forma independente, mas a integração pode ser personalizada de acordo com as necessidades da gestora."
       }

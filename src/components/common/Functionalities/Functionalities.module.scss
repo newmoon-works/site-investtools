@@ -3,6 +3,11 @@
 .funcSection {
   padding-bottom: 90px;
 
+  h3 {
+    margin-top: 125px;
+    margin-bottom: 75px;
+  }
+
   & :global(.title-box) {
     margin-bottom: 50px;
   }
@@ -40,20 +45,19 @@
 .icon {
   width: 55px;
   height: 55px;
-  margin-bottom: 12px;
+  margin-bottom: 25px;
 }
 
 .content {
   max-width: 90%;
 
-  h5 {
-    font-size: 16px;
-    letter-spacing: .28px;
+  h6 {
     color: $green;
     text-transform: uppercase;
     font-weight: bold;
-    line-height: 25px;
+    margin-bottom: 15px;
   }
+
   .textBox {
     p {
       font-size: 14px;

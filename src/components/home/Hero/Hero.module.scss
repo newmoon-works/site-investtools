@@ -147,8 +147,9 @@
   .monitorContent {
     position: absolute;
     z-index: 2;
-    left: 20px;
-    top: 25px;
+    left: 105px;
+    top: 54px;
+    transform: translateX(-52px);
 
     & > div {
       animation: fade-in-left 1s ease both;
@@ -224,8 +225,8 @@
   }
 
   & > div:nth-child(1) {
-    bottom: -47%;
-    right: -95%;
+    bottom: -48%;
+    right: -87%;
   }
 
   & > div:nth-child(2) {
