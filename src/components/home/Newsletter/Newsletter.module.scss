@@ -1,0 +1,42 @@
+@import "src/styles/scss/colors";
+
+.newsForm {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px 75px;
+  background-color: $white;
+  margin-bottom: -75px;
+  position: relative;
+  z-index: 1;
+
+  & > div:nth-child(1) {
+    h3, h5 {
+      margin-bottom: 0;
+    }
+
+    h5 {
+      color: $green;
+    }
+  }
+
+  & > div:nth-child(2) {
+    display: flex;
+    align-items: center;
+
+    input {
+      padding: 10px 25px;
+      width: 285px;
+      background-color: $snow;
+      color: $carbon;
+      border: 1px solid $steel;
+      margin-right: 7px;
+    }
+
+    button {
+      color: white;
+      padding: 10px 20px;
+      background-color: $darkGreen;
+      border: 0;
+    }
+  }
+}

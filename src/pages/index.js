@@ -6,6 +6,7 @@ import Clients from "../components/home/Clients";
 import Testimonials from "../components/home/Testimonials";
 import Contact from "../components/home/Contact";
 import About from "src/components/home/About";
+import Newsletter from "src/components/home/Newsletter";
 
 export default function Home(pageContent) {
 
@@ -21,6 +22,7 @@ export default function Home(pageContent) {
       <Clients content={pageContent.clients} />
       <Testimonials content={pageContent.testimonials} />
       <Contact content={pageContent.generalText[0]} />
+      <Newsletter />
     </>
   )
 }
