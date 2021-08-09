@@ -25,13 +25,11 @@
 }
 
 .footerLogo {
-  width: 50%;
-  height: 60px;
   display: flex;
   align-items: center;
 
   & + div {
-    margin-top: 20px;
+    margin-top: 30px;
     @media (max-width: 768px) {
       margin-top: 0;
       text-align: center;
@@ -49,12 +47,9 @@
 }
 
 .footer {
-  h3 {
+  h5 {
     color: white;
-    font-weight: bold;
-    text-transform: uppercase;
-    font-size: 18px;
-    margin-bottom: 20px;
+    margin-bottom: 25px;
   }
 
   ul {
@@ -71,31 +66,21 @@
       &:last-child {
         margin-top: 5px;
       }
-
-      a {
-        font-size: 14px;
-        text-decoration: none;
-        letter-spacing: .2px;
-        color: $white;
-        display: flex;
-        align-items: center;
-        transition: all .285s ease-in-out;
-
-        img {
-          width: 23px;
-          height: 23px;
-          margin-right: 10px;
-        }
-
-        p {
-          margin: 0;
-        }
-      }
     }
   }
 }
 
 .footerBox {
+  color: $white;
+  a {
+    text-decoration: none;
+    color: $white;
+  }
+
+  & > div {
+
+  }
+
   @media (max-width: 992px) {
     & > div {
       padding: 10% 10% 10% 10% !important;
@@ -106,21 +91,33 @@
     }
   }
 
-  &:nth-child(1) > div {
-    padding-right: 30px;
-  }
-
   &:nth-child(2) > div {
-    padding-top: 15px;
-    padding-left: 45px;
-    padding-right: 30px;
+    
   }
 
   &:nth-child(3) > div {
-    padding-top: 15px;
-    padding-left: 30px;
-    padding-right: 20px;
+    a {
+      font-weight: bold;
+      span {
+        color: $green;
+      }
+    }
+    margin-left: -15px;
   }
+
+  &:nth-child(4) > div {
+    
+  }
+}
+
+.footerBottom {
+  width: 100%;
+  padding: 16px 0;
+  background-color: #224751;
+  text-align: center;
+  color: $white;
+  font-size: 10px;
+  line-height: 18px;
 }
 
 .decor {

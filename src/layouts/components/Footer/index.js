@@ -1,15 +1,14 @@
-import React, {useEffect} from 'react';
-import logo from "../../../../public/images/logo-branca.png";
-import faaz from "../../../../public/images/logo-faaz.svg";
+import React, { useEffect } from 'react';
+import logo from "public/images/new/logo-negative.svg";
 import Image from "next/image";
 import Link from 'next/link';
 import styles from './Footer.module.scss'
 import { useRouter } from "next/router";
 
-export default function Index() {
+export default function Footer() {
 
   // ocultar informações de contato na home
-  const router = useRouter();
+  /* const router = useRouter();
   let home = router.route === '/' || router.route === '/#';
   useEffect(() => {
     const footerInfo = document.getElementById('footer-info');
@@ -18,16 +17,15 @@ export default function Index() {
     } else {
       footerInfo.style.display = 'block';
     }
-  })
+  }) */
 
   return (
-    <footer className={styles.footer}>
-
-      <div className={`decoration ${styles.decor}`}><img src="/images/triangulos-depo-esqu@2x.png" alt="Detalhe"/></div>
-
-      <div className="container">
+    <>
+      <footer className={styles.footer}>
+      <div className="container caption">
         <div className="row justify-content-between">
-          <div className={`col-12 col-lg-4 ${styles.footerBox}`}>
+          <div className="col-1" />
+          <div className={`col-12 col-lg-3 ${styles.footerBox}`}>
             <div>
               <div className={styles.footerLogo}>
                 <Link href="/">
@@ -37,34 +35,28 @@ export default function Index() {
                 </Link>
               </div>
               <div>
-                <p>A Investtools está sempre em busca de soluções importantes e inéditas para o mercado financeiro.</p>
+                <p className="caption">
+                  A Investtools está sempre em busca de soluções <br /> importantes e inéditas para o mercado financeiro.
+                </p>
               </div>
             </div>
           </div>
 
-          <div className={`col-12 col-lg-4 ${styles.footerBox}`}>
+          <div className={`col-12 col-lg-4 d-flex justify-content-center ${styles.footerBox}`}>
             <div id="footer-info">
-              <h3>Contatos</h3>
-              <ul>
-                <li>
-                  <a href="tel:+552131785866" rel="noopener noreferrer" target="_blank">
-                    <img src="/images/phone@2x.png" alt="Investtools - Telefone" />
-                    <p>+55 21 3178 . 5866</p>
-                  </a>
-                </li>
-                <li>
-                  <a href="https://goo.gl/maps/2NYBacpko2UKigfs8" rel="noopener noreferrer" target="_blank">
-                    <img src="/images/pin@2x.png" alt="Investtools - Endereço" />
-                    <p>Rua Marquês de São Vicente, 225 <br/> Gávea - Rio de Janeiro - RJ</p>
-                  </a>
-                </li>
-              </ul>
+              <h5>Contatos</h5>
+              <p className="caption">
+                Quer conhecer nossos produtos? <br /> Nós teremos o prazer de te responder.
+              </p>
+              <Link href="/contato">
+                <a>Entre em Contato Conosco &nbsp; <span>&rarr;</span></a>
+              </Link>
             </div>
           </div>
 
-          <div className={`col-12 col-lg-4 ${styles.footerBox}`}>
+          <div className={`col-12 col-lg-3 ${styles.footerBox}`}>
             <div>
-              <h3>Posts recentes</h3>
+              <h5>Posts recentes</h5>
               <ul>
                 <li>
                   <a href="https://blog.investtools.com.br/2021/06/23/tecnologia-humana-uma-aliada-na-melhoria-de-processos/">
@@ -79,8 +71,11 @@ export default function Index() {
               </ul>
             </div>
           </div>
+          <div className="col-1" />
         </div>
       </div>
     </footer>
+    <div className={styles.footerBottom}>Copyright © 2021 – Investtools Tecnologia em Informática LTDA</div>
+    </>
   )
 }
