@@ -48,6 +48,11 @@
     padding-bottom: 28px;
     text-align: center;
     height: auto;
+    justify-content: flex-start;
+
+    & > div {
+      margin-left: 30px;
+    }
 
     h3 {
       margin-bottom: 28px;
@@ -56,8 +61,8 @@
     p {
       margin-left: 0;
       max-width: none;
-      padding-left: 48px;
-      padding-right: 48px;
+      padding-left: 30px;
+      padding-right: 30px;
     }
   }
 }

@@ -16,6 +16,11 @@
     padding-top: 85px;
     padding-bottom: 45px;
 
+    :global(.container) {
+      padding-left: 30px;
+      padding-right: 30px;
+    }
+
     .cardFunc {
       display: flex;
     }
@@ -59,6 +64,9 @@
   }
 
   .textBox {
+    font-size: 14px;
+    line-height: 24px;
+
     p {
       font-size: 14px;
       line-height: 24px;

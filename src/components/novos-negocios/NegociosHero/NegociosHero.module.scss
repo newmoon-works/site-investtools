@@ -8,8 +8,9 @@
   background-size: 70% 120%;
 
   @media (max-width: 992px) {
+    padding-top: 50px;
     background-size: 123% 50%;
-    background-position: top 0 right 0;
+    background-position: top -75px right 0;
     
   }
   @media (max-width: 576px) {
@@ -45,7 +46,7 @@
   @media (max-width: 992px) {
     margin-left: auto;
     margin-right: auto;
-    width: 60%;
+    width: 85%;
     margin-bottom: 50px;
 
     & > img:last-child {

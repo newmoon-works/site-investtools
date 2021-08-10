@@ -3,6 +3,12 @@
 .negociosHistory {
   position: relative;
   margin-top: 200px;
+  @media (max-width: 992px) {
+    :global(.col-12.col-lg-6) {
+      padding-left: 12px;
+      padding-right: 12px;
+    }
+  }
 }
 
 .historyText {
@@ -28,7 +34,9 @@
   }
 
   @media (max-width: 992px) {
-    margin-top: 150px;
+    margin-top: 50px;
+    padding-left: 30px;
+    padding-right: 30px;
   }
 }
 
