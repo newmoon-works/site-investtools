@@ -16,7 +16,7 @@ export default function Home(pageContent) {
       </Head>
 
       <Hero content={pageContent.hero} />
-      <Products content={pageContent.products} />
+      {/* <Products content={pageContent.products} /> */}
       <About content={pageContent.about} />
       <Clients content={pageContent.clients} />
       <Testimonials content={pageContent.testimonials} />
