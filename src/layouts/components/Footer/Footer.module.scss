@@ -37,7 +37,6 @@
   & + div {
     margin-top: 30px;
     @media (max-width: 768px) {
-      margin-top: 0;
       text-align: center;
       font-size: 14px;
     }
@@ -83,10 +82,6 @@
     color: $white;
   }
 
-  & > div {
-
-  }
-
   @media (max-width: 992px) {
     & > div {
       padding: 10% 10% 10% 10% !important;
@@ -98,21 +93,30 @@
   }
 
   &:nth-child(2) > div {
-    
+    .socials {
+      display: flex;
+      align-items: center;
+      margin-top: 15px;
+
+      a, path {
+        transition: all 150ms ease;
+        &:hover path {
+          fill: $white;
+        }
+      }
+
+      a:nth-child(2) {
+        margin-left: 5px;
+        margin-right: 10px;
+      }
+      @media (max-width: 992px) {
+        justify-content: center;
+      }
+    }
   }
 
   &:nth-child(3) > div {
-    a {
-      font-weight: bold;
-      span {
-        color: $green;
-      }
-    }
     margin-left: -15px;
-  }
-
-  &:nth-child(4) > div {
-    
   }
 }
 

@@ -1,0 +1,10 @@
+@import "../../../styles/scss/colors";
+
+.contactLink {
+  a {
+    font-weight: bold;
+  }
+  span {
+    color: $green;
+  }
+}
