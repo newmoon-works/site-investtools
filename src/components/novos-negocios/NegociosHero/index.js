@@ -28,7 +28,7 @@ export default function NegociosHero() {
               <img src="/images/new/pattern-square-vertical.svg" />
             </div>
           </div>
-          <div className="col-1" />
+          <div className="col-1 order-3" />
         </div>
       </div>
     </section>
