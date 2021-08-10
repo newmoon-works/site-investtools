@@ -256,8 +256,8 @@
 
   & > div:nth-child(2) {
     max-width: none !important;
-    top: -27%;
-    left: -22%;
+    top: -20%;
+    left: -25%;
     width: 143%;
     z-index: 1;
     animation: bob 1s ease-out infinite both alternate;
@@ -266,8 +266,9 @@
     }
   
     @media (max-width: 768px) {
-      top: -42%;
-      left: -17%;
+      width: 125%;
+      top: -35%;
+      left: -11%;
     }
   
     @media (max-width: 576px) {
