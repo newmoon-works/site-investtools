@@ -2,6 +2,7 @@
 
 .negociosSection {
   margin-top: 200px;
+  position: relative;
 
   h3 {
     margin-bottom: 70px;
@@ -14,8 +15,16 @@
   align-items: center;
 }
 
-.negocioBox {
-  width: 90%;
-  margin-right: auto;
-  margin-left: auto;
+@media (min-width: 992px) {
+  :global(.row) > div:nth-child(2) .negocioBox {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.decor {
+  right: 0;
+  top: -120px;
+  transform: rotateX(180deg) rotateY(180deg)
 }

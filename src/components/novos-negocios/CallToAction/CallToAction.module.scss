@@ -11,6 +11,15 @@
   background-repeat: no-repeat;
   background-size: cover;
 
+  a {
+    text-decoration: none;
+    padding-right: 25px;
+    padding-left: 25px;
+    &:hover {
+      color: $white;
+    }
+  }
+
   h4 {
     color: $green;
   }
@@ -62,4 +71,16 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
+}
+
+.decorBottom {
+  bottom: 0;
+  left: 0;
+  z-index: 2;
+}
+
+.decorTop {
+  top: 0;
+  right: 0;
+  z-index: 2;
 }

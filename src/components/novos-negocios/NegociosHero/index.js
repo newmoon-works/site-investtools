@@ -10,7 +10,7 @@ export default function NegociosHero() {
     <section className={styles.heroSection}>
       <div className="container">
         <div className="row">
-          <div className="col-12 col-lg-5">
+          <div className="col-12 col-lg-5 order-2 order-lg-1">
             <div className={styles.textSection}>
               <TitleBox>Novos Negócios</TitleBox>
               <h1>Apostamos na Inovação Tecnológica Constante</h1>
@@ -21,7 +21,7 @@ export default function NegociosHero() {
               </div>
             </div>
           </div>
-          <div className="col-12 offset-lg-1 col-lg-5 d-flex align-items-center">
+          <div className="col-12 offset-lg-1 col-lg-5 d-flex align-items-center order-lg-1">
             <div className={styles.heroImage}>
               <Image src={img} alt="Investtools" />
               <img src="/images/new/triangles-negocios.svg" />

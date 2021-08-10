@@ -7,7 +7,7 @@ export default function Iniciativas() {
     <section className={styles.section}>
       <div className="container">
         <div className="row">
-          <div className="col-10 mx-auto">
+          <div className="col-12 col-10 mx-auto">
             <div className={styles.intro}>
               <TitleBox>Iniciativas</TitleBox>
               <p className="body-small text-white">A partir dos sucessos nas experiências anteriores, optamos por institucionalizar nossa força geradora de novas soluções para o universo das finanças. É aí que surge, dentro da Investtools, um braço exclusivamente dedicado aos Novos Negócios, voltado à construção, desenvolvimento e apoio de novas iniciativas.</p>

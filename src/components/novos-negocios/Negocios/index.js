@@ -1,10 +1,14 @@
 import React from 'react';
+import Decoration from 'src/components/common/Decoration';
 import TitleBox from 'src/components/common/TitleBox';
 import styles from './Negocios.module.scss';
 
 export default function Negocios() {
   return (
     <section className={styles.negociosSection}>
+
+      <Decoration size="lg" style="normal" className={styles.decor} />
+
       <div className="container">
         <TitleBox>Negócios</TitleBox>
         <div className="row gy-5">

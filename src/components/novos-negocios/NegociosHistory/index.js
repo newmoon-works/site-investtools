@@ -1,9 +1,13 @@
 import React from 'react';
+import Decoration from 'src/components/common/Decoration';
 import styles from './NegociosHistory.module.scss';
 
 export default function NegociosHistory() {
   return (
     <section className={styles.negociosHistory}>
+
+      <Decoration size="xs" style="normal" className={styles.decor} />
+
       <div className="container">
         <div className="row gy-5">
           <div className="col-12 col-lg-6">

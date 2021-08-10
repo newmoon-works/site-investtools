@@ -9,6 +9,8 @@
 
   @media (max-width: 992px) {
     background-size: 123% 50%;
+    background-position: top 0 right 0;
+    
   }
   @media (max-width: 576px) {
     background-size: 150% 50%;
@@ -43,7 +45,17 @@
   @media (max-width: 992px) {
     margin-left: auto;
     margin-right: auto;
-    width: 50%;
-    margin-top: 120px;
+    width: 60%;
+    margin-bottom: 50px;
+
+    & > img:last-child {
+      width: 44px;
+    }
+  }
+
+  @media (max-width: 576px) {
+    & > img:last-child {
+      width: 30px;
+    }
   }
 }
