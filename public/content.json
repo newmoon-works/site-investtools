@@ -2,21 +2,21 @@
   "hero": [
     {
       "logo": "perform-it-logo.svg",
-      "text": "Ganhe Tempo para Pensar na Estratégia",
+      "text": "Ganhe Tempo para\nPensar na Estratégia",
       "image": "perform-it-screen.png",
       "alt": "Perform It",
       "id": "perform-it"
     },
     {
       "logo": "diligence-it-logo.svg",
-      "text": "Faça da sua Gestora uma Distribuidora de Sucesso",
+      "text": "Faça da sua Gestora uma\nDistribuidora de Sucesso",
       "image": "diligence-it-screen.png",
       "alt": "Diligence It",
       "id": "diligence-it"
     },
     {
       "logo": "arcon-it-logo.svg",
-      "text": "Simplifique os Processos Operacionais de sua Gestora",
+      "text": "Simplifique os Processos\nOperacionais de sua Gestora",
       "image": "arcon-it-screen.png",
       "alt": "Arcon It",
       "id": "arcon-it"

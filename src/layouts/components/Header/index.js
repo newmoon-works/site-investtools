@@ -134,7 +134,7 @@ export default function Header() {
                 <Link href="/blog"><a className="nav-link">Blog</a></Link>
               </li> */}
               <li className="nav-item">
-                <a rel="noopener noreferrer" target="_blank" href="https://blog.investtools.com.br" className="nav-link">Blog</a>
+                <a href="https://blog.investtools.com.br" className="nav-link">Blog</a>
               </li>
               <li className="nav-item">
                 <Link href="/contato"><a className="nav-link">Contato</a></Link>

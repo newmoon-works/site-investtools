@@ -45,7 +45,7 @@ export default function Hero({ content }) {
     <section className={styles.heroSection}>
       <div className="container">
         <div className="row">
-          <div className="col-12 col-md-4 position-relative order-2 order-md-1">
+          <div className="col-12 col-md-5 position-relative order-2 order-md-1">
             <div className="h-100 d-flex flex-column justify-content-center">
               <div className={styles.heroSlider} id="heroSlider">
                 {
@@ -53,9 +53,9 @@ export default function Hero({ content }) {
                     return (
                       <div key={item.alt} id={item.id} className={styles.content}>
                         <Image src={require(`public/images/new/${item.logo}`).default} alt={item.alt} />
-                        <h1>
+                        <h2>
                           {item.text}
-                        </h1>
+                        </h2>
                       </div>
                     )
                   })
@@ -75,7 +75,7 @@ export default function Hero({ content }) {
               </div>
             </div>
           </div>
-          <div className="col-12 col-md-6 offset-md-2 px-sm-0 order-md-1 position-relative">
+          <div className="col-12 col-md-6 offset-md-1 px-sm-0 order-md-1 position-relative">
             <div className={styles.heroSliderImage}>
               <div className={styles.monitorContent} id="monitor">
                 {

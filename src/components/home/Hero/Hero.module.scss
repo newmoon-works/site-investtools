@@ -79,10 +79,12 @@
     height: 35px !important;
   }
 
-  h1 {
-    white-space: break-spaces;
+  h2 {
     margin-top: 40px;
     margin-bottom: 30px;
+    @media (min-width: 768px) {
+      white-space: break-spaces;
+    }
   }
 }
 
@@ -262,7 +264,8 @@
     z-index: 1;
     animation: bob 1s ease-out infinite both alternate;
 
-    @media (max-width: 992px) {
+    @media (max-width: 1200px) {
+      top: -35%;
     }
   
     @media (max-width: 768px) {
