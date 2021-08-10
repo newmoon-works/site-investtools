@@ -1,6 +1,5 @@
 import React from 'react';
 import styles from './FooterContactInfo.module.scss';
-import TitleBox from '../TitleBox';
 
 export default function FooterContactInfo() {
   return (

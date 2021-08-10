@@ -47,7 +47,7 @@ export default function Footer() {
               <div id="footer-info">
                 <h5>Contatos</h5>
                 {
-                  home ? <FooterContactInfo /> : <FooterContactLink />
+                  home ? <FooterContactLink /> : <FooterContactInfo />
                 }
               </div>
             </div>
