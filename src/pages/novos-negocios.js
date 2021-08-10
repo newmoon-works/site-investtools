@@ -4,6 +4,7 @@ import Head from "next/head";
 import NegociosHero from 'src/components/novos-negocios/NegociosHero';
 import NegociosHistory from 'src/components/novos-negocios/NegociosHistory';
 import Negocios from 'src/components/novos-negocios/Negocios';
+import Iniciativas from 'src/components/novos-negocios/Iniciativas';
 
 export default function NovosNegocios() {
   return (
@@ -15,6 +16,7 @@ export default function NovosNegocios() {
       <NegociosHero />
       <NegociosHistory />
       <Negocios />
+      <Iniciativas />
     </>
   )
 }
