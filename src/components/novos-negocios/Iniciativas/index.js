@@ -15,12 +15,12 @@ export default function Iniciativas() {
           </div>
         </div>
         <div className="row">
-          <div className="col-12 col-lg-4">
+          <div className="col-12 col-xl-4">
             <div className={styles.logoBox}>
               <img src="/images/new/plific.svg" alt="" />
             </div>
           </div>
-          <div className="col-12 col-lg-8 d-flex align-items-center">
+          <div className="col-12 col-xl-8 d-flex align-items-center">
             <p className="body-small m-0">Ao usar ferramentas de open finance para elaborar um aplicativo voltado em facilitar as finanças de motoristas e entregadores de aplicativo, os jovens fundadores da Plific são um exemplo de como boas ideias podem, além de criar soluções inéditas, ter forte impacto social. A Investtools, nesse caso, surge precisamente para investir no caminho que separa a ideia da realidade - o fornecimento de know-how em tecnologia -, tão necessário para a consolidação de empreendimentos ambiciosos.</p>
           </div>
         </div>

@@ -7,7 +7,7 @@ export default function Negocios() {
     <section className={styles.negociosSection}>
       <div className="container">
         <TitleBox>Negócios</TitleBox>
-        <div className="row">
+        <div className="row gy-5">
           <div className="col-12 col-lg-4">
             <div className={styles.negocioBox}>
               <div className={styles.logoBox}>

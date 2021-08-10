@@ -21,8 +21,7 @@ export default function NegociosHero() {
               </div>
             </div>
           </div>
-          <div className="col-1" />
-          <div className="col-12 col-lg-5">
+          <div className="col-12 offset-lg-1 col-lg-5 d-flex align-items-center">
             <div className={styles.heroImage}>
               <Image src={img} alt="Investtools" />
               <img src="/images/new/triangles-negocios.svg" />

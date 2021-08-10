@@ -27,6 +27,13 @@
     margin-top: 32px;
     margin-bottom: 40px;
   }
+
+  @media (max-width: 768px) {
+    p {
+      margin-right: 70px;
+      margin-left: 70px;
+    }
+  }
 }
 
 .overlay {
