@@ -6,14 +6,13 @@ import Newsletter from 'src/components/home/Newsletter';
 export default function Layout(props) {
   return (
     <>
-      <Header/>
+      <Header />
       <main>
         {
           props.children
         }
       </main>
-      <Newsletter/>
-      <Footer/>
+      <Footer />
     </>
   )
 }

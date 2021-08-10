@@ -1,11 +1,14 @@
 @import "src/styles/scss/colors";
 
+.newsSection {
+  margin-top: -75px;
+}
+
 .newsForm {
   display: flex;
   justify-content: space-between;
   padding: 40px 75px;
   background-color: $white;
-  margin-bottom: -70px;
   position: relative;
   z-index: 1;
 
@@ -30,13 +33,6 @@
       color: $carbon;
       border: 1px solid $steel;
       margin-right: 7px;
-    }
-
-    button {
-      color: white;
-      padding: 10px 20px;
-      background-color: $darkGreen;
-      border: 0;
     }
   }
 }

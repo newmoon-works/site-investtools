@@ -6,9 +6,7 @@ export default function Newsletter() {
     <section className={styles.newsSection}>
       <div className="container">
         <div className="row">
-          <div className="col-md-1" />
-
-          <div className="col-12 col-md-10">
+          <div className="col-12 col-md-10 mx-auto">
             <div className={styles.newsForm}>
               <div>
                 <h5>Receba Atualizações e Fique Conectado</h5>
@@ -16,12 +14,10 @@ export default function Newsletter() {
               </div>
               <div>
                 <input className="caption" placeholder="Insira seu melhor e-mail" type="email" required />
-                <button className="caption">Insecrever-se</button>
+                <button className="ivt-btn">Insecrever-se</button>
               </div>
             </div>
           </div>
-
-          <div className="col-md-1" />
         </div>
       </div>
     </section>

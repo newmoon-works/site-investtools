@@ -5,6 +5,7 @@ import Link from 'next/link';
 import styles from './Footer.module.scss'
 import { useRouter } from "next/router";
 import Decoration from 'src/components/common/Decoration';
+import Newsletter from 'src/components/home/Newsletter';
 
 export default function Footer() {
 
@@ -23,8 +24,8 @@ export default function Footer() {
   return (
     <>
       <footer className={styles.footer}>
-        <Decoration size="lg" style="normal" className={styles.decorTop}/>
-        <Decoration size="sm" style="white" className={styles.decorBottom}/>
+        <Newsletter />
+        <Decoration size="sm" style="white" className={styles.decorBottom} />
         <div className="container caption">
           <div className="row justify-content-between">
             <div className="col-1" />
@@ -78,6 +79,7 @@ export default function Footer() {
           </div>
         </div>
       </footer>
+
       <div className={styles.footerBottom}>Copyright © 2021 – Investtools Tecnologia em Informática LTDA</div>
     </>
   )
