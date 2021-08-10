@@ -12,7 +12,7 @@ export default function Contact({ content }) {
   return (
     <section className={styles.contactSection}>
       <div className="container">
-        <div className="row">
+        <div className="row gy-5">
           <div className="col-12 col-lg-6">
             <TitleBox>Contatos</TitleBox>
             <div className={styles.infosBox}>

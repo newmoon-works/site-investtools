@@ -8,7 +8,7 @@ export default function Products({ content }) {
     <section className={styles.productsSection}>
       <div className="container">
         <TitleBox>Produtos</TitleBox>
-        <div className="row">
+        <div className="row gy-5">
           {
             content.map(card => {
               return (

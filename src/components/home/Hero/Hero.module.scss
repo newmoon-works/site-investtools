@@ -36,7 +36,7 @@
   background-image: url("../../../../public/images/new/grad.png");
   background-repeat: no-repeat;
   background-position: bottom right;
-  background-size: 60% 100%;
+  background-size: 55% 115%;
   /* height: 765px; */
 
   @media (max-width: 992px) {
@@ -55,6 +55,10 @@
     .heroSliderImage {
       max-width: 270px;
       margin: 0 auto;
+    }
+
+    .heroSlider {
+      margin-top: 75px;
     }
 
     &::before {
@@ -147,9 +151,31 @@
   .monitorContent {
     position: absolute;
     z-index: 2;
-    left: 105px;
-    top: 54px;
+    left: 112px;
+    top: 63px;
     transform: translateX(-52px);
+
+    @media (max-width: 1400px) {
+      left: 105px;
+      top: 55px;
+    }
+
+    @media (max-width: 1200px) {
+      left: 98px;
+      top: 51px;
+    }
+
+    @media (max-width: 992px) {
+      left: 75px;
+      top: 40px;
+      transform: translateX(-39px);
+    }
+  
+    @media (max-width: 768px) {
+      left: 52px;
+      top: 27px;
+      transform: translateX(-27px);
+    }
 
     & > div {
       animation: fade-in-left 1s ease both;
@@ -157,27 +183,6 @@
 
     & > div:not(:global(.active)) {
       display: none;
-    }
-  }
-
-  @media (max-width: 992px) {
-    .monitorContent {
-      top: -19px;
-      height: 75%;
-    }
-  }
-
-  @media (max-width: 768px) {
-    .monitorContent {
-      top: -73px;
-      height: 80%;
-    }
-  }
-
-  @media (max-width: 576px) {
-    .monitorContent {
-      top: -16px;
-      height: 80%;
     }
   }
 }
@@ -225,8 +230,28 @@
   }
 
   & > div:nth-child(1) {
-    bottom: -48%;
-    right: -87%;
+    bottom: -50%;
+    right: -83%;
+
+    @media (max-width: 1200px) {
+      bottom: -42%;
+      right: -87%;
+    }
+
+    @media (max-width: 992px) {
+      width: 44px;
+      bottom: -41%;
+      right: -82%;
+    }
+  
+    @media (max-width: 768px) {
+      width: 35px;
+      bottom: -51%;
+      right: -81%;
+    }
+  
+    @media (max-width: 576px) {
+    }
   }
 
   & > div:nth-child(2) {
@@ -236,5 +261,16 @@
     width: 143%;
     z-index: 1;
     animation: bob 1s ease-out infinite both alternate;
+
+    @media (max-width: 992px) {
+    }
+  
+    @media (max-width: 768px) {
+      top: -42%;
+      left: -17%;
+    }
+  
+    @media (max-width: 576px) {
+    }
   }
 }

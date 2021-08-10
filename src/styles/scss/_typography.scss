@@ -113,6 +113,33 @@ p, .body {
   text-transform: uppercase;
 }
 
+@media (max-width: 992px) {
+  .body-large {
+    font-size: 16px;
+    line-height: 26px;
+  }
+  
+  p, .body {
+    font-size: 15px;
+    line-height: 24px;
+  }
+  
+  .body-small {
+    font-size: 14px;
+    line-height: 22px;
+  }
+  
+  .caption, .caption-upper {
+    font-size: 12px;
+    line-height: 16px;
+  }
+  
+  .caption-upper {
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  }
+}
+
 // Links
 a:hover {
   color: $green;

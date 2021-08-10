@@ -10,17 +10,12 @@ export default function About({ content }) {
   return (
     <section className={styles.aboutSection}>
       <div className="container">
-        <div className="row position-relative">
+        <div className="row gy-5 position-relative">
           <div className="col-1 position-absolute" />
-          <div className="col-12 col-md-6">
-            <div className={styles.aboutImages}>
-              <Image src={bigImg} alt="Investtools" />
-              <Image src={smallImg} alt="Investtools" />
-              <Image src={pattern} alt="Pattern" />
-            </div>
+          <div className="col-12 col-lg-6">
+            <img src="/images/new/home-mosaic.png" className="w-100" alt="" />
           </div>
-          <div className="col-md-1" />
-          <div className="col-12 col-md-5">
+          <div className="col-12 col-lg-5 offset-lg-1">
             <div className={styles.aboutText}>
               <h2>{content.title}</h2>
               {

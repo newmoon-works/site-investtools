@@ -6,6 +6,7 @@
 
 .newsForm {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   padding: 40px 75px;
   background-color: $white;
@@ -24,6 +25,7 @@
 
   & > div:nth-child(2) {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
 
     input {

@@ -1,8 +1,12 @@
 @import "../../../styles/scss/colors";
 
 .contactSection {
-  margin-top: 115px;
+  padding-top: 115px;
   background: $snow;
+
+  @media (max-width: 992px) {
+    margin-bottom: 150px;
+  }
 
   .infosBox {
     color: $granite;
@@ -36,6 +40,7 @@
       max-width: 100%;
       ul {
         display: flex;
+        flex-direction: column;
         li {
           margin-right: 45px;
         }
@@ -68,6 +73,7 @@
   @media (max-width: 992px) {
     max-width: 560px;
     margin: 0 auto;
+    top: initial;
   }
 
   @media (max-width: 768px) {
