@@ -15,9 +15,9 @@ export default function NegociosHero() {
               <TitleBox>Novos Negócios</TitleBox>
               <h1>Apostamos na Inovação Tecnológica Constante</h1>
               <div className={styles.heroText}>
-                <p>A Investtools aposta na inovação tecnológica constante como meio para gerar novas soluções capazes de construir um ecossistema financeiro mais prático, democrático e eficiente.</p>
-                <p>Há quase quinze anos nesse meio, trazemos em nosso DNA o interesse em ideias e iniciativas disruptivas, capazes de se destacar por seu potencial de impacto e de crescimento.</p>
-                <strong>Conheça a nossa história para entender o que a Investtools tem a oferecer a empreendedores de todo o Brasil.</strong>
+                <p className="body-small">A Investtools aposta na inovação tecnológica constante como meio para gerar novas soluções capazes de construir um ecossistema financeiro mais prático, democrático e eficiente.</p>
+                <p className="body-small">Há quase quinze anos nesse meio, trazemos em nosso DNA o interesse em ideias e iniciativas disruptivas, capazes de se destacar por seu potencial de impacto e de crescimento.</p>
+                <strong className="body-small">Conheça a nossa história para entender o que a Investtools tem a oferecer a empreendedores de todo o Brasil.</strong>
               </div>
             </div>
           </div>

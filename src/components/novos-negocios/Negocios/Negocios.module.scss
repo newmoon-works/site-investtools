@@ -1,0 +1,24 @@
+@import "../../../styles/scss/colors";
+
+.negociosSection {
+  margin-top: 200px;
+
+  h3 {
+    margin-bottom: 70px;
+  }
+}
+
+.logoBox {
+  height: 150px;
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid $steel
+}
+
+.negocioBox {
+  width: 90%;
+  margin-right: auto;
+  margin-left: auto;
+}
