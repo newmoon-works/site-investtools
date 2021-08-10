@@ -1,0 +1,58 @@
+@import "../../../styles/scss/colors";
+
+.section {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 600px;
+  background-image: url("../../../../public//images/new/bg-call-to-action.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  h4 {
+    color: $green;
+  }
+
+  h3 {
+    color: $white;
+  }
+
+  p {
+    color: $white;
+    text-align: center;
+    max-width: 680px;
+    margin: 0;
+    margin-top: 32px;
+    margin-bottom: 40px;
+  }
+}
+
+.overlay {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  background: $darkGreen;
+  mix-blend-mode: normal;
+  opacity: 0.5;
+}
+
+.gradient {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  background: linear-gradient(180deg, $darkGreen 0%, rgba(41, 89, 101, 0) 100%);
+  mix-blend-mode: normal;
+  opacity: 0.8;
+}
+
+.content {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}

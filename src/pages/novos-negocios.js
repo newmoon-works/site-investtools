@@ -5,6 +5,7 @@ import NegociosHero from 'src/components/novos-negocios/NegociosHero';
 import NegociosHistory from 'src/components/novos-negocios/NegociosHistory';
 import Negocios from 'src/components/novos-negocios/Negocios';
 import Iniciativas from 'src/components/novos-negocios/Iniciativas';
+import CallToAction from 'src/components/novos-negocios/CallToAction';
 
 export default function NovosNegocios() {
   return (
@@ -17,6 +18,7 @@ export default function NovosNegocios() {
       <NegociosHistory />
       <Negocios />
       <Iniciativas />
+      <CallToAction />
     </>
   )
 }

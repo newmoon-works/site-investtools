@@ -53,3 +53,27 @@ body {
     }
   }
 }
+
+// Button
+.ivt-btn, .ivt-btn-alt {
+  padding: 10px 20px;
+  font-size: 12px;
+  line-height: 18px;
+  text-align: center;
+  color: $white;
+  transition: 150ms ease;
+  border: 0;
+}
+
+.ivt-btn {
+  background-color: $darkGreen;
+  &:hover {
+    background-color: $green;
+  }
+}
+.ivt-btn-alt {
+  background-color: $green;
+  &:hover {
+    background-color: $darkGreen;
+  }
+}
