@@ -1,0 +1,28 @@
+@import "../../../styles//scss//colors";
+
+.negociosHistory {
+  margin-top: 200px;
+}
+
+.historyText {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  p {
+    position: relative;
+
+    &::before {
+      content: '';
+      display: block;
+      position: absolute;
+      width: 0;
+      height: 0;
+      top: -45px;
+      left: 0;
+      border-style: solid;
+      border-width: 20px 20px 0 0;
+      border-color: $green transparent transparent transparent;
+    }
+  }
+}
