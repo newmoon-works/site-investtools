@@ -81,3 +81,10 @@ body {
     background-color: $darkGreen;
   }
 }
+
+@media (max-width: 576px) {
+  div.col-12 {
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+}

@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import styles from './Contact.module.scss'
 import initForm from "public/js/rd-form";
 import TitleBox from 'src/components/common/TitleBox';
+import Decoration from 'src/components/common/Decoration';
 
 export default function Contact({ content }) {
 
@@ -11,6 +12,9 @@ export default function Contact({ content }) {
 
   return (
     <section className={styles.contactSection}>
+
+      <Decoration size="lg" style="normal" className={styles.decorBottom} />
+
       <div className="container">
         <div className="row gy-5">
           <div className="col-12 col-lg-6">
