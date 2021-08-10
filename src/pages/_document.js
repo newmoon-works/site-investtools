@@ -16,7 +16,7 @@ class MyDocument extends Document {
     return (
       <Html>
         <Head>
-          {/*<PageScripts />*/}
+          <PageScripts />
           {/*Metadata*/}
           <meta charSet="utf-8" />
           <meta name="apple-mobile-web-app-capable" content="yes" />
