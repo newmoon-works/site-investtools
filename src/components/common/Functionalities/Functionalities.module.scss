@@ -59,7 +59,9 @@
   }
 
   .textBox {
-    font-size: 14px;
-    line-height: 24px;
+    p {
+      font-size: 14px;
+      line-height: 24px;
+    }
   }
 }
