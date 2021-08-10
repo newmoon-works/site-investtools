@@ -57,12 +57,16 @@ body {
 // Button
 .ivt-btn, .ivt-btn-alt {
   padding: 10px 20px;
-  font-size: 12px;
+  font-size: 14px;
   line-height: 18px;
   text-align: center;
   color: $white;
   transition: 150ms ease;
   border: 0;
+  border-radius: 2px;
+  font-weight: bold;
+  display: inline-flex;
+  align-items: center;
 }
 
 .ivt-btn {

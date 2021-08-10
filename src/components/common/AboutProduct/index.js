@@ -4,7 +4,7 @@ import Image from "next/image";
 import TitleBox from '../TitleBox';
 import Decoration from '../Decoration';
 
-export default function AboutProduct({ content: {about, features, title, logo, monitor} }) {
+export default function AboutProduct({ content: {about, features, title, href, logo, monitor} }) {
   return (
     <section className={styles.productSection}>
       <Decoration size="lg" style="normal" className={styles.decorTop} />
@@ -27,6 +27,10 @@ export default function AboutProduct({ content: {about, features, title, logo, m
                   <Decoration size="xs" style="normal" className={styles.decorSmall} />
                   <TitleBox>{ title }</TitleBox>
                   <div className={styles.textBox} dangerouslySetInnerHTML={{__html: about}}/>
+                  <a href={href} className="ivt-btn-alt" target="_blank" rel="noopener noreferer">
+                    <img src="/images/new/calendar.svg" alt="Calendar" />
+                    <span>Agende uma Demonstação</span>
+                  </a>
                 </div>
               </div>
               <div className="col-12 col-lg-7">
