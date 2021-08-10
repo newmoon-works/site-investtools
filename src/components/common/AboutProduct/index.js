@@ -27,7 +27,7 @@ export default function AboutProduct({ content: {about, features, title, href, l
                   <Decoration size="xs" style="normal" className={styles.decorSmall} />
                   <TitleBox>{ title }</TitleBox>
                   <div className={styles.textBox} dangerouslySetInnerHTML={{__html: about}}/>
-                  <a href={href} className="ivt-btn-alt" target="_blank" rel="noopener noreferer">
+                  <a href={href} className="ivt-btn-alt" target="_blank" rel="noopener noreferrer">
                     <img src="/images/new/calendar.svg" alt="Calendar" />
                     <span>Agende uma Demonstação</span>
                   </a>
