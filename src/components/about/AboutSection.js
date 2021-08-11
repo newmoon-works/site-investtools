@@ -18,7 +18,7 @@ export default function AboutSection({content}) {
             </div>
             <div className={styles.historyBox}>
               <div className="title-box">
-                <h3 className="text-white">Breve História <br/> da empresa</h3>
+                <h3 className="text-white">Breve História<br/>da empresa</h3>
               </div>
               <div className={`${styles.textBox} text-white`} dangerouslySetInnerHTML={{__html: content.historyText}} />
             </div>

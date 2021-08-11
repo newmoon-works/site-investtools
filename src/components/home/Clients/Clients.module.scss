@@ -2,11 +2,11 @@
 
 .clientSection {
   position: relative;
-  margin-top: 220px;
-  padding-bottom: 160px;
+  margin-top: 125px;
+  padding-bottom: 120px;
 
   h3 {
-    margin-bottom: 70px;
+    margin-bottom: 30px;
   }
 
   :global(.flickity) {
@@ -22,7 +22,7 @@
   }
 
   .carouselItem {
-    max-width: 175px;
+    max-width: 150px;
     margin: 0 auto;
   }
 
@@ -39,7 +39,7 @@
 
 .carouselItem {
   display: flex;
-  margin-right: 20% !important;
+  margin-right: 100px !important;
 
   @media (max-width: 1199px) {
     margin-right: 10% !important;

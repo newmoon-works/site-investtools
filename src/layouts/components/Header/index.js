@@ -85,7 +85,7 @@ export default function Header() {
               <a target="_blank" rel="noopener noreferrer" href="https://www.grana.capital">Grana Capital</a>
             </li>
             <li>
-              <a target="_blank" rel="noopener noreferrer" href="https://www.neaglebank.com">NeagleBank</a>
+              <a target="_blank" rel="noopener noreferrer" href="https://www.plific.com">Plific</a>
             </li>
             <li>
               <a target="_blank" rel="noopener noreferrer" href="https://www.trampol.in">Trampolin</a>
