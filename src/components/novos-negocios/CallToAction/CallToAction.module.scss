@@ -13,8 +13,8 @@
 
   a {
     text-decoration: none;
-    padding-right: 25px;
-    padding-left: 25px;
+    text-transform: uppercase;
+    padding: 20px;
     &:hover {
       color: $white;
     }
