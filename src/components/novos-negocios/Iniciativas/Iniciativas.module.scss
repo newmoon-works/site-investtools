@@ -1,7 +1,7 @@
 @import "../../../styles/scss/colors";
 
 .section {
-  margin-top: 225px;
+  margin-top: 175px;
   padding-bottom: 125px;
   background-color: $snow;
   :global(.row):first-child > div {
@@ -12,7 +12,7 @@
 .intro {
   background-color: $darkGreen;
   height: 150px;
-  margin-bottom: 100px;
+  margin-bottom: 125px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -68,7 +68,7 @@
 }
 
 .logoBox {
-  width: 350px;
+  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
