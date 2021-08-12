@@ -61,8 +61,8 @@ h6 {
 
 @media (max-width: 992px) {
   h1 {
-    font-size: 32px;
-    line-height: 44px;
+    font-size: 28px;
+    line-height: 40px;
   }
 
   h2 {
@@ -71,18 +71,23 @@ h6 {
   }
 
   h3 {
-    font-size: 20px;
-    line-height: 30px;
+    font-size: 18px;
+    line-height: 28px;
   }
 
   h4 {
-    font-size: 18px;
+    font-size: 16px;
     line-height: 26px;
   }
 
   h5 {
-    font-size: 16px;
+    font-size: 15px;
     line-height: 24px;
+  }
+
+  h6 {
+    font-size: 14px;
+    line-height: 22px;
   }
 }
 .body-large {
@@ -110,6 +115,32 @@ p, .body {
   text-transform: uppercase;
 }
 
+@media (max-width: 992px) {
+  .body-large {
+    font-size: 16px;
+    line-height: 26px;
+  }
+
+  p, .body {
+    font-size: 15px;
+    line-height: 24px;
+  }
+
+  .body-small {
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  .caption, .caption-upper {
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  .caption-upper {
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  }
+}
 a:hover {
   color: #00B5A5;
 }
@@ -121,6 +152,16 @@ a:hover {
   color: #00B5A5;
 }
 
+@media (min-width: 1400px) {
+  h1, h2, h3, h4, h5, h6 {
+    white-space: break-spaces !important;
+  }
+}
+@media (max-width: 1400px) {
+  h1, h2, h3, h4, h5, h6 {
+    white-space: normal !important;
+  }
+}
 html {
   overflow-x: hidden;
 }
@@ -128,7 +169,7 @@ html {
 body {
   overflow-x: hidden;
   margin-top: 75px;
-  background-color: #F9FBFC;
+  background-color: #FFFFFF;
 }
 
 .title-box {
@@ -168,6 +209,41 @@ body {
 @media (max-width: 768px) {
   .decoration img {
     max-width: 60px;
+  }
+}
+
+.ivt-btn, .ivt-btn-alt {
+  padding: 10px 20px;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  color: #FFFFFF;
+  transition: 150ms ease;
+  border: 0;
+  border-radius: 2px;
+  font-weight: bold;
+  display: inline-flex;
+  align-items: center;
+}
+
+.ivt-btn {
+  background-color: #295965;
+}
+.ivt-btn:hover {
+  background-color: #00B5A5;
+}
+
+.ivt-btn-alt {
+  background-color: #00B5A5;
+}
+.ivt-btn-alt:hover {
+  background-color: #295965;
+}
+
+@media (max-width: 576px) {
+  div.col-12 {
+    padding-right: 30px;
+    padding-left: 30px;
   }
 }
 

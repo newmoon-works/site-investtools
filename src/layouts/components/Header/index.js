@@ -70,11 +70,6 @@ export default function Header() {
   function DropDown() {
     return (
       <ul>
-        <li>
-          <Link href="/novos-negocios">
-            <a className="nav-link">Nossa Incubadora</a>
-          </Link>
-        </li>
         <li className="sub-dropdown">
           <span tabIndex="0" className="nav-link">Cases</span>
           <ul>
@@ -127,7 +122,7 @@ export default function Header() {
                 <Link href="/arcon-it"><a className="nav-link">Arcon It</a></Link>
               </li>
               <li className="nav-item dropdown">
-                <span tabIndex="0" className="nav-link">Novos Negócios</span>
+                <Link href="/novos-negocios"><a className="nav-link">Novos Negócios</a></Link>
                 <DropDown />
               </li>
               {/* <li className="nav-item">

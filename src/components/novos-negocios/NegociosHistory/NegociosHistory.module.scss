@@ -15,7 +15,7 @@
   flex-direction: column;
   justify-content: center;
 
-  p {
+  p:first-child {
     position: relative;
 
     &::before {

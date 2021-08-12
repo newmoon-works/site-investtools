@@ -16,8 +16,8 @@ export default function NovosNegocios() {
 
       <NegociosHero />
       <NegociosHistory />
-      <Negocios />
       <Iniciativas />
+      <Negocios />
       <CallToAction />
     </>
   )

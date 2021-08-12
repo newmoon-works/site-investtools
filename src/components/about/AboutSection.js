@@ -30,7 +30,7 @@ export default function AboutSection({content}) {
           </div>
         </div>
         <div className="row">
-          <div className="col-12 col-sm-6">
+          <div className="col-12 col-md-6">
             <div className={styles.whyUsBox}>
               <div className="title-box">
                 <h3>Por que nos contratar</h3>
@@ -40,7 +40,7 @@ export default function AboutSection({content}) {
 
             </div>
           </div>
-          <div className="col-12 col-sm-6">
+          <div className="col-12 col-md-6">
             <div className={styles.motivationBox}>
               <div className="title-box">
                 <h3>O que nos motiva</h3>

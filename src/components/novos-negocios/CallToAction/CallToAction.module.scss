@@ -6,7 +6,7 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  height: 600px;
+  height: 500px;
   background-image: url("../../../../public//images/new/bg-call-to-action.png");
   background-repeat: no-repeat;
   background-size: cover;
@@ -15,6 +15,7 @@
     text-decoration: none;
     text-transform: uppercase;
     padding: 20px;
+    font-size: 16px;
     &:hover {
       color: $white;
     }
