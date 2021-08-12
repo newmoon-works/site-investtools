@@ -15,7 +15,6 @@
       margin-top: -55px;
 
       .aboutBox {
-        right: -50px;
         padding: 30px 35px 40px;
       }
     }
@@ -102,23 +101,12 @@
 
   .aboutBox {
     background: $snow;
-    padding: 30px 60px 70px;
+    padding: 30px 50px 70px;
     position: relative;
-    right: -60px;
     z-index: 1;
 
-    a {
-      cursor: pointer;
-      text-decoration: none;
-      margin-top: 24px;
-      padding-right: 45px;
-      padding-left: 45px;
-      img {
-        margin-right: 10px;
-      }
-      &:hover {
-        color: $white
-      }
+    img {
+      margin-top: 35px;
     }
 
     h3 {
@@ -139,10 +127,11 @@
 
 .featureBox {
   background: $darkGreen;
-  padding: 130px 40px 120px 100px;
+  padding: 0 50px;
+  height: 100%;
   position: relative;
-  top: -105px;
-  left: -30px;
+  align-items: center;
+  display: flex;
 
   .feature {
     flex-wrap: wrap !important;
@@ -150,7 +139,7 @@
     div {
       max-width: 50%;
       margin-bottom: 70px;
-      padding: 0 37px;
+      padding: 0 25px;
       h6 {
         color: $green;
         text-transform: uppercase;

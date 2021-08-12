@@ -197,6 +197,7 @@
       "title": "Total controle do fluxo de\nInvestimento de sua gestora",
       "about": "<p>O Perform It possibilita total controle do fluxo de investimentos de sua gestora, liberando você e sua equipe para pensar no principal, a estratégia.</p><p>Com o Perform It, as gestoras de recursos terão maior controle das operações, sem perder o foco no objetivo principal.Tudo de forma automática e com segurança comprovada.</p><p>Nosso software ERP monitora todo o fluxo da gestora de capitais, com interfaces modernas com administradoras, corretoras, entre outras.</p><p>O Perform It controla o fluxo 360 graus, desde os processos de Back Office até Middle Office e Front Office.</p>",
       "href": "http://investtools.rds.land/cta-site-perform-it",
+      "ctaImage": "cta-img-performit.png",
       "features": [
         {
           "id": 1,
@@ -253,6 +254,7 @@
     "title": "FAÇA DA SUA GESTORA UMA\nDISTRIBUIDORA DE SUCESSO",
     "about": "<p>O Diligence It firma a parceria da Investtools com gestoras que busquem tornar seus processos de suitability e de prevenção à lavagem de dinheiro mais rápidos, práticos e transparentes.</p>",
     "href": "http://investtools.rds.land/cta-site-diligence-it",
+    "ctaImage": "cta-img-diligenceit.png",
     "features": [
       {
         "id": 1,
@@ -294,6 +296,7 @@
     "title": "SIMPLIFIQUE OS PROCESSOS\nOPERACIONAIS DE SUA GESTORA",
     "about": "<p>O Arcon It é um sistema de pré compliance que simplifica processos operacionais das gestoras, usando a tecnologia para garantir que estejam de acordo com a Instrução 555 da CVM, relativa às necessidades de enquadramento dos fundos de investimento.</p>",
     "href": "http://investtools.rds.land/cta-site-arcon-it",
+    "ctaImage": "cta-img-arcon.png",
     "features": [
       {
         "id": 1,
