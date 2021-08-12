@@ -8,7 +8,7 @@ export default function Decoration(props) {
 
   return (
     <div className={`${styles.decoration} ${props.className}`}>
-      <Image src={require(`public/images/new/${decorName}`).default} />
+      <Image src={require(`public/images/new/${decorName}`).default} alt="" />
     </div>
   )
 }
