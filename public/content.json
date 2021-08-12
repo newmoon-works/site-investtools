@@ -2,21 +2,21 @@
   "hero": [
     {
       "logo": "perform-it-logo.svg",
-      "text": "Ganhe Tempo para\nPensar na Estratégia",
+      "text": "Total controle do fluxo de investimentos de sua Gestora",
       "image": "perform-it-screen.png",
       "alt": "Perform It",
       "id": "perform-it"
     },
     {
       "logo": "diligence-it-logo.svg",
-      "text": "Faça da sua Gestora uma\nDistribuidora de Sucesso",
+      "text": "Agilidade e transparência para sua distribuição com suitability e prevenção à lavagem de dinheiro",
       "image": "diligence-it-screen.png",
       "alt": "Diligence It",
       "id": "diligence-it"
     },
     {
       "logo": "arcon-it-logo.svg",
-      "text": "Simplifique os Processos\nOperacionais de sua Gestora",
+      "text": "Sistema pré trade compliance - Garanta o enquadramento de fundos em tempo real",
       "image": "arcon-it-screen.png",
       "alt": "Arcon It",
       "id": "arcon-it"
@@ -264,7 +264,7 @@
       {
         "id": 2,
         "title": "Suitability",
-        "text": "Controle. Com o Diligence It, o cliente fica liberado do estresse de ter que se preocupar se o seu perfil está próximo da expiração. A parte burocrática fica conosco.\n\nPreocupe-se apenas com seus investimentos."
+        "text": "Controle. Com o Diligence It, o cliente fica liberado do estresse de ter que se preocupar se o seu perfil está próximo da expiração. A parte burocrática fica conosco. Preocupe-se apenas com seus investimentos."
       }
     ],
     "functionalities": [
@@ -294,7 +294,7 @@
     "monitor": "note-arcon-it.png",
     "logo": "arcon-it-logo.svg",
     "title": "SIMPLIFIQUE OS PROCESSOS\nOPERACIONAIS DE SUA GESTORA",
-    "about": "<p>O Arcon It é um sistema de pré compliance que simplifica processos operacionais das gestoras, usando a tecnologia para garantir que estejam de acordo com a Instrução 555 da CVM, relativa às necessidades de enquadramento dos fundos de investimento.</p>",
+    "about": "<p>O Arcon It é um sistema de pré compliance, integrado às principais plataformas de trading do mercado e ao carrying broker, que simplifica processos operacionais das gestoras, usando a tecnologia para garantir que estejam de acordo com a Instrução 555 da CVM, relativa às necessidades de enquadramento dos fundos de investimento.</p>",
     "href": "http://investtools.rds.land/cta-site-arcon-it",
     "ctaImage": "cta-img-arcon.png",
     "features": [
@@ -346,7 +346,7 @@
       "id": 1,
       "name": "Grana Capital",
       "logo": "grana.svg",
-      "text": "Grana é uma startup comandada por um dos sócios da Investtools que administra o primeiro aplicativo a automatizar integralmente a gestão do Imposto de Renda para investidores da Bolsa de Valores."
+      "text": "Startup comandada por um dos sócios da Investtools, o Grana é o primeiro aplicativo a automatizar integralmente a gestão do Imposto de Renda para investidores da Bolsa de Valores."
     },
     {
       "id": 2,
