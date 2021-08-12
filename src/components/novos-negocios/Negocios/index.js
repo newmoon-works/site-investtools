@@ -2,8 +2,18 @@ import React from 'react';
 import Decoration from 'src/components/common/Decoration';
 import TitleBox from 'src/components/common/TitleBox';
 import styles from './Negocios.module.scss';
+import 'flickity/css/flickity.css';
+import Flickity from "react-flickity-component";
 
-export default function Negocios() {
+export default function Negocios({ content }) {
+
+  const flickityOptions = {
+    wrapAround: true,
+    autoPlay: true,
+    initialIndex: 1,
+    pageDots: false,
+  }
+
   return (
     <section className={styles.negociosSection}>
 
@@ -12,15 +22,26 @@ export default function Negocios() {
       <div className="container">
         <TitleBox>Negócios</TitleBox>
         <div className="row gy-5">
-          <div className="col-12 col-lg-4">
-            <div className={styles.negocioBox}>
-              <div className={styles.logoBox}>
-                <img src="/images/new/grana.svg" alt="" />
-              </div>
-              <p className="body-small">Grana é uma startup comandada por um dos sócios da Investtools que administra o primeiro aplicativo a automatizar integralmente a gestão do Imposto de Renda para investidores da Bolsa de Valores.</p>
-            </div>
-          </div>
-          <div className="col-12 col-lg-4">
+
+          <Flickity options={flickityOptions}>
+          {
+            content.map(item => {
+              return (
+                <div className={`col-12 col-lg-6 ${styles.carouselItem}`}>
+                  <div className={styles.negocioBox} key={item.id}>
+                    <div className={styles.logoBox}>
+                      <img src={`/images/new/${item.logo}`} alt="" />
+                    </div>
+                    <p className="body-small">{ item.text }</p>
+                  </div>
+                </div>
+              )
+            })
+          }
+          </Flickity>
+
+
+          {/* <div className="col-12 col-lg-4">
             <div className={styles.negocioBox}>
               <div className={styles.logoBox}>
                 <img src="/images/new/blockchain.svg" alt="" />
@@ -35,7 +56,7 @@ export default function Negocios() {
               </div>
               <p className="body-small">Trampolin criada por outro sócio com a proposta de desenvolver plataformas personalizadas de banking (Baas) para empresas que desejam oferecer serviços financeiros.</p>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </section>

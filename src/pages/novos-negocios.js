@@ -7,7 +7,7 @@ import Negocios from 'src/components/novos-negocios/Negocios';
 import Iniciativas from 'src/components/novos-negocios/Iniciativas';
 import CallToAction from 'src/components/novos-negocios/CallToAction';
 
-export default function NovosNegocios() {
+export default function NovosNegocios(pageContent) {
   return (
     <>
       <Head>
@@ -17,8 +17,14 @@ export default function NovosNegocios() {
       <NegociosHero />
       <NegociosHistory />
       <Iniciativas />
-      <Negocios />
+      <Negocios content={pageContent.businesses} />
       <CallToAction />
     </>
   )
+}
+
+export async function getStaticProps() {
+  return {
+    props: data
+  }
 }

@@ -2,17 +2,15 @@
 
 .section {
   margin-top: 175px;
-  padding-bottom: 125px;
   background-color: $snow;
   :global(.row):first-child > div {
-    margin-top: -75px;
+    
   }
 }
 
 .intro {
   background-color: $darkGreen;
   height: 150px;
-  margin-bottom: 125px;
   display: flex;
   justify-content: center;
   align-items: center;
