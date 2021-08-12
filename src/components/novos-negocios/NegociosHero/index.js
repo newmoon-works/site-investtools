@@ -5,7 +5,6 @@ import img from 'public/images/new/banner-novos-negócios.png';
 import TitleBox from 'src/components/common/TitleBox';
 
 export default function NegociosHero() {
-  console.log(styles);
   return (
     <section className={styles.heroSection}>
       <div className="container">
