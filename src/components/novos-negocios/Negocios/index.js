@@ -27,8 +27,8 @@ export default function Negocios({ content }) {
           {
             content.map(item => {
               return (
-                <div className={`col-12 col-lg-6 ${styles.carouselItem}`}>
-                  <div className={styles.negocioBox} key={item.id}>
+                <div className={`col-12 col-lg-6 ${styles.carouselItem}`} key={item.id}>
+                  <div className={styles.negocioBox}>
                     <div className={styles.logoBox}>
                       <img src={`/images/new/${item.logo}`} alt="" />
                     </div>
