@@ -3,13 +3,11 @@
 .section {
   margin-top: 175px;
   background-color: $snow;
-  :global(.row):first-child > div {
-    
-  }
 }
 
 .intro {
   background-color: $darkGreen;
+  margin-top: -75px;
   height: 150px;
   display: flex;
   justify-content: center;

@@ -9,7 +9,7 @@ export default function Negocios({ content }) {
 
   const flickityOptions = {
     wrapAround: true,
-    autoPlay: true,
+    autoPlay: false,
     initialIndex: 1,
     pageDots: false,
   }
