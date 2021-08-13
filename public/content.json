@@ -195,7 +195,7 @@
       "monitor": "note-perform-it.png",
       "logo": "perform-it-logo.svg",
       "title": "Total controle do fluxo de\nInvestimento de sua gestora",
-      "about": "<p>O Perform It possibilita total controle do fluxo de investimentos de sua gestora, liberando você e sua equipe para pensar no principal, a estratégia.</p><p>Com o Perform It, as gestoras de recursos terão maior controle das operações, sem perder o foco no objetivo principal.Tudo de forma automática e com segurança comprovada.</p><p>Nosso software ERP monitora todo o fluxo da gestora de capitais, com interfaces modernas com administradoras, corretoras, entre outras.</p><p>O Perform It controla o fluxo 360 graus, desde os processos de Back Office até Middle Office e Front Office.</p>",
+      "about": "<p>O Perform It possibilita total controle do fluxo de investimentos de sua gestora, liberando você e sua equipe para pensar no principal, a estratégia.</p><p>Com o Perform It, as gestoras de recursos terão maior controle das operações, sem perder o foco no objetivo principal. Tudo de forma automática e com segurança comprovada.</p><p>Nosso software ERP monitora todo o fluxo da gestora de capitais, com interfaces modernas com administradoras, corretoras, entre outras.</p><p>O Perform It controla o fluxo 360 graus, desde os processos de Back Office até Middle Office e Front Office.</p>",
       "href": "http://investtools.rds.land/cta-site-perform-it",
       "ctaImage": "cta-img-performit.png",
       "features": [
@@ -259,7 +259,7 @@
       {
         "id": 1,
         "title": "Prevenção à lavagem de dinheiro",
-        "text": "Confiança. Esse será sempre um dos nossos lemas: atuar de forma clara e honesta a fim de que os clientes estejam tranquilos quanto às informações e dados que fornecemos.\n\nAté por isso, enviamos ao Conselho de Controle de Atividades Financeiras (COAF) relatóriosempre que identificamos o surgimento de padrão suspeito de operações de lavagem de dinheiro."
+        "text": "Confiança. Esse será sempre um dos nossos lemas: atuar de forma clara e honesta a fim de que os clientes estejam tranquilos quanto às informações e dados que fornecemos.\n\nAté por isso, enviamos ao Conselho de Controle de Atividades Financeiras (COAF) relatório sempre que identificamos o surgimento de padrão suspeito de operações de lavagem de dinheiro."
       },
       {
         "id": 2,
@@ -335,7 +335,7 @@
   "generalText": [
     {
       "contactText": "Quer conhecer nossos produtos?\nNós teremos o prazer de te responder.",
-      "aboutText": "<p>Somos uma empresa com foco nas melhores soluções de tecnologia para o mercado financeiro, atuando com excelência no atendimento e com elevado nível de inovações tecnológicas.</p> <p>Trabalhamos em várias frentes ao mesmo tempo, com produtos voltados para gestoras, corretoras, distribuidoras, agentes autônomos, pessoas físicas e researches.Além disso, fornecemos treinamento e consultorias com tecnologia de ponta.</p>",
+      "aboutText": "<p>Somos uma empresa com foco nas melhores soluções de tecnologia para o mercado financeiro, atuando com excelência no atendimento e com elevado nível de inovações tecnológicas.</p> <p>Trabalhamos em várias frentes ao mesmo tempo, com produtos voltados para gestoras, corretoras, distribuidoras, agentes autônomos, pessoas físicas e researches. Além disso, fornecemos treinamento e consultorias com tecnologia de ponta.</p>",
       "historyText": "<p>Nascida em 2007 com foco apenas em soluções para corretoras, a Investtools cresceu sempre em busca de soluções importantes e inéditas para o mercado financeiro. Em 2009, surge o Perform It, software inovador onde o cliente poderia ter controle total do fluxo de investimentos de sua gestora. Já em 2014, sob o comando de novos sócios, a empresa é refundada. Em 2017, surgem novos produtos e empresas, como o Grana Capital, o Investtools CRM e o Blockchain Studio. Nos últimos quatro anos, aumentamos consideravelmente o número de clientes, ampliamos nossa equipe e continuamos desenvolvendo novas ferramentas tecnológicas.</p> <p>Esse é só o começo de um caminho com muitas inovações pela frente, sempre desenvolvendo as melhores soluções para o mercado.</p>",
       "whyUsText": "<p>Nossa qualidade no desenvolvimento de soluções tanto tecnológicas quanto financeiras criam satisfação imediata nos clientes, com aprovação de 100% dos nossos produtos e taxa de saída próxima a zero.</p>",
       "motivationText": "<p>Nossa motivação está no desafio da inovação constante e da satisfação do cliente. Trabalhamos para nos tornar referência no mercado, como uma empresa de excelência tecnológica e excelência na área financeira.</p> <p>Se você, assim como a gente, acredita que a tecnologia da informação é vital para o mercado financeiro, a Investtools é ideal para você e para sua empresa.</p>"
