@@ -3,8 +3,16 @@
 .contactLink {
   a {
     font-weight: bold;
+    transition: all 250ms ease;
+    &:hover {
+      color: $green;
+      span {
+        color: $white;
+      }
+    }
   }
   span {
     color: $green;
+    transition: all 250ms ease;
   }
 }
