@@ -43,7 +43,7 @@
     }
   ],
   "about": {
-      "title": "Soluções Importantes e Inéditas\npara o Mercado Financeiro",
+      "title": "Soluções importantes e inéditas\npara o Mercado Financeiro",
       "paragraphs": [
         {
           "id": 1,
@@ -336,7 +336,7 @@
     {
       "contactText": "Quer conhecer nossos produtos?\nNós teremos o prazer de te responder.",
       "aboutText": "<p>Somos uma empresa com foco nas melhores soluções de tecnologia para o mercado financeiro, atuando com excelência no atendimento e com elevado nível de inovações tecnológicas.</p> <p>Trabalhamos em várias frentes ao mesmo tempo, com produtos voltados para gestoras, corretoras, distribuidoras, agentes autônomos, pessoas físicas e researches. Além disso, fornecemos treinamento e consultorias com tecnologia de ponta.</p>",
-      "historyText": "<p>Nascida em 2007 com foco apenas em soluções para corretoras, a Investtools cresceu sempre em busca de soluções importantes e inéditas para o mercado financeiro. Em 2009, surge o Perform It, software inovador onde o cliente poderia ter controle total do fluxo de investimentos de sua gestora. Já em 2014, sob o comando de novos sócios, a empresa é refundada. Em 2017, surgem novos produtos e empresas, como o Grana Capital, o Investtools CRM e o Blockchain Studio. Nos últimos quatro anos, aumentamos consideravelmente o número de clientes, ampliamos nossa equipe e continuamos desenvolvendo novas ferramentas tecnológicas.</p> <p>Esse é só o começo de um caminho com muitas inovações pela frente, sempre desenvolvendo as melhores soluções para o mercado.</p>",
+      "historyText": "<p>Nascida em 2007 com foco apenas em soluções para corretoras, a Investtools cresceu sempre em busca de soluções importantes e inéditas para o mercado financeiro. Em 2009, surge o Perform It, software inovador onde o cliente poderia ter controle total do fluxo de investimentos de sua gestora. Já em 2014, sob o comando de novos sócios, a empresa é refundada. Em 2017, surgem novos produtos e empresas, como o Grana Capital, o Arcon It e o Blockchain Studio. Nos últimos quatro anos, aumentamos consideravelmente o número de clientes, ampliamos nossa equipe e continuamos desenvolvendo novas ferramentas tecnológicas.</p> <p>Esse é só o começo de um caminho com muitas inovações pela frente, sempre desenvolvendo as melhores soluções para o mercado.</p>",
       "whyUsText": "<p>Nossa qualidade no desenvolvimento de soluções tanto tecnológicas quanto financeiras criam satisfação imediata nos clientes, com aprovação de 100% dos nossos produtos e taxa de saída próxima a zero.</p>",
       "motivationText": "<p>Nossa motivação está no desafio da inovação constante e da satisfação do cliente. Trabalhamos para nos tornar referência no mercado, como uma empresa de excelência tecnológica e excelência na área financeira.</p> <p>Se você, assim como a gente, acredita que a tecnologia da informação é vital para o mercado financeiro, a Investtools é ideal para você e para sua empresa.</p>"
     }
@@ -346,24 +346,28 @@
       "id": 1,
       "name": "Grana Capital",
       "logo": "grana.svg",
+      "link": "https://www.grana.capital",
       "text": "Startup comandada por um dos sócios da Investtools, o Grana é o primeiro aplicativo a automatizar integralmente a gestão do Imposto de Renda para investidores da Bolsa de Valores."
     },
     {
       "id": 2,
       "name": "Blockchain Studio",
       "logo": "blockchain.svg",
+      "link": "https://www.blockchainstudio.com.br",
       "text": "Antes mesmo do Bitcoin tomar conta dos noticiários, percebemos o poder transformador do mercado e da tecnologia que há por detrás da moeda virtual: o blockchain. Um potencial inovador tão claro que o GOV Token, primeira solução gerada pelo Blockchain Studio e primeira solução gerada no âmbito da Investtools voltada às finanças públicas, tornou a unidade de negócios objeto de um investimento de R$ 1,5 milhão do BNDES, da Faperj e da AgeRio."
     },
     {
       "id": 3,
       "name": "Trampolin",
       "logo": "trampolin.svg",
+      "link": "https://www.trampol.in",
       "text": "Trampolin criada por outro sócio com a proposta de desenvolver plataformas personalizadas de banking (Baas) para empresas que desejam oferecer serviços financeiros."
     },
     {
       "id": 4,
       "name": "Plific",
       "logo": "plific.svg",
+      "link": "https://www.plific.com",
       "text": "Ao usar ferramentas de open finance para elaborar um aplicativo voltado em facilitar as finanças de motoristas e entregadores de aplicativo, os jovens fundadores da Plific são um exemplo de como boas ideias podem, além de criar soluções inéditas, ter forte impacto social. A Investtools, nesse caso, surge precisamente para investir no caminho que separa a ideia da realidade - o fornecimento de know-how em tecnologia -, tão necessário para a consolidação de empreendimentos ambiciosos."
     }
   ]

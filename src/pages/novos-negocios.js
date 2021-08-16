@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import data from 'public/content.json';
 import Head from "next/head";
 import NegociosHero from 'src/components/novos-negocios/NegociosHero';
@@ -8,6 +8,11 @@ import Iniciativas from 'src/components/novos-negocios/Iniciativas';
 import CallToAction from 'src/components/novos-negocios/CallToAction';
 
 export default function NovosNegocios(pageContent) {
+
+  useEffect(() => {
+    
+  }, [])
+
   return (
     <>
       <Head>

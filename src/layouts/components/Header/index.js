@@ -50,7 +50,7 @@ export default function Header() {
   ]*/
 
   useEffect(() => {
-    //tornar a navbar menor a partir de 100px "scrollados"
+    // tornar a navbar menor a partir de 100px "scrollados"
     const navbar = document.querySelector('.navbar');
     window.onscroll = () => {
       100 < window.scrollY ? navbar.classList.add("shrink") : navbar.classList.remove("shrink");
@@ -65,27 +65,28 @@ export default function Header() {
         bsCollapse.hide();
       });
     });
+
+    // retirar o foco do link "Novos Negócios depois de clicado"
+    const dropBtn = document.querySelector('.dropdown .nav-link');
+    dropBtn.addEventListener('click', () => {
+      dropBtn.blur();
+    })
   }, []);
 
   function DropDown() {
     return (
       <ul>
-        <li className="sub-dropdown">
-          <span tabIndex="0" className="nav-link">Cases</span>
-          <ul>
-            <li>
-              <a target="_blank" rel="noopener noreferrer" href="https://www.blockchainstudio.com.br">Blockchain Studio</a>
-            </li>
-            <li>
-              <a target="_blank" rel="noopener noreferrer" href="https://www.grana.capital">Grana Capital</a>
-            </li>
-            <li>
-              <a target="_blank" rel="noopener noreferrer" href="https://www.plific.com">Plific</a>
-            </li>
-            <li>
-              <a target="_blank" rel="noopener noreferrer" href="https://www.trampol.in">Trampolin</a>
-            </li>
-          </ul>
+        <li>
+          <a target="_blank" rel="noopener noreferrer" href="https://www.blockchainstudio.com.br">Blockchain Studio</a>
+        </li>
+        <li>
+          <a target="_blank" rel="noopener noreferrer" href="https://www.grana.capital">Grana Capital</a>
+        </li>
+        <li>
+          <a target="_blank" rel="noopener noreferrer" href="https://www.plific.com">Plific</a>
+        </li>
+        <li>
+          <a target="_blank" rel="noopener noreferrer" href="https://www.trampol.in">Trampolin</a>
         </li>
       </ul>
     )
@@ -100,8 +101,7 @@ export default function Header() {
               <Image layout="intrinsic" src={logo} quality="1" alt="Investtools" />
             </a>
           </Link>
-          <button className={`navbar-toggler collapsed border-0 ${styles.toggler}`} data-bs-toggle="collapse"
-            data-bs-target="#navigation">
+          <button className={`navbar-toggler collapsed border-0 ${styles.toggler}`} data-bs-toggle="collapse" data-bs-target="#navigation">
             <span className={styles.hamburgerBox}>
               <span className={styles.hamburgerInner} />
             </span>
