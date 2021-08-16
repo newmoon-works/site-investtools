@@ -9,7 +9,7 @@ export default function Negocios({ content }) {
 
   const flickityOptions = {
     wrapAround: true,
-    autoPlay: true,
+    autoPlay: 2000,
     initialIndex: 1,
     pageDots: false,
   }
@@ -27,7 +27,7 @@ export default function Negocios({ content }) {
             {
               content.map(item => {
                 return (
-                  <div className={`col-12 col-lg-6 ${styles.carouselItem}`} key={item.id}>
+                  <div className={`col-12 col-lg-4 ${styles.carouselItem}`} key={item.id}>
                     <div className={styles.negocioBox}>
                       <div className={styles.logoBox}>
                         <a href={item.link} rel="noreferrer noopener" target="_blank">

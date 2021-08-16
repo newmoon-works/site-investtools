@@ -215,18 +215,14 @@
 
     li {
 
-      background-color: $green;
-
       a, span {
-        color: $white;
-        font-weight: normal;
+        color: $darkGreen;
         padding: 20px !important;
         display: inline-block;
         width: 100%;
 
         &:hover {
-          color: $darkGreen;
-          background-color: $white;
+          color: $green;
         }
       }
 
