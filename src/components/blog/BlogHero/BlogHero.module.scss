@@ -1,20 +1,20 @@
 @import "../../../styles/scss/colors";
 
-.heroSection {
+.section {
   margin-bottom: 500px;
-  background-color: $green;
   position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.heroShape {
+.shape {
   overflow: hidden;
   position: absolute;
-  bottom: -25px;
+  bottom: 100px;
   width: 100%;
   transform: rotate(180deg);
+  background-color: $green;
   
   svg {
     width: calc(150% + 1.3px);

@@ -4,8 +4,8 @@ import BlogImage from "../BlogImage";
 
 export default function BlogHero() {
   return (
-    <section className={styles.heroSection}>
-      <div className={styles.heroShape}>
+    <section className={styles.section}>
+      <div className={styles.shape}>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100" preserveAspectRatio="none">
           <path d="M738,99l262-93V0H0v5.6L738,99z"/>
         </svg>
