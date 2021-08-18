@@ -1,7 +1,6 @@
 @import "../../../styles/scss/colors";
 
 .section {
-  margin-bottom: 500px;
   position: relative;
   display: flex;
   align-items: center;
@@ -29,7 +28,7 @@
     path {
       position: relative;
       z-index: -2;
-      fill: $snow;
+      fill: $white;
     }
   }
 }

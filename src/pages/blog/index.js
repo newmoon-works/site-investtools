@@ -1,6 +1,7 @@
 import React from 'react';
 import Head from "next/head";
 import BlogHero from "../../components/blog/BlogHero";
+import PostList from 'src/components/blog/PostList';
 
 export default function Blog(/*{ postList }*/) {
   return (
@@ -10,6 +11,7 @@ export default function Blog(/*{ postList }*/) {
       </Head>
 
       <BlogHero />
+      <PostList />
     </>
   )
 }
