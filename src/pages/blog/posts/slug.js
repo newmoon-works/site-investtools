@@ -1,4 +1,5 @@
 import React from "react";
+import PostBody from "src/components/blog/PostBody";
 import PostHero from "src/components/blog/PostHero";
 
 export default function BlogPost({ post }) {
@@ -7,6 +8,7 @@ export default function BlogPost({ post }) {
     <>
       <PostHero />
       {/* <div dangerouslySetInnerHTML={{__html: post}} /> */}
+      <PostBody content={post} />
     </>
   )
 }

@@ -8,7 +8,7 @@ export default function PostHero() {
         <div className={styles.heroText}>
           <h1>HTTP vs. FIX: como fazer integrações escaláveis</h1>
           <div>
-            <img height="14" width="14" src="/images/new/tags.svg" alt="Tags" />
+            <img height="17" width="17" src="/images/new/tags.svg" alt="Tags" />
             <span className="caption-upper">Geral, Tecnologia</span>
           </div>
         </div>
