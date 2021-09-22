@@ -10,7 +10,8 @@ export default function PageScripts() {
           `window.dataLayer = window.dataLayer || [];
           function gtag(){dataLayer.push(arguments);}
           gtag('js', new Date());
-          gtag('config', 'UA-181473567-1');`
+          gtag('config', 'UA-181473567-1');
+          gtag('config', 'G-R0H77YJN3F');`
       }}/>
 
       {/*Google Tag Manager*/}
