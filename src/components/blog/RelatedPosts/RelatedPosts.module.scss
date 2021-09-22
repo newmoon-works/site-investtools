@@ -1,18 +1,29 @@
 @import '../../../styles/scss/colors';
 
 .section {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  margin-top: 150px;
+  background-color: $snow;
   position: relative;
+
+  :global {
+    .container {
+      max-width: 800px;
+    }
+  }
 }
 
 .card {
   position: relative;
+  background: $white;
 }
 
 .thumbnail {
   & > div {
     position: relative;
     height: 285px;
-    margin-bottom: 30px;
+    margin-bottom: 35px;
 
     &::after {
       display: block;
@@ -51,8 +62,8 @@
 }
 
 .body {
-  margin-bottom: 30px;
   padding: 0 25px;
+  padding-bottom: 30px;
 
   h3 {
     margin-bottom: 20px;
@@ -71,8 +82,32 @@
   }
 }
 
-.decor {
-  position: absolute;
-  bottom: 0;
+.title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 45px;
+
+  h3 {
+    margin-bottom: 0;
+  }
+
+  a {
+    text-decoration: none;
+    color: $green;
+    transition: all 350ms ease;
+    &:hover {
+      color: $darkGreen;
+    }
+  }
+}
+
+.decorLeft {
+  top: -150px;
   left: 0;
+}
+
+.decorRight {
+  top: 0;
+  right: 0;
 }
