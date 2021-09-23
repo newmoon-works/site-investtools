@@ -3,6 +3,7 @@ import styles from './PostList.module.scss';
 import postImg from 'public/images/postimg.jpg';
 import Image from 'next/image';
 import Decoration from 'src/components/common/Decoration';
+import PostCard from '../PostCard';
 
 export default function PostList() {
   return (
@@ -13,21 +14,12 @@ export default function PostList() {
       <div className="container">
         <div className="row gy-5">
           <div className="col-12 col-md-6 col-lg-4">
-            <article className={styles.card}>
-              <a href="#" className={styles.thumbnail}>
-                <div>
-                  <Image src={postImg} alt="Thumbnail" />
-                </div>
-              </a>
-              <div className={`${styles.badge} caption`}>
-                Geral
-              </div>
-              <div className={styles.body}>
-                <a href="#"><h3>HTTP vs. FIX: como fazer integrações escaláveis</h3></a>
-                <div className="body-small">Nosso desenvolvedor Fabiano Martins explicou como a escolha de diferentes tecnologias está ligada à elaboração de soluções que se integram com multibrokers, como o PerformIt.</div>
-                <a className="body-small" href="#">Ler Mais</a>
-              </div>
-            </article>
+            <PostCard
+              cover="/images/postimg.jpg"
+              category="Geral"
+              title="HTTP vs. FIX: como fazer integrações escaláveis"
+              exerpt="Nosso desenvolvedor Fabiano Martins explicou como a escolha de diferentes tecnologias está ligada à elaboração de soluções que se integram com multibrokers, como o PerformIt."
+            />
           </div>
         </div>
       </div>
