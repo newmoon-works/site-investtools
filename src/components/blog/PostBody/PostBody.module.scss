@@ -24,7 +24,7 @@
   justify-content: flex-end;
   width: 100%;
 
-  div {
+  a {
     height: 45px;
     width: 45px;
     margin-left: 5px;
@@ -32,6 +32,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    color: $darkGreen;
+    transition: all 350ms ease;
+
+    &:hover {
+      color: $green;
+    }
 
     &:first-child {
       margin-left: 0;
@@ -40,5 +46,9 @@
     &:last-child {
       margin-right: 0;
     }
+  }
+
+  svg {
+    width: 17px;
   }
 }
