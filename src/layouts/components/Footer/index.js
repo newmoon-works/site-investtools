@@ -7,10 +7,13 @@ import { useRouter } from "next/router";
 import Decoration from 'src/components/common/Decoration';
 import FooterContactLink from 'src/components/common/FooterContactLink';
 import FooterContactInfo from 'src/components/common/FooterContactInfo';
+import RecentPosts from '../RecentPosts';
 
 export default function Footer() {
   let router = useRouter();
   let home = router.route === '/' || router.route === '/#';
+
+
 
   return (
     <>
@@ -55,18 +58,7 @@ export default function Footer() {
             <div className={`col-12 col-lg-3 ${styles.footerBox}`}>
               <div>
                 <h5>Posts recentes</h5>
-                <ul>
-                  <li>
-                    <a href="https://blog.investtools.com.br/2021/06/23/tecnologia-humana-uma-aliada-na-melhoria-de-processos/">
-                      Tecnologia humana: uma aliada na melhoria de processos
-                    </a>
-                  </li>
-                  <li>
-                    <a href="https://blog.investtools.com.br/2021/06/08/quem-e-a-investtools/">
-                      Quem é a Investtols?
-                    </a>
-                  </li>
-                </ul>
+                <RecentPosts quantity={2} />
               </div>
             </div>
             <div className="col-1" />
