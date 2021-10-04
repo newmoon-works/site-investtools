@@ -5,51 +5,6 @@ import Image from 'next/image';
 import logo from 'public/images/new/logo-investtools.svg';
 
 export default function Header({ content }) {
-  console.log(content);
-
-  /*const links = [
-    {
-      name: 'A Investtools',
-      slug: 'a-investtools',
-      class: ''
-    },
-    {
-      name: 'Perform It',
-      slug: 'perform-it',
-      class: ''
-    },
-    {
-      name: 'Diligence It',
-      slug: 'diligence-it',
-      class: ''
-    },
-    {
-      name: 'Pré-Trade (Arco It)',
-      slug: 'arco-it',
-      class: ''
-    },
-    {
-      name: 'Novos Negócios',
-      slug: '#',
-      class: 'dropdown'
-    },
-    {
-      name: 'Blog',
-      slug: 'blog',
-      class: ''
-    },
-    {
-      name: 'Contato',
-      slug: 'contato',
-      class: ''
-    },
-    {
-      name: 'Carreiras',
-      slug: 'carreiras',
-      class: ''
-    },
-  ]*/
-
   useEffect(() => {
     // tornar a navbar menor a partir de 100px "scrollados"
     const navbar = document.querySelector('.navbar');

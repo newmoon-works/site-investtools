@@ -10,8 +10,6 @@ import FooterContactInfo from 'src/components/common/FooterContactInfo';
 import RecentPosts from '../RecentPosts';
 
 export default function Footer({content, info}) {
-  console.log(content);
-  console.log(info);
   let router = useRouter();
   let home = router.route === '/' || router.route === '/#';
 
