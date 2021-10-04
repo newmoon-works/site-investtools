@@ -181,6 +181,9 @@
 
     & > div {
       animation: fade-in-left 1s ease both;
+      img {
+        max-width: 100%;
+      }
     }
 
     & > div:not(:global(.active)) {
