@@ -4,7 +4,8 @@ import Link from 'next/link';
 import Image from 'next/image';
 import logo from 'public/images/new/logo-investtools.svg';
 
-export default function Header({content}) {
+export default function Header({ content }) {
+  console.log(content);
 
   /*const links = [
     {
@@ -76,18 +77,15 @@ export default function Header({content}) {
   function DropDown() {
     return (
       <ul>
-        <li>
-          <a target="_blank" rel="noopener noreferrer" href="https://www.blockchainstudio.com.br">Blockchain Studio</a>
-        </li>
-        <li>
-          <a target="_blank" rel="noopener noreferrer" href="https://www.grana.capital">Grana Capital</a>
-        </li>
-        <li>
-          <a target="_blank" rel="noopener noreferrer" href="https://www.plific.com">Plific</a>
-        </li>
-        <li>
-          <a target="_blank" rel="noopener noreferrer" href="https://www.trampol.in">Trampolin</a>
-        </li>
+        {
+          content.novosNegociosLinks.map((item, index) => {
+            return (
+              <li key={`linkHeader-${index}`}>
+                <a target="_blank" rel="noopener noreferrer" href={item.link}>{item.text}</a>
+              </li>
+            )
+          })
+        }
       </ul>
     )
   }
@@ -98,7 +96,7 @@ export default function Header({content}) {
         <div className="container">
           <Link href="/">
             <a className="navbar-brand">
-              <Image layout="intrinsic" src={logo} quality="1" alt="Investtools" />
+              <img src={`${process.env.NEXT_PUBLIC_API_URL}${content.logo.url}`} alt="Investtools" />
             </a>
           </Link>
           <button className={`navbar-toggler collapsed border-0 ${styles.toggler}`} data-bs-toggle="collapse" data-bs-target="#navigation">
@@ -110,32 +108,32 @@ export default function Header({content}) {
             <ul className={`${styles.mainNav} navbar-nav ms-auto`}>
 
               <li className="nav-item">
-                <Link href="/a-investtools"><a className="nav-link">A Investtools</a></Link>
+                <Link href={content.aInvesttools.link}><a className="nav-link">{content.aInvesttools.text}</a></Link>
               </li>
               <li className="nav-item">
-                <Link href="/perform-it"><a className="nav-link">Perform It</a></Link>
+                <Link href={content.performIt.link}><a className="nav-link">{content.performIt.text}</a></Link>
               </li>
               <li className="nav-item">
-                <Link href="/diligence-it"><a className="nav-link">Diligence It</a></Link>
+                <Link href={content.diligenceIt.link}><a className="nav-link">{content.diligenceIt.text}</a></Link>
               </li>
               <li className="nav-item">
-                <Link href="/arcon-it"><a className="nav-link">Arcon It</a></Link>
+                <Link href={content.arconIt.link}><a className="nav-link">{content.arconIt.text}</a></Link>
               </li>
               <li className="nav-item dropdown">
-                <Link href="/novos-negocios"><a className="nav-link">Novos Negócios</a></Link>
+                <Link href={content.novosNegocios.link}><a className="nav-link">{content.novosNegocios.text}</a></Link>
                 <DropDown />
               </li>
               {/* <li className="nav-item">
                 <Link href="/blog"><a className="nav-link">Blog</a></Link>
               </li> */}
               <li className="nav-item">
-                <a href="https://blog.investtools.com.br" className="nav-link">Blog</a>
+                <a href={content.blog.link} className="nav-link">{content.blog.text}</a>
               </li>
               <li className="nav-item">
-                <Link href="/contato"><a className="nav-link">Contato</a></Link>
+                <Link href={content.contact.link}><a className="nav-link">{content.contact.text}</a></Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link" target="_blank" href="https://investtools.gupy.io/" rel="noopener noreferrer">Carreiras</a>
+                <a className="nav-link" target="_blank" href={content.careers.link} rel="noopener noreferrer">{content.careers.text}</a>
               </li>
 
               {/*{
