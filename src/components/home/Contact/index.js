@@ -29,7 +29,7 @@ export default function Contact({content}) {
                   </a>
                 </li>
                 <li>
-                  <a href="https://goo.gl/maps/2NYBacpko2UKigfs8" rel="noopener noreferrer" target="_blank">
+                  <a href={content.mapsLink} rel="noopener noreferrer" target="_blank">
                     <img src="/images/new/pin.svg" alt="Investtools - Endereço" className={styles.iconInfo} />
                     <p className="body-small">{content.location}</p>
                   </a>

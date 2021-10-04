@@ -13,7 +13,7 @@ export default function FooterContactInfo({info}) {
             </a>
           </li>
           <li>
-            <a href="https://goo.gl/maps/2NYBacpko2UKigfs8" rel="noopener noreferrer" target="_blank">
+            <a href={info.mapsLink} rel="noopener noreferrer" target="_blank">
               <img src="/images/new/pin.svg" alt="Investtools - Endereço" className={styles.iconInfo} />
               <p className="caption">{info.location}</p>
             </a>
