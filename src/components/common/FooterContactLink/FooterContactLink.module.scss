@@ -11,6 +11,11 @@
       }
     }
   }
+
+  p {
+    white-space: break-spaces;
+  }
+
   span {
     color: $green;
     transition: all 250ms ease;
