@@ -4,7 +4,7 @@ import initForm from "public/js/rd-form";
 import TitleBox from 'src/components/common/TitleBox';
 import Decoration from 'src/components/common/Decoration';
 
-export default function Contact({ content }) {
+export default function Contact({content}) {
 
   useEffect(() => {
     initForm();
@@ -20,18 +20,18 @@ export default function Contact({ content }) {
           <div className="col-12 col-lg-6">
             <TitleBox>Contatos</TitleBox>
             <div className={styles.infosBox}>
-              <p className="body-small">{content.contactText}</p>
+              <p className="body-small">{content.message}</p>
               <ul>
                 <li>
-                  <a href="tel:+552131785866" rel="noopener noreferrer" target="_blank">
+                  <a href={`tel:${content.phone}`} rel="noopener noreferrer" target="_blank">
                     <img src="/images/new/phone.svg" alt="Investtools - Telefone" className={styles.iconInfo} />
-                    <p className="body-small">+55 21 3178 . 5866</p>
+                    <p className="body-small">{content.phone}</p>
                   </a>
                 </li>
                 <li>
                   <a href="https://goo.gl/maps/2NYBacpko2UKigfs8" rel="noopener noreferrer" target="_blank">
                     <img src="/images/new/pin.svg" alt="Investtools - Endereço" className={styles.iconInfo} />
-                    <p className="body-small">Rua Marquês de São Vicente, 225 <br /> Gávea - Rio de Janeiro - RJ</p>
+                    <p className="body-small">{content.location}</p>
                   </a>
                 </li>
               </ul>

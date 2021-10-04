@@ -9,11 +9,9 @@ import FooterContactLink from 'src/components/common/FooterContactLink';
 import FooterContactInfo from 'src/components/common/FooterContactInfo';
 import RecentPosts from '../RecentPosts';
 
-export default function Footer() {
+export default function Footer({content}) {
   let router = useRouter();
   let home = router.route === '/' || router.route === '/#';
-
-
 
   return (
     <>

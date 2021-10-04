@@ -21,14 +21,14 @@ export default function Clients({ content }) {
       <div className="container">
         <div className="row">
           <div className="col-12">
-            <TitleBox>Clientes</TitleBox>
+            <TitleBox>{content.title}</TitleBox>
             <div className="flickity">
               <Flickity options={flickityOptions}>
                 {
-                  content.map(client => {
+                  content.images.map((client, index) => {
                     return (
-                      <div className={`col-6 col-md-4 col-lg-3 ${styles.carouselItem}`} key={content.indexOf(client)}>
-                        <Image src={require(`public/images/clientes/${client.logo}`).default} alt={client.name} />
+                      <div className={`col-6 col-md-4 col-lg-3 ${styles.carouselItem}`} key={`clientImg-${index}`}>
+                        <img src={`${process.env.NEXT_PUBLIC_API_URL}${client.url}`} alt={client.name} />
                       </div>
                     )
                   })

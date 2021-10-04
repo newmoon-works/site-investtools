@@ -51,10 +51,10 @@ export default function Hero({ content }) {
                 {
                   content.map(item => {
                     return (
-                      <div key={item.alt} id={item.id} className={styles.content}>
-                        <Image src={require(`public/images/new/${item.logo}`).default} alt={item.alt} />
+                      <div key={`produto-${item.id}`} id={item.id} className={styles.content}>
+                        <img src={`${process.env.NEXT_PUBLIC_API_URL}${item.logo.url}`}  alt={item.alt} />
                         <h2>
-                          {item.text}
+                          {item.title}
                         </h2>
                       </div>
                     )
@@ -81,8 +81,8 @@ export default function Hero({ content }) {
                 {
                   content.map(item => {
                     return (
-                      <div key={item.id} id={`screen-${item.id}`}>
-                        <Image src={require(`public/images/new/${item.image}`).default} alt="Captura de tela" />
+                      <div key={`monitor-${item.id}`} id={`screen-${item.id}`}>
+                        <img src={`${process.env.NEXT_PUBLIC_API_URL}${item.monitor.url}`}  alt={item.alt} />
                       </div>
                     )
                   })

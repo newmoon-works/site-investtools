@@ -13,20 +13,18 @@ export default function About({ content }) {
         <div className="row gy-5 position-relative">
           <div className="col-1 position-absolute" />
           <div className="col-12 col-lg-6">
-            <img src="/images/new/home-mosaic.png" className="w-100" alt="" />
+            {
+              content.image.formats.small.url ? (
+                <img src={`${process.env.NEXT_PUBLIC_API_URL}${content.image.formats.small.url}`} className="w-100" alt="" />
+              ) : (
+                <img src={`${process.env.NEXT_PUBLIC_API_URL}${content.image.url}`} className="w-100" alt="" />
+              )
+            }
           </div>
           <div className="col-12 col-lg-5 offset-lg-1">
             <div className={styles.aboutText}>
               <h2>{content.title}</h2>
-              {
-                content.paragraphs.map(item => {
-                  return (
-                    <p key={item.id} className="body-small">
-                      {item.text}
-                    </p>
-                  )
-                })
-              }
+              <p>{content.text}</p>
             </div>
           </div>
         </div>

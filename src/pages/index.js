@@ -6,8 +6,9 @@ import Clients from "../components/home/Clients";
 import Testimonials from "../components/home/Testimonials";
 import Contact from "../components/home/Contact";
 import About from "src/components/home/About";
+import { getLayoutContent } from "src/lib/getLayoutContent";
 
-export default function Home(pageContent) {
+export default function Home({pageContent, contact}) { 
 
   return (
     <>
@@ -20,13 +21,22 @@ export default function Home(pageContent) {
       <About content={pageContent.about} />
       <Clients content={pageContent.clients} />
       <Testimonials content={pageContent.testimonials} />
-      <Contact content={pageContent.generalText[0]} />
+      <Contact content={contact} />
     </>
   )
 }
 
 export async function getStaticProps() {
+  const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/home-site`);
+  const pageContent = await res.json();
+
+  const contactRes = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/dados-de-contato`);
+  const contact = await contactRes.json();
+
+  const layout = await getLayoutContent();
+
   return {
-    props: data
+    props: { pageContent, layout, contact },
+    revalidate: 10,
   }
 }

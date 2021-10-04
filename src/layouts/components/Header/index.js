@@ -4,7 +4,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import logo from 'public/images/new/logo-investtools.svg';
 
-export default function Header() {
+export default function Header({content}) {
 
   /*const links = [
     {
