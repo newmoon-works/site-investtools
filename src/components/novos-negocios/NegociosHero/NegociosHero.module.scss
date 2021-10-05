@@ -20,6 +20,8 @@
 }
 
 .textSection {
+  white-space: break-spaces;
+
   h3 {
     color: $green;
   }
@@ -31,6 +33,11 @@
 
 .heroImage {
   position: relative;
+
+  .mockupImg {
+    max-width: 100%;
+  }
+
   & > img:nth-child(2) {
     position: absolute !important;
     height: 100%;

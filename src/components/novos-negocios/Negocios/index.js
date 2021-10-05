@@ -20,18 +20,18 @@ export default function Negocios({ content }) {
       <Decoration size="lg" style="normal" className={styles.decor} />
 
       <div className="container">
-        <TitleBox>Negócios</TitleBox>
+        <TitleBox>{content.title}</TitleBox>
         <div className="row gy-5">
 
           <Flickity options={flickityOptions}>
             {
-              content.map(item => {
+              content.businesses.map(item => {
                 return (
                   <div className={`col-12 col-lg-4 ${styles.carouselItem}`} key={item.id}>
                     <div className={styles.negocioBox}>
                       <div className={styles.logoBox}>
                         <a href={item.link} rel="noreferrer noopener" target="_blank">
-                          <img src={`/images/new/${item.logo}`} alt="" />
+                          <img src={`${process.env.NEXT_PUBLIC_API_URL}${item.logo.url}`} alt="" />
                         </a>
                       </div>
                       <p className="body-small">{item.text}</p>
