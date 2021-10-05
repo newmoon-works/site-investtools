@@ -1,0 +1,45 @@
+@import 'colors';
+
+.notfound {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: -75px;
+
+  & > div {
+    display: flex;
+    align-items: center;
+
+    h1, h2 {
+      margin-bottom: 0;
+    }
+
+    h1 {
+      margin-right: 30px;
+      padding-right: 30px;
+      border-right: 1px solid $steel;
+    }
+
+    @media (max-width: 768px) {
+      flex-wrap: wrap;
+      justify-content: center;
+      h1 {
+        border: 0;
+        margin-bottom: 20px;
+      }
+      h2 {
+        margin-bottom: 20px;
+      }
+    }
+  }
+
+  & > div:nth-child(2) {
+    a {
+      color: $green;
+      text-decoration: none;
+      cursor: pointer
+    }
+  }
+}

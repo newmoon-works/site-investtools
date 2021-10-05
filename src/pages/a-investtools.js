@@ -4,7 +4,6 @@ import AboutSection from "../components/about/AboutSection";
 import { getLayoutContent } from 'src/lib/getLayoutContent';
 
 export default function aInvesttools({pageContent}) {
-  console.log(pageContent);
 
   return (
     <>
