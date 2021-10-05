@@ -55,6 +55,9 @@
 
 .content {
   max-width: 90%;
+  font-size: 14px;
+  line-height: 24px;
+  white-space: break-spaces;
 
   h6 {
     color: $green;
@@ -66,10 +69,5 @@
   .textBox {
     font-size: 14px;
     line-height: 24px;
-
-    p {
-      font-size: 14px;
-      line-height: 24px;
-    }
   }
 }

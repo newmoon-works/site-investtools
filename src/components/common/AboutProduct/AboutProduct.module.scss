@@ -86,6 +86,10 @@
   z-index: 11;
   max-width: 620px;
   margin: 0 auto;
+
+  img {
+    max-width: 100%;
+  }
 }
 
 .logoBox {
@@ -119,10 +123,9 @@
 }
 
 .textBox {
-  & > p {
-    font-size: 14px;
-    line-height: 24px;
-  }
+  font-size: 14px;
+  line-height: 24px;
+  white-space: break-spaces;
 }
 
 .featureBox {

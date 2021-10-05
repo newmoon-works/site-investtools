@@ -1,10 +1,9 @@
 import React from 'react';
-import styles from './AboutProduct.module.scss'
-import Image from "next/image";
+import styles from './AboutProduct.module.scss';
 import TitleBox from '../TitleBox';
 import Decoration from '../Decoration';
 
-export default function AboutProduct({ content: {about, features, title, href, ctaImage, logo, monitor} }) {
+export default function AboutProduct({content}) {
   return (
     <section className={styles.productSection}>
       <Decoration size="lg" style="normal" className={styles.decorTop} />
@@ -12,22 +11,24 @@ export default function AboutProduct({ content: {about, features, title, href, c
         <div className="row align-items-center">
           <div className="col-12 col-md-7">
             <div className={styles.monitorBox}>
-              <Image src={require(`public/images/new/${monitor}`).default} alt="Investtools - Perform It"/>
+              <img src={`${process.env.NEXT_PUBLIC_API_URL}${content.monitorImage.url}`} alt="Investtools - Perform It"/>
             </div>
           </div>
           <div className="col-12 col-md-5">
             <div className={styles.logoBox}>
-              <Image src={require(`public/images/new/${logo}`).default} alt="Investtools - Perform It"/>
+              <img src={`${process.env.NEXT_PUBLIC_API_URL}${content.logo.url}`} alt="Investtools - Perform It"/>
             </div>
           </div>
           <div className={styles.aboutProductBox}>
             <div className="row gx-lg-0">
               <div className="col-12 col-lg-5">
                 <div className={styles.aboutBox}>
-                  <TitleBox>{ title }</TitleBox>
-                  <div className={styles.textBox} dangerouslySetInnerHTML={{__html: about}}/>
-                  <a href={href} className={styles.cta} target="_blank" rel="noopener noreferrer">
-                    <img className="img-fluid d-block mx-auto" src={`/images/new/${ctaImage}`} alt="Calendar" />
+                  <TitleBox>{ content.title }</TitleBox>
+                  <div className={styles.textBox}>
+                    { content.text }
+                  </div>
+                  <a href={content.ctaLink} className={styles.cta} target="_blank" rel="noopener noreferrer">
+                    <img className="img-fluid d-block mx-auto" src={`${process.env.NEXT_PUBLIC_API_URL}${content.ctaImage.url}`} alt="" />
                   </a>
                 </div>
               </div>
@@ -36,11 +37,11 @@ export default function AboutProduct({ content: {about, features, title, href, c
                   <Decoration size="xs" style="white" className={styles.decorBig} />
                   <div className={styles.feature}>
                     {
-                      features.map(feat => {
+                      content.features.map(feat => {
                         return (
                           <div key={feat.id}>
-                            <h6 dangerouslySetInnerHTML={{__html: feat.title}} />
-                            <p className="body-small" dangerouslySetInnerHTML={{__html: feat.text}} />
+                            <h6>{ feat.title }</h6>
+                            <p className="body-small">{ feat.text }</p>
                           </div>
                         )
                       })
