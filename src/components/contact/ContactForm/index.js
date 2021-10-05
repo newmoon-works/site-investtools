@@ -3,7 +3,7 @@ import React, { useEffect } from 'react';
 import initForm from "../../../../public/js/rd-form";
 import TitleBox from 'src/components/common/TitleBox';
 
-export default function Index() {
+export default function Index({content}) {
 
   useEffect(() => {
     initForm();
@@ -18,22 +18,22 @@ export default function Index() {
               <div className={styles.contactInfo}>
                 <TitleBox>Contatos</TitleBox>
                 <div className={styles.textBox}>
-                  <p className="text-white body-small">
-                    Quer conhecer nossos produtos? <br /> Nós teremos o prazer de te responder.
+                  <p className="text-white">
+                    {content.message}
                   </p>
                 </div>
                 <div className={styles.infosBox}>
                   <ul>
                     <li>
-                      <a href="https://goo.gl/maps/2NYBacpko2UKigfs8" rel="noopener noreferrer" target="_blank">
+                      <a href={content.mapsLink} rel="noopener noreferrer" target="_blank">
                         <img src="/images/new/pin.svg" alt="Investtools - Endereço"/>
-                        <p className="text-white body-small">Rua Marquês de São Vicente, 225 <br/> Gávea - Rio de Janeiro - RJ</p>
+                        <p className="text-white body-small">{content.location}</p>
                       </a>
                     </li>
                     <li>
-                      <a href="tel:+552131785866" rel="noopener noreferrer" target="_blank">
+                      <a href={`tel:${content.phone}`} rel="noopener noreferrer" target="_blank">
                         <img src="/images/new/phone.svg" alt="Investtools - Telefone"/>
-                        <p className="text-white body-small">+55 21 3178 . 5866</p>
+                        <p className="text-white body-small">{content.phone}</p>
                       </a>
                     </li>
                   </ul>
