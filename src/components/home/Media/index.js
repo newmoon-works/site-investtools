@@ -1,11 +1,10 @@
 import React from 'react';
-import Decoration from 'src/components/common/Decoration';
 import TitleBox from 'src/components/common/TitleBox';
-import styles from './Negocios.module.scss';
+import styles from './Media.module.scss';
 import 'flickity/css/flickity.css';
 import Flickity from "react-flickity-component";
 
-export default function Negocios({ content }) {
+export default function Media({ content }) {
 
   const flickityOptions = {
     wrapAround: true,
@@ -15,26 +14,25 @@ export default function Negocios({ content }) {
   }
 
   return (
-    <section className={styles.negociosSection}>
-
-      <Decoration size="lg" style="normal" className={styles.decor} />
-
+    <section className={styles.section}>
       <div className="container">
         <TitleBox>{content.title}</TitleBox>
         <div className="row gy-5">
-
           <Flickity options={flickityOptions}>
             {
-              content.businesses.map(item => {
+              content.mediaCards.map(item => {
                 return (
-                  <div className={`col-12 col-lg-4 ${styles.carouselItem}`} key={item.id}>
-                    <div className={styles.negocioBox}>
-                      <div className={styles.logoBox}>
+                  <div className={`col-12 col-lg-4 ${styles.carouselItem}`} key={`media-item-${item.id}`}>
+                    <div className={styles.mediaBox}>
+                      <div className={styles.coverBox}>
                         <a href={item.link} rel="noreferrer noopener" target="_blank">
-                          <img src={`${process.env.NEXT_PUBLIC_API_URL}${item.logo.url}`} alt="" />
+                          <img src={`${process.env.NEXT_PUBLIC_API_URL}${item.cover.url}`} alt="" />
+                          <img src={`${process.env.NEXT_PUBLIC_API_URL}${item.portalCover.url}`} alt="" />
                         </a>
                       </div>
-                      <p className="body-small">{item.text}</p>
+                      <a href={item.link} className="text-decoration-none" rel="noreferrer noopener" target="_blank">
+                        <h3>{item.title}</h3>
+                      </a>
                     </div>
                   </div>
                 )

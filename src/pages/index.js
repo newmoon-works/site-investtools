@@ -1,5 +1,5 @@
 import Head from "next/head";
-import data from  '../../public/content.json';
+import data from '../../public/content.json';
 import Hero from "../components/home/Hero";
 import Products from "../components/home/Products";
 import Clients from "../components/home/Clients";
@@ -7,8 +7,9 @@ import Testimonials from "../components/home/Testimonials";
 import Contact from "../components/home/Contact";
 import About from "src/components/home/About";
 import { getLayoutContent } from "src/lib/getLayoutContent";
+import Media from "src/components/home/Media";
 
-export default function Home({pageContent, contact}) { 
+export default function Home({ pageContent, contact }) {
 
   return (
     <>
@@ -20,6 +21,7 @@ export default function Home({pageContent, contact}) {
       {/* <Products content={pageContent.products} /> */}
       <About content={pageContent.about} />
       <Clients content={pageContent.clients} />
+      <Media content={pageContent.media} />
       <Testimonials content={pageContent.testimonials} />
       <Contact content={contact} />
     </>
