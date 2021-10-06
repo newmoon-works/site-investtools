@@ -18,6 +18,10 @@
     margin: 0 15px;
     position: relative;
 
+    @media (max-width: 1200px) {
+      margin: 0 5px;
+    }
+
     a:focus {
       color: $darkGreen !important;
     }
@@ -176,10 +180,9 @@
     font-size: 16px;
     line-height: 24px;
     font-weight: 600;
-
     
     @media (max-width: 1400px) {
-      font-size: 14px;
+      font-size: 12px;
     }
   }
 }
