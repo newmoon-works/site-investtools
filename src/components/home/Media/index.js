@@ -14,7 +14,7 @@ export default function Media({ content }) {
   }
 
   return (
-    <section className={styles.section}>
+    <section className={styles.section} id="imprensa">
       <div className="container">
         <TitleBox>{content.title}</TitleBox>
         <div className="row gy-5">
@@ -31,7 +31,7 @@ export default function Media({ content }) {
                         </a>
                       </div>
                       <a href={item.link} className="text-decoration-none" rel="noreferrer noopener" target="_blank">
-                        <h3>{item.title}</h3>
+                        <h4>{item.title}</h4>
                       </a>
                     </div>
                   </div>

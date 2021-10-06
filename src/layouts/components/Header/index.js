@@ -78,11 +78,11 @@ export default function Header({ content }) {
                 <Link href={content.novosNegocios.link}><a className="nav-link">{content.novosNegocios.text}</a></Link>
                 <DropDown />
               </li>
-              {/* <li className="nav-item">
-                <Link href="/blog"><a className="nav-link">Blog</a></Link>
-              </li> */}
               <li className="nav-item">
                 <a href={content.blog.link} className="nav-link">{content.blog.text}</a>
+              </li>
+              <li className="nav-item">
+                <Link href={content.press.link}><a className="nav-link">{content.press.text}</a></Link>
               </li>
               <li className="nav-item">
                 <Link href={content.contact.link}><a className="nav-link">{content.contact.text}</a></Link>
@@ -90,24 +90,6 @@ export default function Header({ content }) {
               <li className="nav-item">
                 <a className="nav-link" target="_blank" href={content.careers.link} rel="noopener noreferrer">{content.careers.text}</a>
               </li>
-
-              {/*{
-                links.map(navLink => {
-                  return (
-                    <li className={`nav-item ${navLink.class}`} key={navLink.slug}>
-                      <Link href={`/${navLink.slug}`}>
-                        <a className="nav-link">
-                          {navLink.name}
-                        </a>
-                      </Link>
-                      {
-                        navLink.class ? <DropDown/> : null
-                      }
-                    </li>
-                  )
-                })
-              }*/}
-
             </ul>
           </div>
         </div>

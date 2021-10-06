@@ -3,6 +3,7 @@
 .section {
   padding-bottom: 100px;
   position: relative;
+  scroll-margin-top: 100px;
   
   :global(.flickity-enabled) {
     button {
