@@ -1,6 +1,7 @@
 import Document, { Html, Head, Main, NextScript } from 'next/document'
 import Script from "next/script";
 import PageScripts from "../components/PageScripts";
+import { env } from 'src/lib/env';
 
 class MyDocument extends Document {
   ogTags = {
@@ -45,6 +46,11 @@ class MyDocument extends Document {
           <Main />
           <NextScript />
           <script src="/js/bootstrap.bundle.min.js"/>
+          {
+            env === 'dev' ? null : (
+              <script type="text/javascript" async src="https://d335luupugsy2.cloudfront.net/js/loader-scripts/b2a333e2-7df2-44e5-9a57-75cd3a3325dc-loader.js" />
+            )
+          }
         </body>
       </Html>
     )
