@@ -174,5 +174,9 @@
 
 .decorTop {
   left: 0;
-  top: -45px;
+  top: 0;
+
+  @media (max-width: 768px) {
+    display: none;
+  }
 }

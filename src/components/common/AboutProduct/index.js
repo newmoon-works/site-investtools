@@ -3,23 +3,33 @@ import styles from './AboutProduct.module.scss';
 import TitleBox from '../TitleBox';
 import Decoration from '../Decoration';
 import Modal from '../Modal';
+import ProductHero from 'src/components/common/ProductHero';
 
-export default function AboutProduct({ content, product }) {
+export default function AboutProduct({ content, product, heroText }) {
+  console.log(content);
   return (
     <section className={styles.productSection}>
       <Decoration size="lg" style="normal" className={styles.decorTop} />
       <div className="container">
         <div className="row align-items-center">
-          <div className="col-12 col-md-7">
-            <div className={styles.monitorBox}>
-              <img src={`${process.env.NEXT_PUBLIC_API_URL}${content.monitorImage.url}`} alt="Investtools - Perform It" />
-            </div>
-          </div>
-          <div className="col-12 col-md-5">
-            <div className={styles.logoBox}>
-              <img src={`${process.env.NEXT_PUBLIC_API_URL}${content.logo.url}`} alt="Investtools - Perform It" />
-            </div>
-          </div>
+          {
+            product === 'consult-it' ? (
+              <ProductHero image={content.logo} heroText={heroText} />
+            ) : (
+              <>
+                <div className="col-12 col-md-7">
+                  <div className={styles.monitorBox}>
+                    <img src={`${process.env.NEXT_PUBLIC_API_URL}${content.monitorImage.url}`} alt="Investtools - Perform It" />
+                  </div>
+                </div>
+                <div className="col-12 col-md-5">
+                  <div className={styles.logoBox}>
+                    <img src={`${process.env.NEXT_PUBLIC_API_URL}${content.logo.url}`} alt="Investtools - Perform It" />
+                  </div>
+                </div>
+              </>
+            )
+          }
           <div className={styles.aboutProductBox}>
             <div className="row gx-lg-0">
               <div className="col-12 col-lg-5">
