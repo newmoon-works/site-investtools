@@ -11,7 +11,7 @@ export default function PerformIt({pageContent}) {
         <title>Perform It - Investtools</title>
       </Head>
 
-      <AboutProduct content={pageContent.performIt} />
+      <AboutProduct content={pageContent.performIt} product="perform-it" />
       <Functionalities col="4" content={pageContent.performIt}/>
     </>
   )

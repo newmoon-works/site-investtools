@@ -109,10 +109,6 @@
     position: relative;
     z-index: 1;
 
-    img {
-      margin-top: 35px;
-    }
-
     h3 {
       margin-bottom: 50px;
       @media (max-width: 768px) {
@@ -126,6 +122,13 @@
   font-size: 14px;
   line-height: 24px;
   white-space: break-spaces;
+}
+
+.cta {
+  all: unset;
+  cursor: pointer;
+  display: flex;
+  margin-top: 35px;
 }
 
 .featureBox {

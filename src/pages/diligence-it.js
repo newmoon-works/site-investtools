@@ -12,7 +12,7 @@ export default function DiligenceIt({pageContent}) {
         <title>Diligence It - Investtools</title>
       </Head>
 
-      <AboutProduct content={pageContent.diligenceIt} />
+      <AboutProduct content={pageContent.diligenceIt} product="diligence-it" />
       <Functionalities col="6" content={pageContent.diligenceIt}/>
     </>
   )

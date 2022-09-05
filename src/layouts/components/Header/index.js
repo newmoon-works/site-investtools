@@ -82,9 +82,6 @@ export default function Header({ content }) {
                 <a href={content.blog.link} className="nav-link">{content.blog.text}</a>
               </li>
               <li className="nav-item">
-                <Link href={content.press.link}><a className="nav-link">{content.press.text}</a></Link>
-              </li>
-              <li className="nav-item">
                 <Link href={content.contact.link}><a className="nav-link">{content.contact.text}</a></Link>
               </li>
               <li className="nav-item">
