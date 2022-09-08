@@ -5,17 +5,18 @@ import Decoration from '../Decoration';
 import Modal from '../Modal';
 import ProductHero from 'src/components/common/ProductHero';
 
-export default function AboutProduct({ content, product, heroText }) {
-  console.log(content);
+export default function AboutProduct({ content, product }) {
+  /* console.log(content); */
   return (
     <section className={styles.productSection}>
-      <Decoration size="lg" style="normal" className={styles.decorTop} />
+      <Decoration size="lg" style={product === 'consultoria' ? 'white2' : 'normal'} className={styles.decorTop} />
+      {
+        product === 'consultoria' && <ProductHero content={content.banner} />
+      }
       <div className="container">
         <div className="row align-items-center">
           {
-            product === 'consult-it' ? (
-              <ProductHero image={content.logo} heroText={heroText} />
-            ) : (
+            product !== 'consultoria' && (
               <>
                 <div className="col-12 col-md-7">
                   <div className={styles.monitorBox}>
@@ -38,13 +39,13 @@ export default function AboutProduct({ content, product, heroText }) {
                   <div className={styles.textBox}>
                     {content.text}
                   </div>
-                  <a href={content.ctaLink} className={styles.cta} target="_blank" rel="noopener noreferrer">
+                  {/* <a href={content.ctaLink} className={styles.cta} target="_blank" rel="noopener noreferrer">
                     <img className="img-fluid d-block mx-auto" src={`${process.env.NEXT_PUBLIC_API_URL}${content.ctaImage.url}`} alt="" />
-                  </a>
+                  </a> */}
 
-                  {/* <button title="Produto" type="button" className={styles.cta} href={`#modal-${product}`} data-bs-toggle="modal">
+                  <button title="Produto" type="button" className={styles.cta} href={`#modal-${product}`} data-bs-toggle="modal">
                     <img className="img-fluid d-block mx-auto" src={`${process.env.NEXT_PUBLIC_API_URL}${content.ctaImage.url}`} alt="" />
-                  </button> */}
+                  </button>
 
                 </div>
               </div>

@@ -1,9 +1,14 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Decoration from 'src/components/common/Decoration';
 import Modal from 'src/components/common/Modal';
 import styles from './CallToAction.module.scss';
 
 export default function CallToAction({ content }) {
+
+  useEffect(() => {
+    new RDStationForms('site-novos-negocios-e82d33e65d72a550d452', 'UA-181473567-1').createForm();
+  }, []);
+
   return (
     <section className={styles.section}>
 
@@ -34,7 +39,7 @@ export default function CallToAction({ content }) {
       </div>
 
       <Modal id="modal-novos-negocios">
-        Modal Novos Negócios
+        <div role="main" id="site-novos-negocios-e82d33e65d72a550d452" />
       </Modal>
     </section>
   )

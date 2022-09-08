@@ -1,7 +1,6 @@
 @import "../../../styles/scss/colors";
 
 .productSection {
-  margin-top: 100px;
   position: relative;
 
   @media (max-width: 1199px) {
@@ -54,7 +53,9 @@
   }
 
   @media (max-width: 768px) {
-    margin-top: 75px;
+    .monitorBox {
+      margin-top: 75px;
+    }
     .logoBox {
       max-width: 150px;
       margin: 0 auto 35px;
@@ -82,10 +83,11 @@
 }
 
 .monitorBox {
+  margin: 0 auto;
+  margin-top: 100px;
   position: relative;
   z-index: 11;
   max-width: 620px;
-  margin: 0 auto;
 
   img {
     max-width: 100%;
@@ -170,11 +172,13 @@
 .decorBig {
   bottom: -6px;
   right: 0;
+  z-index: 10;
 }
 
 .decorTop {
   left: 0;
-  top: 0;
+  top: 100px;
+  z-index: 10;
 
   @media (max-width: 768px) {
     display: none;

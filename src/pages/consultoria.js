@@ -5,21 +5,22 @@ import AboutProduct from "../components/common/AboutProduct";
 import Functionalities from "../components/common/Functionalities";
 import { getLayoutContent } from 'src/lib/getLayoutContent';
 
-export default function ConsultIt({pageContent}) {
+export default function Consultoria({pageContent}) {
+  console.log(pageContent);
   return (
     <>
       <Head>
-        <title>Consult It - Investtools</title>
+        <title>Consultoria - Investtools</title>
       </Head>
 
-      <AboutProduct content={pageContent.consultIt} product="consult-it" heroText={pageContent.heroText} />
-      <Functionalities col="3" content={pageContent.consultIt}/>
+      <AboutProduct content={pageContent} product="consultoria" />
+      <Functionalities col="3" content={pageContent}/>
     </>
   )
 }
 
 export async function getStaticProps() {
-  const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/consult-it`);
+  const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/consultoria`);
   const pageContent = await res.json();
 
   const contactRes = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/dados-de-contato`);
