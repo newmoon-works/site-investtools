@@ -30,7 +30,7 @@ export default function Modal({ id, formId, children }) {
 
   return (
     <div className="modal fade" id={id} tabIndex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" ref={modal}>
-      <div className="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-xl">
+      <div className="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-fullscreen">
         <div className="modal-content" style={{
           background: 'rgba(0,0,0,0)',
           border: '0',
@@ -43,7 +43,7 @@ export default function Modal({ id, formId, children }) {
               }}
             />
           </div>
-          <div className="modal-body d-flex justify-content-center">
+          <div className="modal-body d-flex justify-content-center align-items-center">
             {
               children
             }
