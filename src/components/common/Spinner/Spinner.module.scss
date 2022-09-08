@@ -1,0 +1,13 @@
+@import "../../../styles/scss/colors";
+
+.spinner {
+  color: $darkGreen;
+  height: 100%;
+  display: none;
+  justify-content: center;
+  align-items: center;
+
+  &:only-child {
+    display: flex;
+  }
+}

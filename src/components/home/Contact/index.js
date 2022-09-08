@@ -3,11 +3,12 @@ import styles from './Contact.module.scss'
 import initForm from "public/js/rd-form";
 import TitleBox from 'src/components/common/TitleBox';
 import Decoration from 'src/components/common/Decoration';
+import Spinner from 'src/components/common/Spinner';
 
-export default function Contact({content}) {
+export default function Contact({ content }) {
 
   useEffect(() => {
-    initForm();
+    new RDStationForms('contato-site-eb80607c4c296921e638', 'UA-181473567-1').createForm();
   }, [])
 
   return (
@@ -40,9 +41,7 @@ export default function Contact({content}) {
           <div className="col-12 col-lg-6">
             <div className={styles.formBox} id="rd-station-form">
               <div className="h-100" id="contato-site-eb80607c4c296921e638" role="main">
-                <div className={styles.spinner} id="spinner">
-                  <div className="spinner-border" />
-                </div>
+                <Spinner />
               </div>
             </div>
           </div>

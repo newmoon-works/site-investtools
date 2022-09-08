@@ -46,6 +46,7 @@ class MyDocument extends Document {
           <Main />
           <NextScript />
           <script src="/js/bootstrap.bundle.min.js"/>
+          <script src="https://d335luupugsy2.cloudfront.net/js/rdstation-forms/stable/rdstation-forms.min.js"/>
           {
             env === 'dev' ? null : (
               <script type="text/javascript" async src="https://d335luupugsy2.cloudfront.net/js/loader-scripts/b2a333e2-7df2-44e5-9a57-75cd3a3325dc-loader.js" />
