@@ -6,7 +6,6 @@ import Functionalities from "../components/common/Functionalities";
 import { getLayoutContent } from 'src/lib/getLayoutContent';
 
 export default function Consultoria({pageContent}) {
-  console.log(pageContent);
   return (
     <>
       <Head>

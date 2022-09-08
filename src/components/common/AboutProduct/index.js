@@ -6,7 +6,6 @@ import Modal from '../Modal';
 import ProductHero from 'src/components/common/ProductHero';
 
 export default function AboutProduct({ content, product, formId }) {
-  /* console.log(content); */
   return (
     <section className={styles.productSection}>
       <Decoration size="lg" style={product === 'consultoria' ? 'white2' : 'normal'} className={styles.decorTop} />

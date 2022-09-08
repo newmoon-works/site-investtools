@@ -2,7 +2,6 @@ import React from 'react';
 import styles from './ProductHero.module.scss';
 
 export default function ProductHero({ content }) {
-  console.log(content);
   return (
     <div className={styles.hero}>
       <img src={`${process.env.NEXT_PUBLIC_API_URL}${content.bannerImage.url}`} alt="Logo Consult It" />
