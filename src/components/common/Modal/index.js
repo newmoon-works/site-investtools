@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from 'react';
 
-export default function Modal({ id, children }) {
+export default function Modal({ id, formId, children }) {
   const modal = useRef(null);
 
   useEffect(() => {
@@ -22,21 +22,23 @@ export default function Modal({ id, children }) {
     }
   }, []);
 
+  useEffect(() => {
+    if (formId) {
+      new RDStationForms(formId, 'UA-181473567-1').createForm();
+    }
+  }, []);
+
   return (
     <div className="modal fade" id={id} tabIndex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" ref={modal}>
-      <div className="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+      <div className="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-xl">
         <div className="modal-content">
           <div className="modal-header">
-            <h5 className="modal-title">Modal title</h5>
             <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
-          <div className="modal-body">
+          <div className="modal-body d-flex justify-content-center">
             {
               children
             }
-          </div>
-          <div className="modal-footer">
-            Modal Footer
           </div>
         </div>
       </div>

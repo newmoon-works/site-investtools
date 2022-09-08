@@ -13,7 +13,7 @@ export default function Consultoria({pageContent}) {
         <title>Consultoria - Investtools</title>
       </Head>
 
-      <AboutProduct content={pageContent} product="consultoria" />
+      <AboutProduct content={pageContent} product="consultoria" formId="site-consultoria-6deb2c1dc6e15d3e8a2a" />
       <Functionalities col="3" content={pageContent}/>
     </>
   )

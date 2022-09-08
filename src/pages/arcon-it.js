@@ -12,7 +12,7 @@ export default function PerformIt({pageContent}) {
         <title>Arcon It - Investtools</title>
       </Head>
 
-      <AboutProduct content={pageContent.arconIt} product="arcon-it" />
+      <AboutProduct content={pageContent.arconIt} product="arcon-it" formId="site-arcon-it-f62c0e07db40e14f5be8" />
       <Functionalities col="6" content={pageContent.arconIt}/>
     </>
   )

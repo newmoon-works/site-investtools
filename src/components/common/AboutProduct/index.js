@@ -5,7 +5,7 @@ import Decoration from '../Decoration';
 import Modal from '../Modal';
 import ProductHero from 'src/components/common/ProductHero';
 
-export default function AboutProduct({ content, product }) {
+export default function AboutProduct({ content, product, formId }) {
   /* console.log(content); */
   return (
     <section className={styles.productSection}>
@@ -71,8 +71,8 @@ export default function AboutProduct({ content, product }) {
         </div>
       </div>
 
-      <Modal id={`modal-${product}`}>
-        <p>Modal {product}</p>
+      <Modal id={`modal-${product}`} formId={formId}>
+        <div role="main" id={formId} />
       </Modal>
     </section>
   )
