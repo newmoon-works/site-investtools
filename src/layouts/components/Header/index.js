@@ -74,6 +74,9 @@ export default function Header({ content }) {
               <li className="nav-item">
                 <Link href={content.arconIt.link}><a className="nav-link">{content.arconIt.text}</a></Link>
               </li>
+              <li className="nav-item">
+                <Link href={'/consultoria'}><a className="nav-link">{'Consultoria'}</a></Link>
+              </li>
               <li className="nav-item dropdown">
                 <Link href={content.novosNegocios.link}><a className="nav-link">{content.novosNegocios.text}</a></Link>
                 <DropDown />
