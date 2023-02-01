@@ -3,8 +3,9 @@ import Head from "next/head";
 import AboutProduct from "../components/common/AboutProduct";
 import Functionalities from "../components/common/Functionalities";
 import { getLayoutContent } from 'src/lib/getLayoutContent';
+import getLocaleParam from 'src/lib/getLocaleParam';
 
-export default function PerformIt({pageContent}) {
+export default function PerformIt({ pageContent }) {
   return (
     <>
       <Head>
@@ -12,19 +13,21 @@ export default function PerformIt({pageContent}) {
       </Head>
 
       <AboutProduct content={pageContent.performIt} product="perform-it" formId="site-perform-it-a548652fdcb2c4a81963" />
-      <Functionalities col="4" content={pageContent.performIt}/>
+      <Functionalities col="4" content={pageContent.performIt} />
     </>
   )
 }
 
-export async function getStaticProps() {
-  const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/perform-it`);
+export async function getStaticProps({ locale }) {
+  let localeParameter = getLocaleParam(locale);
+
+  const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/perform-it${localeParameter}`);
   const pageContent = await res.json();
 
-  const contactRes = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/dados-de-contato`);
+  const contactRes = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/dados-de-contato${localeParameter}`);
   const contact = await contactRes.json();
 
-  const layout = await getLayoutContent();
+  const layout = await getLayoutContent(localeParameter);
 
   return {
     props: { pageContent, layout, contact },

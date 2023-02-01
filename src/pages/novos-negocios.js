@@ -7,6 +7,7 @@ import Negocios from 'src/components/novos-negocios/Negocios';
 import Iniciativas from 'src/components/novos-negocios/Iniciativas';
 import CallToAction from 'src/components/novos-negocios/CallToAction';
 import { getLayoutContent } from 'src/lib/getLayoutContent';
+import getLocaleParam from 'src/lib/getLocaleParam';
 
 export default function NovosNegocios({pageContent}) {
   return (
@@ -24,14 +25,16 @@ export default function NovosNegocios({pageContent}) {
   )
 }
 
-export async function getStaticProps() {
-  const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/novos-negocios`);
+export async function getStaticProps({ locale }) {
+  let localeParameter = getLocaleParam(locale);
+
+  const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/novos-negocios${localeParameter}`);
   const pageContent = await res.json();
 
-  const contactRes = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/dados-de-contato`);
+  const contactRes = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/dados-de-contato${localeParameter}`);
   const contact = await contactRes.json();
 
-  const layout = await getLayoutContent();
+  const layout = await getLayoutContent(localeParameter);
 
   return {
     props: { pageContent, layout, contact },

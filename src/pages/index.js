@@ -8,13 +8,18 @@ import Contact from "../components/home/Contact";
 import About from "src/components/home/About";
 import { getLayoutContent } from "src/lib/getLayoutContent";
 import Media from "src/components/home/Media";
+import getLocaleParam from "src/lib/getLocaleParam";
+import { useRouter } from "next/router";
 
 export default function Home({ pageContent, contact }) {
+
+  const { locale } = useRouter();
+  const title = locale === 'pt' ? 'Investtools' : 'Investtools';
 
   return (
     <>
       <Head>
-        <title>Investtools</title>
+        <title>{title}</title>
       </Head>
 
       <Hero content={pageContent.hero} />
@@ -28,14 +33,16 @@ export default function Home({ pageContent, contact }) {
   )
 }
 
-export async function getStaticProps() {
-  const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/home-site`);
+export async function getStaticProps({ locale }) {
+  let localeParameter = getLocaleParam(locale);
+
+  const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/home-site${localeParameter}`);
   const pageContent = await res.json();
 
-  const contactRes = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/dados-de-contato`);
+  const contactRes = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/dados-de-contato${localeParameter}`);
   const contact = await contactRes.json();
 
-  const layout = await getLayoutContent();
+  const layout = await getLayoutContent(localeParameter);
 
   return {
     props: { pageContent, layout, contact },

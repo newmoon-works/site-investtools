@@ -1,4 +1,4 @@
-export async function getLayoutContent() {
+export async function getLayoutContent(params) {
   const resHeader = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/cabecalho`);
   const header = await resHeader.json();
 
