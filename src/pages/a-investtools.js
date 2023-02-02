@@ -27,7 +27,7 @@ export async function getStaticProps({ locale }) {
   const contactRes = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/dados-de-contato${localeParameter}`);
   const contact = await contactRes.json();
 
-  const layout = await getLayoutContent({ localeParameter });
+  const layout = await getLayoutContent(localeParameter);
 
   return {
     props: { pageContent, layout, contact },
