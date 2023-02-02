@@ -4,9 +4,12 @@ import styles from './Hero.module.scss';
 import mac from 'public/images/new/imac-screen.png';
 import pattern from 'public/images/new/pattern-square-vertical.svg';
 import triangleFree from 'public/images/new/triangle-free.svg';
+import { useRouter } from 'next/router';
 
 export default function Hero({ content }) {
   const [active, setActive] = useState(content[0]);
+
+  const { locale } = useRouter();
 
   function handleClick(e) {
     if (e.currentTarget.classList.contains('arrow-left')) {
@@ -37,9 +40,14 @@ export default function Hero({ content }) {
       element.classList.remove('active');
     });
 
-    document.getElementById(active.id).classList.add('active');
-    document.getElementById(`screen-${active.id}`).classList.add('active');
-  }, [active])
+    document.getElementById(active.id)?.classList.add('active');
+    document.getElementById(`screen-${active.id}`)?.classList.add('active');
+  }, [active]);
+
+  useEffect(() => {
+    document.querySelector('#heroSlider > :first-child')?.classList.add('active')
+    document.querySelector('#monitor > :first-child')?.classList.add('active')
+  }, [locale]);
 
   return (
     <section className={styles.heroSection}>
@@ -52,7 +60,7 @@ export default function Hero({ content }) {
                   content.map(item => {
                     return (
                       <div key={`produto-${item.id}`} id={item.id} className={styles.content}>
-                        <img src={`${process.env.NEXT_PUBLIC_API_URL}${item.logo.url}`}  alt={item.alt} />
+                        <img src={`${process.env.NEXT_PUBLIC_API_URL}${item.logo.url}`} alt={item.alt} />
                         <h2>
                           {item.title}
                         </h2>
@@ -82,13 +90,13 @@ export default function Hero({ content }) {
                   content.map(item => {
                     return (
                       <div key={`monitor-${item.id}`} id={`screen-${item.id}`}>
-                        <img src={`${process.env.NEXT_PUBLIC_API_URL}${item.monitor.url}`}  alt={item.alt} />
+                        <img src={`${process.env.NEXT_PUBLIC_API_URL}${item.monitor.url}`} alt={item.alt} />
                       </div>
                     )
                   })
                 }
               </div>
-              
+
               <Image src={mac} alt="Investtools" priority />
 
               <div className={styles.decorations}>
