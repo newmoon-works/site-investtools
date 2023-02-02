@@ -6,9 +6,10 @@ import Decoration from 'src/components/common/Decoration';
 import Spinner from 'src/components/common/Spinner';
 
 export default function Contact({ content }) {
+  let { part1, part2 } = content.formCode;
 
   useEffect(() => {
-    new RDStationForms('contato-site-eb80607c4c296921e638', 'UA-181473567-1').createForm();
+    new RDStationForms(part1, part2).createForm();
   }, [])
 
   return (

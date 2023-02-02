@@ -2,12 +2,25 @@ import styles from './ContactForm.module.scss';
 import React, { useEffect } from 'react';
 import initForm from "../../../../public/js/rd-form";
 import TitleBox from 'src/components/common/TitleBox';
+import Spinner from 'src/components/common/Spinner';
+import { useRouter } from 'next/router';
 
-export default function Index({content}) {
+export default function Index({ content }) {
+  let { part1, part2 } = content.formCode;
+
+  let { locale } = useRouter();
 
   useEffect(() => {
-    initForm();
-  }, [])
+    new RDStationForms(part1, part2).createForm();
+    /* console.dir(RDStationForms);
+    let prevLocale = locale;
+    console.log(prevLocale); */
+
+    /* return () => {
+      console.log(`document.querySelector('#rd-station-form_${locale} section')?.remove();`);
+      document.querySelector(`#rd-station-form_${locale} section`)?.remove();
+    } */
+  }, [/* locale */])
 
   return (
     <section className={styles.contactForm}>
@@ -26,13 +39,13 @@ export default function Index({content}) {
                   <ul>
                     <li>
                       <a href={content.mapsLink} rel="noopener noreferrer" target="_blank">
-                        <img src="/images/new/pin.svg" alt="Investtools - Endereço"/>
+                        <img src="/images/new/pin.svg" alt="Investtools - Endereço" />
                         <p className="text-white body-small">{content.location}</p>
                       </a>
                     </li>
                     <li>
                       <a href={`tel:${content.phone}`} rel="noopener noreferrer" target="_blank">
-                        <img src="/images/new/phone.svg" alt="Investtools - Telefone"/>
+                        <img src="/images/new/phone.svg" alt="Investtools - Telefone" />
                         <p className="text-white body-small">{content.phone}</p>
                       </a>
                     </li>
@@ -41,11 +54,9 @@ export default function Index({content}) {
               </div>
             </div>
             <div className="col-12 col-lg-8 px-lg-0">
-              <div className={styles.formBox} id="rd-station-form">
+              <div className={styles.formBox} id={`rd-station-form_${locale}`}>
                 <div className="h-100" id="contato-site-eb80607c4c296921e638" role="main">
-                  <div className={styles.spinner} id="spinner">
-                    <div className="spinner-border"/>
-                  </div>
+                  <Spinner />
                 </div>
               </div>
             </div>

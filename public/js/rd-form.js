@@ -18,7 +18,7 @@ export default function initForm() {
   const observer = new MutationObserver(removeSpinner);
   observer.observe(form, options);
 
-  const script = document.createElement('script');
+  /* const script = document.createElement('script');
   script.src = 'https://d335luupugsy2.cloudfront.net/js/rdstation-forms/stable/rdstation-forms.min.js';
   script.type = 'text/javascript';
   script.onload = () => {
@@ -27,5 +27,5 @@ export default function initForm() {
     script.type = 'text/javascript';
     form.appendChild(insertForm);
   }
-  form.appendChild(script);
+  form.appendChild(script); */
 }
