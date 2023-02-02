@@ -12,10 +12,19 @@
       max-width: 170px !important;
       z-index: 1040 !important;
     }
+
+    li {
+      a {
+        img {
+          width: 20px;
+          height: auto;
+        }
+      }
+    }
   }
 
   li:global(.nav-item) {
-    margin: 0 15px;
+    margin: 0 10px;
     position: relative;
 
     @media (max-width: 1200px) {
@@ -182,7 +191,10 @@
     font-weight: 600;
     
     @media (max-width: 1400px) {
-      font-size: 12px;
+      font-size: 10px;
+    }
+    @media (max-width: 992px) {
+      font-size: 14px;
     }
   }
 }
