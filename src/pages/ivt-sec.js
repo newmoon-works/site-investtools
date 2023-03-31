@@ -6,11 +6,11 @@ import Functionalities from "../components/common/Functionalities";
 import { getLayoutContent } from 'src/lib/getLayoutContent';
 import getLocaleParam from 'src/lib/getLocaleParam';
 
-export default function PerformIt({ pageContent }) {
+export default function IVTSec({ pageContent }) {
   return (
     <>
       <Head>
-        <title>Arcon It - Investtools</title>
+        <title>IVT Sec - Investtools</title>
       </Head>
 
       <AboutProduct content={pageContent.arconIt} product="arcon-it" formId="site-arcon-it-f62c0e07db40e14f5be8" />
