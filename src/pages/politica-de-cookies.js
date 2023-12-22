@@ -5,7 +5,7 @@ import getLocaleParam from 'src/lib/getLocaleParam';
 import { apiURL } from 'src/lib/env';
 
 export default function CookiePolicy({ pageContent }) {
-  let content = pageContent.text.replaceAll('/uploads/', `${apiURL}/uploads/`);
+  /* let content = pageContent.text.replaceAll('/uploads/', `${apiURL}/uploads/`); */
 
   return (
     <>
@@ -27,7 +27,7 @@ export default function CookiePolicy({ pageContent }) {
           }
         `}</style>
 
-        <div dangerouslySetInnerHTML={{ __html: content }} />
+        <div dangerouslySetInnerHTML={{ __html: pageContent.text }} />
       </div>
 
     </>
