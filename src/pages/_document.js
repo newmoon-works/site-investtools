@@ -51,7 +51,7 @@ class MyDocument extends Document {
             env === 'dev' ? null : (
               <>
                 <meta name="adopt-website-id" content="1d12a76e-f881-429d-8c86-0c2a876746b7" />
-                <script src="//tag.goadopt.io/injector.js?website_code=1d12a76e-f881-429d-8c86-0c2a876746b7" class="adopt-injector" />
+                <script src="//tag.goadopt.io/injector.js?website_code=1d12a76e-f881-429d-8c86-0c2a876746b7" className="adopt-injector" />
               </>
             )
           }
