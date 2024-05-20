@@ -31,7 +31,7 @@ export default function Products({ content }) {
             })
           }
           <div className="col-12 col-sm-6 col-lg-3">
-            <Link href="/novos-negocios">
+            <Link href="/inovacao">
               <a className={styles.cardProduct}>
                 <h5>Conheça também a</h5>
                 <h3>Nossa Incubadora</h3>
