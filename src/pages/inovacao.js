@@ -26,15 +26,15 @@ export default function NovosNegocios({pageContent}) {
 }
 
 export async function getStaticProps({ locale }) {
-  let localeParameter = getLocaleParam(locale);
+  
 
-  const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/novos-negocios${localeParameter}`);
+  const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/novos-negocios`);
   const pageContent = await res.json();
 
-  const contactRes = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/dados-de-contato${localeParameter}`);
+  const contactRes = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/dados-de-contato`);
   const contact = await contactRes.json();
 
-  const layout = await getLayoutContent(localeParameter);
+  const layout = await getLayoutContent();
 
   return {
     props: { pageContent, layout, contact },

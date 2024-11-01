@@ -9,8 +9,6 @@ import { useRouter } from 'next/router';
 export default function Hero({ content }) {
   const [active, setActive] = useState(content[0]);
 
-  const { locale } = useRouter();
-
   function handleClick(e) {
     if (e.currentTarget.classList.contains('arrow-left')) {
       let newActive = content[content.indexOf(active) - 1];
@@ -43,11 +41,6 @@ export default function Hero({ content }) {
     document.getElementById(active.id)?.classList.add('active');
     document.getElementById(`screen-${active.id}`)?.classList.add('active');
   }, [active]);
-
-  useEffect(() => {
-    document.querySelector('#heroSlider > :first-child')?.classList.add('active')
-    document.querySelector('#monitor > :first-child')?.classList.add('active')
-  }, [locale]);
 
   return (
     <section className={styles.heroSection}>

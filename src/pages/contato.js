@@ -19,12 +19,12 @@ export default function Contato({ contact }) {
 }
 
 export async function getStaticProps({ locale }) {
-  let localeParameter = getLocaleParam(locale);
+  
 
-  const contactRes = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/dados-de-contato${localeParameter}`);
+  const contactRes = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/dados-de-contato`);
   const contact = await contactRes.json();
 
-  const layout = await getLayoutContent(localeParameter);
+  const layout = await getLayoutContent();
 
   return {
     props: { layout, contact },

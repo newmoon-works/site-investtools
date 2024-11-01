@@ -13,20 +13,17 @@ import { useRouter } from "next/router";
 
 export default function Home({ pageContent, contact }) {
 
-  const { locale } = useRouter();
-  const title = locale === 'pt' ? 'Investtools' : 'Investtools';
-
   return (
     <>
       <Head>
-        <title>{title}</title>
+        <title>Investtools</title>
       </Head>
 
       <Hero content={pageContent.hero} />
       {/* <Products content={pageContent.products} /> */}
       <About content={pageContent.about} />
       <Clients content={pageContent.clients} />
-      <Media content={pageContent.media} />
+      {/* <Media content={pageContent.media} /> */}
       <Testimonials content={pageContent.testimonials} />
       <Contact content={contact} />
     </>
@@ -34,15 +31,15 @@ export default function Home({ pageContent, contact }) {
 }
 
 export async function getStaticProps({ locale }) {
-  let localeParameter = getLocaleParam(locale);
+  
 
-  const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/home-site${localeParameter}`);
+  const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/home-site`);
   const pageContent = await res.json();
 
-  const contactRes = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/dados-de-contato${localeParameter}`);
+  const contactRes = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/dados-de-contato`);
   const contact = await contactRes.json();
 
-  const layout = await getLayoutContent(localeParameter);
+  const layout = await getLayoutContent();
 
   return {
     props: { pageContent, layout, contact },

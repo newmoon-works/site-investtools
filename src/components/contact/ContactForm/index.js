@@ -8,19 +8,9 @@ import { useRouter } from 'next/router';
 export default function Index({ content }) {
   let { part1, part2 } = content.formCode;
 
-  let { locale } = useRouter();
-
   useEffect(() => {
     new RDStationForms(part1, part2).createForm();
-    /* console.dir(RDStationForms);
-    let prevLocale = locale;
-    console.log(prevLocale); */
-
-    /* return () => {
-      console.log(`document.querySelector('#rd-station-form_${locale} section')?.remove();`);
-      document.querySelector(`#rd-station-form_${locale} section`)?.remove();
-    } */
-  }, [/* locale */])
+  }, [])
 
   return (
     <section className={styles.contactForm}>
@@ -54,7 +44,7 @@ export default function Index({ content }) {
               </div>
             </div>
             <div className="col-12 col-lg-8 px-lg-0">
-              <div className={styles.formBox} id={`rd-station-form_${locale}`}>
+              <div className={styles.formBox} id={`rd-station-form`}>
                 <div className="h-100" id="contato-site-eb80607c4c296921e638" role="main">
                   <Spinner />
                 </div>
