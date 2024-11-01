@@ -15,7 +15,7 @@ export default function PrivacyPolicy({ pageContent }) {
 
       <div className="container" style={{ marginTop: '32px' }}>
 
-        <style jsx-global>{`
+        <style jsx global>{`
           img {
             max-width: 75%;
           }
