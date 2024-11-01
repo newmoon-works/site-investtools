@@ -80,7 +80,7 @@ export default function Header({ content }) {
               </li>
               <li className="nav-item dropdown">
                 <Link href={content.novosNegocios.link}><a className="nav-link">{content.novosNegocios.text}</a></Link>
-                <DropDown />
+                {/* <DropDown /> */}
               </li>
               <li className="nav-item">
                 <a href={`${content.blog.link}`} className="nav-link">{content.blog.text}</a>
