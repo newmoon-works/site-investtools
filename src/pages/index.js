@@ -22,7 +22,7 @@ export default function Home({ pageContent, contact }) {
       <Hero content={pageContent.hero} />
       {/* <Products content={pageContent.products} /> */}
       <About content={pageContent.about} />
-      <Clients content={pageContent.clients} />
+      {/* <Clients content={pageContent.clients} /> */}
       {/* <Media content={pageContent.media} /> */}
       <Testimonials content={pageContent.testimonials} />
       <Contact content={contact} />
